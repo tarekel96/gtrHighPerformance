@@ -1,1 +1,1 @@
-export { default } from "./gtrHigh.js";
+export { default } from "./GtrHigh";
