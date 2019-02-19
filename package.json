@@ -1,0 +1,25 @@
+{
+  "name": "gtrhighperformance",
+  "version": "1.0.0",
+  "description": "I am making a website for GTR High Performance located in Rancho Cucamonga, CA.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarekel96/gtrHighPerformance.git"
+  },
+  "author": "tarek el-hajjaoui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tarekel96/gtrHighPerformance/issues"
+  },
+  "homepage": "https://github.com/tarekel96/gtrHighPerformance#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  }
+}
