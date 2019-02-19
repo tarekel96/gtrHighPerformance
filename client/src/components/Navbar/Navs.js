@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button } from "react-bootstrap/Button";
+import { Button } from "react-bootstrap";
 // import React from "react";
 // import { Nav, Navbar } from "react-bootstrap/Nav";
 // import NavDropdown from "react-bootstrap/NavDropdown";
@@ -7,7 +7,7 @@ import { Button } from "react-bootstrap/Button";
 class Nav extends Component {
   state = {};
   render() {
-    return <Button />;
+    return <Button variant="secondary">Hello</Button>;
   }
 }
 
