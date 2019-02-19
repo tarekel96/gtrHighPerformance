@@ -12,7 +12,7 @@ class Navs extends Component {
           <Nav className="mr-auto">
             <Nav.Link href="#features">About</Nav.Link>
             <NavDropdown
-              title="Product & Services"
+              title="Products & Services"
               id="collasible-nav-dropdown"
             >
               <NavDropdown.Item href="#action/3.1">Catalog</NavDropdown.Item>
