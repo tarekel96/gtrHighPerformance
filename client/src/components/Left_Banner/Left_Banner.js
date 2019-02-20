@@ -1,11 +1,23 @@
 import React, { Component } from "react";
 import { Image } from "react-bootstrap";
+import "./leftBanner.css";
 
 class LeftBanner extends Component {
   state = {};
   render() {
     return (
-      <Image src={window.location.origin + "/images/gtrInverted.jpg"} fluid />
+      <div>
+        <Image
+          id="gtrLeft"
+          src={window.location.origin + "/images/gtrInverted.jpg"}
+          fluid
+        />
+        <Image
+          id="gtrLeftTwo"
+          src={window.location.origin + "/images/gtrLogo.png"}
+          fluid
+        />
+      </div>
     );
   }
 }

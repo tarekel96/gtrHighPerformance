@@ -1,0 +1,10 @@
+#gtrLeft {
+  width: 152px;
+  height: 65px;
+}
+
+#gtrLeftTwo {
+  width: 152px;
+  height: 100%;
+  display: block;
+}
