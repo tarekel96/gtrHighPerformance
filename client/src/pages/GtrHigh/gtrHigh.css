@@ -1,12 +1,36 @@
-/* body {
-  background-image: url("https://vortechsuperchargers.files.wordpress.com/2011/01/img_0444.jpg");
-} */
-
-/* #first {
-  color: blue;
-  background-color: coral;
+.spanHeader {
+  color: white;
+  font-weight: bold thick;
+  font-size: large;
+  font-family: "Ubuntu", sans-serif;
+  text-shadow: 2px 2px grey;
+  margin-left: -8px;
+}
+.block {
+  display: block;
 }
 
-#top {
-  background-color: black;
+#gtrValues {
+  padding-top: 375px;
+  color: white;
+  color: white;
+  font-weight: bold thick;
+  font-size: large;
+  font-family: "Ubuntu", sans-serif;
+  text-shadow: 2px 2px grey;
+}
+
+/* #leftValue {
+  display: flex;
+  justify-content: left;
+} */
+
+.middleValue {
+  display: flex;
+  justify-content: center;
+}
+
+/* #rightValue {
+  display: flex;
+  justify-content: right;
 } */

@@ -60,8 +60,7 @@ body {
   background-image: url("https://vortechsuperchargers.files.wordpress.com/2011/01/img_0444.jpg");
   /* Full height
 
-  Center and scale the image nicely 
-  background-position: center; */
+  Scale the image nicely  */
   background-repeat: no-repeat;
   background-size: cover;
 }
