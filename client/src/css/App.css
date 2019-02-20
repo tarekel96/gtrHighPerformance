@@ -30,3 +30,19 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color: black;
+}
+
+#colLeft {
+  background-color: white;
+}
+
+#colMid {
+  background-color: white;
+}
+
+#colRight {
+  background-color: white;
+}

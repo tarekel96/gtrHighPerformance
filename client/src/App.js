@@ -6,17 +6,19 @@ import Gtr from "./pages/GtrHigh";
 import LeftBanner from "./components/Left_Banner/Left_Banner.js";
 
 const App = () => (
-  <div>
+  <div id="leftContainer">
     <Navs />
     <Container>
       <Row>
-        <Col xs={2}>
+        <Col id="colLeft" xs={2}>
           <LeftBanner />
         </Col>
-        <Col xs={8}>
+        <Col id="colMid" xs={8}>
           <Gtr />
         </Col>
-        <Col xs={2}>Right Column</Col>
+        <Col id="colRight" xs={2}>
+          Right Column
+        </Col>
       </Row>
     </Container>
   </div>
