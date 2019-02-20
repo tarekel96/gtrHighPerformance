@@ -49,11 +49,11 @@
   display: flex;
 }
 body {
-  background-color: black;
+  background-color: darkgrey;
 }
 
 #colLeft {
-  background-color: darkred;
+  background-color: darkblue;
 }
 
 #colMid {

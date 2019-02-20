@@ -11,6 +11,15 @@ class RightBanner extends Component {
           src={window.location.origin + "/images/GOTM.gif"}
           fluid
         />
+        <Image src={window.location.origin + "/images/KenneBell.jpg"} fluid />
+        <Image src={window.location.origin + "/images/vortech.png"} fluid />
+        <Image
+          id="roush"
+          src={window.location.origin + "/images/roush.png"}
+          fluid
+        />
+        <Image src={window.location.origin + "/images/paxton.jpg"} fluid />
+        <Image src={window.location.origin + "/images/fordRacing.jpg"} fluid />
       </div>
     );
   }
