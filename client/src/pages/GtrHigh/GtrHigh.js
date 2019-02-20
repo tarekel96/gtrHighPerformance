@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./gtrHigh.css";
 
 class Gtr extends Component {
   constructor(props) {
@@ -6,7 +7,11 @@ class Gtr extends Component {
     this.state = {};
   }
   render() {
-    return <h1>Hello World</h1>;
+    return (
+      <div id="top">
+        <h1 id="first">Hello World</h1>
+      </div>
+    );
   }
 }
 
