@@ -4,6 +4,7 @@ import { Container, Col, Row } from "react-bootstrap";
 import Navs from "./components/Navbar/Navs";
 import Gtr from "./pages/GtrHigh/GtrHigh";
 import LeftBanner from "./components/Left_Banner/Left_Banner.js";
+import RightBanner from "./components/Right_Banner/Right_Banner.js";
 
 const App = () => (
   <div id="leftContainer">
@@ -17,7 +18,7 @@ const App = () => (
           <Gtr />
         </Col>
         <Col id="colRight" lg={2}>
-          Right Column
+          <RightBanner />
         </Col>
       </Row>
     </Container>
