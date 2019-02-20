@@ -10,13 +10,13 @@ const App = () => (
     <Navs />
     <Container>
       <Row>
-        <Col id="colLeft" xs={2}>
+        <Col id="colLeft" lg={2}>
           <LeftBanner />
         </Col>
-        <Col id="colMid" xs={8}>
+        <Col id="colMid" lg={8}>
           <Gtr />
         </Col>
-        <Col id="colRight" xs={2}>
+        <Col id="colRight" lg={2}>
           Right Column
         </Col>
       </Row>
