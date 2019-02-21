@@ -9,18 +9,30 @@ class About extends Component {
       <div>
         <Container>
           <Row>
-            <Col>
+            <Col lg={3}>
+              <Figure className="left">
+                <Figure.Caption>
+                  <h4>Gonzalo Topete</h4>
+                  <h6>President and Co-Founder of GTR High</h6>
+                </Figure.Caption>
+                <Figure.Image
+                  src={window.location.origin + "/images/Gonz.jpeg"}
+                  fluid
+                />
+              </Figure>
+              <Figure className="left">
+                <Figure.Caption>
+                  <h4>Ricardo Topete</h4>
+                  <h6>Vice-President and Co-Founder of GTR High</h6>
+                </Figure.Caption>
+                <Figure.Image
+                  src={window.location.origin + "/images/Ric.jpg"}
+                  fluid
+                />
+              </Figure>
+            </Col>
+            <Col lg={3}>
               <section>
-                <Figure className="left">
-                  <Figure.Caption>
-                    <h4>Gonzalo Topete</h4>
-                    <h6>President and Co-Founder of GTR High</h6>
-                  </Figure.Caption>
-                  <Figure.Image
-                    src={window.location.origin + "/images/Gonz.jpeg"}
-                    fluid
-                  />
-                </Figure>
                 <ul>
                   <li>
                     Education: Bachelor of Science Business Administration,
@@ -36,16 +48,6 @@ class About extends Component {
                 Camaro?!), 2007 Tahoe.
               </p>
               <section>
-                <Figure className="left">
-                  <Figure.Caption>
-                    <h4>Ricardo Topete</h4>
-                    <h6>Vice-President and Co-Founder of GTR High</h6>
-                  </Figure.Caption>
-                  <Figure.Image
-                    src={window.location.origin + "/images/Ric.jpg"}
-                    fluid
-                  />
-                </Figure>
                 <ul>
                   <li>
                     Education: Bachelor of Science Business Administration,
@@ -59,31 +61,9 @@ class About extends Component {
                   </li>
                   <li>Favorite Food: Anything his wife, Lauri, makes.</li>
                 </ul>
-                {/* <aside>
-                  Education: Bachelor of Science Business Administration,
-                  University of California, Riverside, 1997.
-                </aside>
-                <aside>
-                  Personal Rides: Vortech Intercooled Supercharged 2006 Mustang
-                  GT (465 RWHP), 1989 Mustang 5.0 LX, 1999 Camaro Z-28 (Yes, a
-                  Camaro?!), 2007 Tahoe Hobbies: Microsoft X-Box & sports.
-                </aside>
-                <aside>Favorite Food: Anything his wife, Lauri, makes.</aside> */}
-              </section>
-              <section>
-                <aside className="justify">
-                  Next time you are in the market for Mustang performance parts
-                  and accessories or installation help or simply a dyno-test,
-                  contact GTR High Performance. You and your Mustang will be
-                  treated with the respect and attention to detail you deserve
-                  and expect. Remember, whether you plan on building a Mustang
-                  for the drag strip, road-course, show-circuit, or simply fun
-                  on the street, GTR High Performance IS your Mustang Race
-                  Place!
-                </aside>
               </section>
             </Col>
-            <Col>
+            <Col lg={6}>
               <header>
                 <h3>The History of GTR</h3>
               </header>
@@ -120,6 +100,18 @@ class About extends Component {
                   Pony! Contact GTR High Performance to schedule your dyno test
                   or tuning session.
                 </article>
+                <section>
+                  <aside className="justify">
+                    Next time you are in the market for Mustang performance
+                    parts and accessories or installation help or simply a
+                    dyno-test, contact GTR High Performance. You and your
+                    Mustang will be treated with the respect and attention to
+                    detail you deserve and expect. Remember, whether you plan on
+                    building a Mustang for the drag strip, road-course,
+                    show-circuit, or simply fun on the street, GTR High
+                    Performance IS your Mustang Race Place!
+                  </aside>
+                </section>
               </section>
             </Col>
           </Row>
