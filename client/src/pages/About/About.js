@@ -10,49 +10,65 @@ class About extends Component {
         <Container>
           <Row>
             <Col>
-              <section id="GonzSec">
+              <section>
                 <Figure className="left">
-                  <Figure.Caption id="RicFig">
+                  <Figure.Caption>
                     <h4>Gonzalo Topete</h4>
                     <h6>President and Co-Founder of GTR High</h6>
                   </Figure.Caption>
                   <Figure.Image
-                    id="RicImage"
                     src={window.location.origin + "/images/Gonz.jpeg"}
                     fluid
                   />
                 </Figure>
-                <aside id="RicBio" className="justify">
-                  Chances are you talk to Gonzalo when you call or visit GTR
-                  High Performance. Education: Bachelor of Science Business
-                  Administration, University of California, Riverside, 1997.
-                  Personal Rides: Vortech Intercooled Supercharged 2006 Mustang
-                  GT (465 RWHP), 1989 Mustang 5.0 LX, 1999 Camaro Z-28 (Yes, a
-                  Camaro?!), 2007 Tahoe Hobbies: Microsoft X-Box & sports.
-                  Favorite Food: Anything his wife, Lauri, makes.
-                </aside>
+                <ul>
+                  <li>
+                    Education: Bachelor of Science Business Administration,
+                    University of California, Riverside, 1997.
+                  </li>
+                  <li>Hobbies: Microsoft X-Box & sports.</li>
+                  <li>Favorite Food: Anything his wife, Lauri, makes.</li>
+                </ul>
               </section>
-              <section id="RicSection">
+              <p className="block">
+                Personal Rides: Vortech Intercooled Supercharged 2006 Mustang GT
+                (465 RWHP), 1989 Mustang 5.0 LX, 1999 Camaro Z-28 (Yes, a
+                Camaro?!), 2007 Tahoe.
+              </p>
+              <section>
                 <Figure className="left">
-                  <Figure.Caption id="RicFig">
+                  <Figure.Caption>
                     <h4>Ricardo Topete</h4>
                     <h6>Vice-President and Co-Founder of GTR High</h6>
                   </Figure.Caption>
                   <Figure.Image
-                    id="RicImage"
                     src={window.location.origin + "/images/Ric.jpg"}
                     fluid
                   />
                 </Figure>
-                <aside id="RicBio" className="justify">
-                  Chances are you talk to Gonzalo when you call or visit GTR
-                  High Performance. Education: Bachelor of Science Business
-                  Administration, University of California, Riverside, 1997.
+                <ul>
+                  <li>
+                    Education: Bachelor of Science Business Administration,
+                    University of California, Riverside, 1997.
+                  </li>
+                  <li>
+                    Personal Rides: Vortech Intercooled Supercharged 2006
+                    Mustang GT (465 RWHP), 1989 Mustang 5.0 LX, 1999 Camaro Z-28
+                    (Yes, a Camaro?!), 2007 Tahoe Hobbies: Microsoft X-Box &
+                    sports.
+                  </li>
+                  <li>Favorite Food: Anything his wife, Lauri, makes.</li>
+                </ul>
+                {/* <aside>
+                  Education: Bachelor of Science Business Administration,
+                  University of California, Riverside, 1997.
+                </aside>
+                <aside>
                   Personal Rides: Vortech Intercooled Supercharged 2006 Mustang
                   GT (465 RWHP), 1989 Mustang 5.0 LX, 1999 Camaro Z-28 (Yes, a
                   Camaro?!), 2007 Tahoe Hobbies: Microsoft X-Box & sports.
-                  Favorite Food: Anything his wife, Lauri, makes.
                 </aside>
+                <aside>Favorite Food: Anything his wife, Lauri, makes.</aside> */}
               </section>
               <section>
                 <aside className="justify">
