@@ -1,12 +1,19 @@
 import React, { Component } from "react";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { GiHomeGarage } from "react-icons/gi";
+import { GoCalendar } from "react-icons/go";
+import { FiShoppingCart } from "react-icons/fi";
+import { FaEnvelope } from "react-icons/fa";
+import "./nav.css";
 
 class Navs extends Component {
   state = {};
   render() {
     return (
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="#home">GTR</Navbar.Brand>
+        <Navbar.Brand href="#home">
+          <GiHomeGarage id="homeIcon" />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
@@ -38,9 +45,18 @@ class Navs extends Component {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">Events</Nav.Link>
+            <Nav.Link eventKey={2} href="#memes" />
             <Nav.Link eventKey={2} href="#memes">
-              Contact
+              <FiShoppingCart />
+            </Nav.Link>
+            <Nav.Link href="#deets">
+              <GoCalendar id="cal" />
+            </Nav.Link>
+            <Nav.Link eventKey={2} href="#memes">
+              <FaEnvelope />
+            </Nav.Link>
+            <Nav.Link eventKey={2} href="#memes">
+              More
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

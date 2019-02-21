@@ -1,8 +1,16 @@
 import React, { Component } from "react";
 import { Image } from "react-bootstrap";
+// import GOTM_one from "../../images/GOTM_one.jpg";
+// import GOTM_two from "../../images/GOTM_two.jpg";
+// import GOTM_three from "../../images/GOTM_three.jpg";
 
 class RightBanner extends Component {
-  state = {};
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     GOTM_image: GOTM_one
+  //   };
+  // }
   render() {
     return (
       <div className="borderLR">
@@ -24,5 +32,13 @@ class RightBanner extends Component {
     );
   }
 }
+
+// let GOTM_images = [GOTM_one, GOTM_two, GOTM_three];
+
+// let playGOTM = (images) => {
+//   if(images) {
+//     src = this.setState(images[])
+//   }
+// };
 
 export default RightBanner;
