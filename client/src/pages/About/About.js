@@ -11,21 +11,18 @@ class About extends Component {
           <Row>
             <Col>
               <section id="GonzSec">
-                <Figure>
+                <Figure className="left">
+                  <Figure.Caption id="RicFig">
+                    <h4>Gonzalo Topete</h4>
+                    <h6>President and Co-Founder of GTR High</h6>
+                  </Figure.Caption>
                   <Figure.Image
-                    id="GonzImage"
+                    id="RicImage"
                     src={window.location.origin + "/images/Gonz.jpeg"}
                     fluid
                   />
-                  <Figure.Caption id="GonzFig">
-                    <h4>Gonzalo Topete</h4>
-                    <h6>
-                      Title: President of GTR High Performance. Co-founded GTR
-                      in 1997.
-                    </h6>
-                  </Figure.Caption>
                 </Figure>
-                <aside id="GonzBio" className="justify">
+                <aside id="RicBio" className="justify">
                   Chances are you talk to Gonzalo when you call or visit GTR
                   High Performance. Education: Bachelor of Science Business
                   Administration, University of California, Riverside, 1997.

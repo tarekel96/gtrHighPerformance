@@ -1,11 +1,11 @@
-#GonzImage {
+/* #GonzImage {
   float: left;
   margin: 10px 5px 0 0;
 }
 
 #GonzFig {
   margin: 10px 5px 0 0;
-}
+} */
 
 /* #RicImage {
   float: right;
@@ -21,6 +21,10 @@
 } */
 .left {
   float: left;
+}
+
+.right {
+  float: right;
 }
 
 .justify {
