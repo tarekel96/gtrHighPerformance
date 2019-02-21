@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Container, Col, Row, Figure } from "react-bootstrap";
 import Gonz from "../../components/Gonz/Gonz.js";
+import historyTop from "../../images/historyTop.png";
 import historyBot from "../../images/historyBot.png";
 import "./about.css";
 
@@ -32,7 +33,18 @@ class About extends Component {
                 </ul>
               </section>
             </Col>
-            <Col id="historyOne" lg={6}>
+            <Col
+              id="historyOne"
+              lg={6}
+              style={{
+                backgroundImage: `url(${historyTop})`,
+
+                backgroundPosition: "center",
+                backgroundRepeat: "no - repeat",
+                backgroundSize: "cover",
+                borderBottom: "thick black solid"
+              }}
+            >
               <header>
                 <h3>The History of GTR</h3>
               </header>
