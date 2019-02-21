@@ -1,0 +1,28 @@
+#GonzImage {
+  float: left;
+  margin: 10px 5px 0 0;
+}
+
+#GonzFig {
+  margin: 10px 5px 0 0;
+}
+
+/* #RicImage {
+  float: right;
+  margin: 10px 5px 0 0;
+} */
+
+/* #RicFig {
+  margin: 10px 5px 0 0;
+  float: left;
+}
+#RicImage {
+  float: right;
+} */
+.left {
+  float: left;
+}
+
+.justify {
+  text-align: justify;
+}

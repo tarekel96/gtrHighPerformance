@@ -17,7 +17,15 @@ class Navs extends Component {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#features">About</Nav.Link>
+            <NavDropdown title="About" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">History</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">Staff</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
             <NavDropdown
               title="Products & Services"
               id="collasible-nav-dropdown"
