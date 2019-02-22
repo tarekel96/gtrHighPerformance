@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import { Container, Col, Row, Figure } from "react-bootstrap";
-import Gonz from "../../components/Gonz/Gonz.js";
+import { Container, Col, Row } from "react-bootstrap";
+import Gonz from "../../components/About/Gonz/Gonz.js";
 import historyTop from "../../images/historyTop.png";
 import historyBot from "../../images/historyBot.png";
+import Ric from "../../components/About/Ric/Ric.js";
 import "./about.css";
 
 class About extends Component {
@@ -10,10 +11,10 @@ class About extends Component {
   render() {
     return (
       <div>
-        <Container>
+        <Container id="aboutContainer">
           {/* First Row */}
-          <Row>
-            <Col lg={2}>
+          <Row className="bio">
+            <Col lg={2} id="topLBio">
               <Gonz />
             </Col>
             <Col lg={4}>
@@ -67,18 +68,9 @@ class About extends Component {
             </Col>
           </Row>
           {/* Second Row */}
-          <Row>
+          <Row className="bio">
             <Col lg={2}>
-              <Figure className="left">
-                <Figure.Caption>
-                  <h4>Ricardo Topete</h4>
-                  <h6>Vice-President and Co-Founder of GTR High</h6>
-                </Figure.Caption>
-                <Figure.Image
-                  src={window.location.origin + "/images/Ric.jpg"}
-                  fluid
-                />
-              </Figure>
+              <Ric />
             </Col>
             <Col lg={4}>
               <section>

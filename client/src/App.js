@@ -25,9 +25,11 @@ const App = () => (
         </Row>
       </Container>
     </div>
-    <Container>
-      <About />
-    </Container>
+    <div id="aboutCon">
+      <Container>
+        <About />
+      </Container>
+    </div>
   </div>
 );
 

@@ -49,7 +49,7 @@
   display: flex;
 }
 #topPortion {
-  background-color: darkgrey;
+  background-color: #e3e3e3;
 }
 
 #colLeft {
@@ -67,4 +67,9 @@
 
 #colRight {
   background-color: darkred;
+}
+
+#aboutCon {
+  background-color: #dddfd4;
+  border-top: black medium solid;
 }

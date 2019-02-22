@@ -1,0 +1,13 @@
+.blackFont {
+  color: black;
+}
+
+.B6 {
+  font-family: "B612", sans-serif;
+}
+
+.figBorder {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px;
+}
