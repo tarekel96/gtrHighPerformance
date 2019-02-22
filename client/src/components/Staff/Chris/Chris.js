@@ -11,9 +11,9 @@ class Chris extends Component {
           <h6>Technician/Installer</h6>
         </Figure.Caption>
         <Figure.Image
-          src={window.location.origin + "/images/Gonz.jpeg"}
+          src={window.location.origin + "/images/Chris.jpg"}
           fluid
-          className="figBorder"
+          className="figBorders"
         />
       </Figure>
     );

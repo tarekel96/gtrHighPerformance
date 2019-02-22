@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import Eli from "../../components/Staff/Eli/Eli.js";
 import Chris from "../../components/Staff/Chris/Chris.js";
+import Dave from "../../components/Staff/Dave/Dave.js";
+import Josh from "../../components/Staff/Josh/Josh.js";
+import "./staff.css";
 
 class Staff extends Component {
   state = {};
@@ -70,6 +73,66 @@ class Staff extends Component {
                   <li>
                     <span className="bold">Personal Rides:</span> 93 Ford F-350
                     460 big block, Ford Explorer, Toyota truck.
+                  </li>
+                </ul>
+              </section>
+            </Col>
+          </Row>
+          <Row className="bio">
+            <Col lg={4}>
+              <Dave />
+            </Col>
+            <Col lg={8} className="topMargin">
+              <section>
+                <ul>
+                  <li>
+                    <span className="bold">Bio:</span> Started with GTR in 2006.
+                    Specializes in 5.0 Mustangs and truck performance. Was
+                    owner/operator of Dave's Custom Motorsports (Upland, Ca)
+                    1992-1996.
+                  </li>
+                  <li>
+                    <span className="bold">Hobbies:</span> Las Vegas and
+                    sleeping.
+                  </li>
+                  <li>
+                    <span className="bold">Favorite Food:</span> Chili cheese
+                    fries at The Hat.
+                  </li>
+                  <li>
+                    <span className="bold">Personal Rides:</span> 06 Chrysler
+                    300C SRT8, 96 Chevy Impala SS, 04 Chevy Truck 2500.
+                    Previously owned 1986 Mustang GT & 1989 Mustang 5.0.
+                  </li>
+                </ul>
+              </section>
+            </Col>
+          </Row>
+          {/* Second Row */}
+          <Row className="bio">
+            <Col lg={4}>
+              <Josh />
+            </Col>
+            <Col lg={8} className="topMargin">
+              <section>
+                <ul>
+                  <li>
+                    <span className="bold">Bio:</span> Started working with GTR
+                    in 2002. Designs, updates, and maintains advertisements in
+                    magazines, web site, and promotional media such as
+                    calendars, flyers, brochures, etc...
+                  </li>
+                  <li>
+                    <span className="bold">Hobbies:</span> Family, and
+                    apparently, work.
+                  </li>
+                  <li>
+                    <span className="bold">Favorite Food:</span> Anything the
+                    majority of North Americans consider food is fine by me.
+                  </li>
+                  <li>
+                    <span className="bold">Personal Rides:</span> 2005 Dodge
+                    Magnum RT, 2005 Ford F-150 FX4 SuperCrew
                   </li>
                 </ul>
               </section>

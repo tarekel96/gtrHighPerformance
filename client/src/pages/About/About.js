@@ -9,9 +9,10 @@ class About extends Component {
   render() {
     return (
       <div>
+        <h1 id="header">The Founders</h1>
         <Container>
           {/* First Row */}
-          <Row className="bio">
+          <Row className="biog">
             <Col lg={4}>
               <Gonz />
             </Col>
@@ -42,7 +43,7 @@ class About extends Component {
             </Col>
           </Row>
           {/* Second Row */}
-          <Row className="bio">
+          <Row className="biog">
             <Col lg={4}>
               <Ric />
             </Col>

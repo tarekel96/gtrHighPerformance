@@ -77,3 +77,8 @@
 #histCon {
   border-top: solid black medium;
 }
+
+#staffCon {
+  background-color: #c0dfd9;
+  border-top: black medium solid;
+}

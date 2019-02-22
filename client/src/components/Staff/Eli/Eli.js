@@ -11,9 +11,9 @@ class Eli extends Component {
           <h6>Sales Associate/ Customer Service / Installer</h6>
         </Figure.Caption>
         <Figure.Image
-          src={window.location.origin + "/images/Gonz.jpeg"}
+          src={window.location.origin + "/images/Eli.jpg"}
           fluid
-          className="figBorder"
+          className="figBorders"
         />
       </Figure>
     );
