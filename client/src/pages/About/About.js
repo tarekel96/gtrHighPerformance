@@ -14,27 +14,36 @@ class About extends Component {
         <Container id="aboutContainer">
           {/* First Row */}
           <Row className="bio">
-            <Col lg={2} id="topLBio">
+            <Col lg={4} id="topLBio">
               <Gonz />
             </Col>
-            <Col lg={4}>
+            <Col lg={8} className="bioInfo">
               <section>
                 <ul>
                   <li>
-                    Education: Bachelor of Science Business Administration,
-                    University of California, Riverside, 1997.
+                    <span className="bold">Education:</span> Bachelor of Science
+                    Business Administration, University of California,
+                    Riverside, 1997.
                   </li>
-                  <li>Hobbies: Microsoft X-Box & sports.</li>
-                  <li>Favorite Food: Anything his wife, Lauri, makes.</li>
                   <li>
-                    Personal Rides: Vortech Intercooled Supercharged 2006
-                    Mustang GT (465 RWHP), 1989 Mustang 5.0 LX, 1999 Camaro Z-28
-                    (Yes, a Camaro?!), 2007 Tahoe.
+                    <span className="bold">Hobbies:</span> Microsoft X-Box &
+                    sports.
+                  </li>
+                  <li>
+                    <span className="bold">Favorite Food:</span> Anything his
+                    wife, Lauri, makes.
+                  </li>
+                  <li>
+                    <span className="bold">Personal Rides:</span> Vortech
+                    Intercooled Supercharged 2006 Mustang GT (465 RWHP), 1989
+                    Mustang 5.0 LX, 1999 Camaro Z-28 (Yes, a Camaro?!), 2007
+                    Tahoe.
                   </li>
                 </ul>
               </section>
             </Col>
-            <Col
+
+            {/* <Col
               id="historyOne"
               lg={6}
               style={{
@@ -65,40 +74,43 @@ class About extends Component {
                   Performance.
                 </article>
               </section>
-            </Col>
+            </Col> */}
           </Row>
           {/* Second Row */}
           <Row className="bio">
-            <Col lg={2}>
+            <Col lg={4}>
               <Ric />
             </Col>
-            <Col lg={4}>
+            <Col lg={8} className="bioInfo">
               <section>
                 <ul>
                   <li>
-                    Education: Bachelor of Science Business Administration,
-                    University of California, Riverside, 1997. A.S.E Certified:
-                    A1 Engine Repair, A8 Engine Performance, A3 Manual
-                    Drivetrains, A4 Suspension & Steering, A5 Braking Systems.
+                    <span className="bold">Education:</span> Bachelor of Science
+                    Business Administration, University of California,
+                    Riverside, 1997. A.S.E Certified: A1 Engine Repair, A8
+                    Engine Performance, A3 Manual Drivetrains, A4 Suspension &
+                    Steering, A5 Braking Systems.
                   </li>
                   <li>
-                    Hobbies: Spending time with family, Traveling, Bicycling,
-                    Cruising in Mustangs & making horsepower!
+                    <span className="bold">Hobbies:</span> Spending time with
+                    family, Traveling, Bicycling, Cruising in Mustangs & making
+                    horsepower!
                   </li>
                   <li>
-                    Favorite Food: Any dead and cooked animal is fair game.
+                    <span className="bold">Favorite Food:</span> Any dead and
+                    cooked animal is fair game.
                   </li>
                   <li>
-                    Personal Rides: Paxton Supercharged 2001 Mustang GT, Vortech
-                    Supercharged 1994 SVT Cobra (sold), 1992 Mustang GT (sold),
-                    1964 1/2 Mustang 289, 2005 Ford F-150 SuperCrew, 2006
-                    Infiniti G35 Coupe. (Ricardo doesn't know the meaning of
-                    "factory stock").
+                    <span className="bold">Personal Rides:</span> Paxton
+                    Supercharged 2001 Mustang GT, Vortech Supercharged 1994 SVT
+                    Cobra (sold), 1992 Mustang GT (sold), 1964 1/2 Mustang 289,
+                    2005 Ford F-150 SuperCrew, 2006 Infiniti G35 Coupe. (Ricardo
+                    doesn't know the meaning of "factory stock").
                   </li>
                 </ul>
               </section>
             </Col>
-            <Col
+            {/* <Col
               style={{
                 backgroundImage: `url(${historyBot})`,
 
@@ -129,12 +141,12 @@ class About extends Component {
                   or tuning session.
                 </article>
               </section>
-            </Col>
+            </Col> */}
           </Row>
           {/* Third Row */}
-          <Row>
+          {/* <Row>
             <Col lg={6} />
-          </Row>
+          </Row> */}
         </Container>
         {/* <aside>
           Next time you are in the market for Mustang performance parts and
