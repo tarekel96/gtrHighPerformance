@@ -1,0 +1,16 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.bio {
+  background-color: #e3e3e3;
+  font-size: x-large;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.topMargin {
+  margin-top: 5%;
+}

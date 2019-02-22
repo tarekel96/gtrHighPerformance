@@ -7,6 +7,7 @@ import LeftBanner from "./components/Left_Banner/Left_Banner.js";
 import RightBanner from "./components/Right_Banner/Right_Banner.js";
 import About from "./pages/About/About.js";
 import History from "../src/pages/History/History.js";
+import Staff from "../src/pages/Staff/Staff.js";
 
 const App = () => (
   <div>
@@ -31,6 +32,9 @@ const App = () => (
     </div>
     <div id="histCon">
       <History />
+    </div>
+    <div id="staffCon">
+      <Staff />
     </div>
   </div>
 );
