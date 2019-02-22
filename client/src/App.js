@@ -6,6 +6,7 @@ import Gtr from "./pages/GtrHigh/GtrHigh";
 import LeftBanner from "./components/Left_Banner/Left_Banner.js";
 import RightBanner from "./components/Right_Banner/Right_Banner.js";
 import About from "./pages/About/About.js";
+import History from "../src/pages/History/History.js";
 
 const App = () => (
   <div>
@@ -26,9 +27,10 @@ const App = () => (
       </Container>
     </div>
     <div id="aboutCon">
-      <Container>
-        <About />
-      </Container>
+      <About />
+    </div>
+    <div id="histCon">
+      <History />
     </div>
   </div>
 );
