@@ -42,11 +42,12 @@ class About extends Component {
                 backgroundPosition: "center",
                 backgroundRepeat: "no - repeat",
                 backgroundSize: "cover",
-                borderBottom: "thick black solid"
+                borderBottom: "thick black solid",
+                borderTop: "medium black solid"
               }}
             >
               <header>
-                <h3>The History of GTR</h3>
+                <h3 id="title">The History of GTR</h3>
               </header>
               <section>
                 <article className="justify">
@@ -116,7 +117,7 @@ class About extends Component {
               lg={6}
             >
               <section>
-                <article className="justify">
+                <article id="historyBot" className="justify">
                   Originating from a modest 1000 sq./ft. shop with one bay for
                   installations and a tiny office, GTR High Performance forged a
                   strong reputation for quality workmanship, excellent customer
