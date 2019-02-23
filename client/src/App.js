@@ -10,18 +10,20 @@ import History from "../src/pages/History/History.js";
 import Staff from "../src/pages/Staff/Staff.js";
 
 const App = () => (
+  // xs={1} sm={1} md={1} lg={2}
+  // xs={4} sm={6} md={8} lg={8}
   <div>
     <div id="topPortion">
       <Navs fixed="top" />
-      <Container id="topContainer">
+      <Container id="topContainer" fluid>
         <Row className="row flex">
-          <Col id="colLeft" lg={2}>
+          <Col id="colLeft" xs={1} sm={false} md={2} lg={2}>
             <LeftBanner />
           </Col>
-          <Col id="colMid" lg={8}>
+          <Col id="colMid" xs={10} sm={10} md={8} lg={8}>
             <Gtr />
           </Col>
-          <Col id="colRight" lg={2}>
+          <Col id="colRight" xs={1} sm={false} md={2} lg={2}>
             <RightBanner />
           </Col>
         </Row>

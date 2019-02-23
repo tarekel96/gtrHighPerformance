@@ -36,7 +36,7 @@
   flex-wrap: wrap;
 } */
 
-.flex-row {
+/* .flex-row {
   display: flex;
   flex-wrap: wrap;
 }
@@ -47,7 +47,7 @@
 .flex-row.row:after,
 .flex-row.row:before {
   display: flex;
-}
+} */
 #topPortion {
   background-color: #e3e3e3;
 }

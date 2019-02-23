@@ -17,4 +17,6 @@ body {
 
 #header {
   text-align: center;
+  font-weight: bold thick;
+  text-shadow: 2px 2px darkgray;
 }

@@ -11,6 +11,7 @@ class Staff extends Component {
   render() {
     return (
       <div>
+        <h1 id="header">Our Professional Staff</h1>
         <Container>
           {/* First Row */}
           <Row className="bio">
