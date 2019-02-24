@@ -15,39 +15,14 @@ const App = () => (
   // xs={4} sm={6} md={8} lg={8}
   <div>
     <Navs fixed="top" fluid />
-    <Container id="masterCon" fluid>
-      <div id="topContainer" className="topPortion" fluid>
-        <Row className="row flex absolute" id="colMid">
-          {/* <Col id="colLeft" xs={1} sm={false} md={2} lg={2}>
-            <LeftBanner />
-          </Col> */}
-          {/* <Col id="colMid" xs={10} sm={10} md={8} lg={8}> */}
-          <Col>
-            <Gtr />
-          </Col>
-          {/* </Col> */}
-          {/* <Col id="colRight" xs={1} sm={false} md={2} lg={2}>
-            <RightBanner />
-          </Col> */}
-        </Row>
-      </div>
-      <div id="aboutCon" fluid>
-        <Row className="absolute">
-          <Col>
-            <AboutHome />
-          </Col>
-        </Row>
-      </div>
-      <div id="foundersCon">
-        <Founders />
-      </div>
-      <div id="histCon">
-        <History />
-      </div>
-      <div id="staffCon">
-        <Staff />
-      </div>
-    </Container>
+    <Gtr />
+    <AboutHome />
+    =
+    <Founders />
+    <History />
+    <div id="staffCon">
+      <Staff />
+    </div>
   </div>
 );
 

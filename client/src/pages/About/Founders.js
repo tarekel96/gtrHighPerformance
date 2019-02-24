@@ -8,7 +8,7 @@ class Founders extends Component {
   state = {};
   render() {
     return (
-      <div>
+      <div id="foundersCon">
         <h1 id="header">The Founders</h1>
         <Container>
           {/* First Row */}

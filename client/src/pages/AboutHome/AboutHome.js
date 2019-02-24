@@ -9,46 +9,48 @@ class AboutHome extends Component {
   }
   render() {
     return (
-      <Container fluid id="aboutHomeCon">
-        <Row>
-          <Col>
-            <div class="containerAbout">
-              <img
-                src="https://www.w3schools.com/howto/img_avatar.png"
-                alt="Avatar"
-                class="image"
-              />
-              <div class="middle">
-                <Button class="text">History</Button>
+      <div id="aboutHome">
+        <Container fluid>
+          <Row>
+            <Col>
+              <div className="containerAbout">
+                <img
+                  src="https://www.w3schools.com/howto/img_avatar.png"
+                  alt="Avatar"
+                  class="image"
+                />
+                <div class="middle">
+                  <Button class="text">History</Button>
+                </div>
               </div>
-            </div>
-          </Col>
-          <Col>
-            <div class="containerAbout">
-              <img
-                src="https://www.w3schools.com/howto/img_avatar.png"
-                alt="Avatar"
-                class="image"
-              />
-              <div class="middle">
-                <Button class="text">Founders</Button>
+            </Col>
+            <Col>
+              <div class="containerAbout">
+                <img
+                  src="https://www.w3schools.com/howto/img_avatar.png"
+                  alt="Avatar"
+                  class="image"
+                />
+                <div class="middle">
+                  <Button class="text">Founders</Button>
+                </div>
               </div>
-            </div>
-          </Col>
-          <Col>
-            <div class="containerAbout">
-              <img
-                src="https://www.w3schools.com/howto/img_avatar.png"
-                alt="Avatar"
-                class="image"
-              />
-              <div class="middle">
-                <Button class="text">Staff</Button>
+            </Col>
+            <Col>
+              <div class="containerAbout">
+                <img
+                  src="https://www.w3schools.com/howto/img_avatar.png"
+                  alt="Avatar"
+                  class="image"
+                />
+                <div class="middle">
+                  <Button class="text">Staff</Button>
+                </div>
               </div>
-            </div>
-          </Col>
-        </Row>
-      </Container>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     );
   }
 }

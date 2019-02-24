@@ -1,10 +1,12 @@
 .spanHeader {
   color: white;
   font-weight: bold thick;
-  font-size: large;
+  font-size: xx-large;
   font-family: "Ubuntu", sans-serif;
   text-shadow: 2px 2px grey;
   margin-left: -8px;
+  text-align: center;
+  margin-top: 10%;
 }
 .block {
   display: block;
@@ -16,6 +18,21 @@
   font-size: large;
   font-family: "Ubuntu", sans-serif;
   position: relative;
+}
+
+#gtrDiv {
+  background-image: url("https://www.wallpapersbrowse.com/images/vr/vrsfxzg.jpg");
+  /* Full height
+
+ /* Full height */
+  height: 100%;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
 }
 
 #gtrValues {
