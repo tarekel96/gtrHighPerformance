@@ -20,11 +20,11 @@ class Gtr extends Component {
             <col sm={4}>Quality</col>
           </row>
         </container> */}
-        <section id="gtrValues">
+        {/* <section id="gtrValues">
           <span className="middleValue">Passionate</span>
           <span className="middleValue">Experienced</span>
           <span className="middleValue">Quality</span>
-        </section>
+        </section> */}
       </div>
     );
   }

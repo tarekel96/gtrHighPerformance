@@ -69,16 +69,16 @@
   background-color: darkred;
 }
 
-#aboutCon {
+#foundersCon {
   background-color: #e3e3e3;
-  border-top: black medium solid;
+  /* border-top: black medium solid; */
 }
 
-#histCon {
+/* #histCon {
   border-top: solid black medium;
-}
+} */
 
 #staffCon {
   background-color: #c0dfd9;
-  border-top: black medium solid;
+  /* border-top: black medium solid; */
 }

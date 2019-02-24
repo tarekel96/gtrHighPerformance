@@ -4,7 +4,7 @@ import Gonz from "../../components/About/Gonz/Gonz.js";
 import Ric from "../../components/About/Ric/Ric.js";
 import "./about.css";
 
-class About extends Component {
+class Founders extends Component {
   state = {};
   render() {
     return (
@@ -83,4 +83,4 @@ class About extends Component {
   }
 }
 
-export default About;
+export default Founders;

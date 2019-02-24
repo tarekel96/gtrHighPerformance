@@ -5,7 +5,7 @@ import Navs from "./components/Navbar/Navs";
 import Gtr from "./pages/GtrHigh/GtrHigh";
 import LeftBanner from "./components/Left_Banner/Left_Banner.js";
 import RightBanner from "./components/Right_Banner/Right_Banner.js";
-import About from "./pages/About/About.js";
+import Founders from "./pages/About/Founders.js";
 import History from "../src/pages/History/History.js";
 import Staff from "../src/pages/Staff/Staff.js";
 
@@ -29,8 +29,8 @@ const App = () => (
         </Row>
       </Container>
     </div>
-    <div id="aboutCon">
-      <About />
+    <div id="foundersCon">
+      <Founders />
     </div>
     <div id="histCon">
       <History />

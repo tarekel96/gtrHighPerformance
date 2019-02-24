@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Image } from "react-bootstrap";
+import "./rightBanner.css";
 // import GOTM_one from "../../images/GOTM_one.jpg";
 // import GOTM_two from "../../images/GOTM_two.jpg";
 // import GOTM_three from "../../images/GOTM_three.jpg";
@@ -13,7 +14,7 @@ class RightBanner extends Component {
   // }
   render() {
     return (
-      <div className="borderLR">
+      <div className="borderRL">
         <Image
           id="gotm"
           src={window.location.origin + "/images/GOTM.gif"}

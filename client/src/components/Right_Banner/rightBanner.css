@@ -1,8 +1,13 @@
-.borderLR {
+.borderRL {
   border-left: 5px black solid;
   border-right: 5px black solid;
+  height: 100%;
 }
 
 #roush {
   background-color: white;
+}
+
+#gotm {
+  width: 100%;
 }

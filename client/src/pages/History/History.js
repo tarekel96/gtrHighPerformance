@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import historyBot from "../../images/history.png";
+// import historyBot from "../../images/history.png";
 import "./history.css";
 
 class History extends Component {
@@ -14,14 +14,13 @@ class History extends Component {
             <Col
               id="histDoc"
               lg={8}
-              style={{
-                backgroundImage: `url(${historyBot})`,
-                height: "100%",
-
-                backgroundPosition: "center",
-                backgroundRepeat: "no - repeat",
-                backgroundSize: "cover"
-              }}
+              // style={{
+              //   backgroundImage: `url(${historyBot})`,
+              //   height: "100%",
+              //   backgroundPosition: "center",
+              //   backgroundRepeat: "no - repeat",
+              //   backgroundSize: "cover"
+              // }}
             >
               <header>
                 <h3 id="title">The History of GTR</h3>

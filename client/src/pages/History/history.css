@@ -2,10 +2,10 @@
   text-align: justify;
 }
 
-#histDoc {
+/* #histDoc {
   height: 100%;
   border: solid black medium;
-}
+} */
 
 .padPar {
   padding-left: 30px;
@@ -17,7 +17,7 @@
   font-family: "Laila", serif;
   text-align: center;
   padding-top: 20px;
-  text-shadow: 2px 2px #ba9077;
+  /* text-shadow: 2px 2px #ba9077; */
 }
 
 #midPar {
@@ -31,5 +31,5 @@
 
 body {
   font-family: "Lato", sans-serif;
-  background-color: #ba9077;
+  background-color: #e3e3e3;
 }
