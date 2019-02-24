@@ -48,6 +48,10 @@
 .flex-row.row:before {
   display: flex;
 } */
+
+#masterCon {
+  display: inline-block;
+}
 #topPortion {
   background-color: #e3e3e3;
 }
@@ -56,13 +60,27 @@
   background-color: darkblue;
 }
 
-#colMid {
-  background-image: url("https://vortechsuperchargers.files.wordpress.com/2011/01/img_0444.jpg");
+#topContainer {
+  background-image: url("https://www.wallpapersbrowse.com/images/vr/vrsfxzg.jpg");
   /* Full height
+  
+   /* Full height */
+  height: 100%;
+  width: 100%;
 
-  Scale the image nicely  */
+  /* Center and scale the image nicely */
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: absolute;
+}
+
+/* #colMid {
+  align-items: stretch;
+} */
+
+#aboutCon {
+  position: relative;
 }
 
 #colRight {

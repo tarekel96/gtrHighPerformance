@@ -25,6 +25,7 @@ class Gtr extends Component {
           <span className="middleValue">Experienced</span>
           <span className="middleValue">Quality</span>
         </section> */}
+        <footer id="topFooter">Copywrite @GTRHighPerformance</footer>
       </div>
     );
   }
