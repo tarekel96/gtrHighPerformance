@@ -1,6 +1,6 @@
 import React from "react";
 import "./css/App.css";
-import { Container, Col, Row } from "react-bootstrap";
+// import { Container, Col, Row } from "react-bootstrap";
 import Navs from "./components/Navbar/Navs";
 import Gtr from "./pages/GtrHigh/GtrHigh";
 // import LeftBanner from "./components/Left_Banner/Left_Banner.js";
