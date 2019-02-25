@@ -8,14 +8,16 @@ class Gtr extends Component {
     this.state = {};
   }
   render() {
+    // let gtrData = this.props.gtrData;
+    // let intro = "Welcome Muscle Car Enthusiasts";
     return (
       <div id="gtrDiv">
         <Container>
           <Row>
             <Col lg={12}>
               <header>
-                <span className="spanHeader block">Welcome Muscle</span>
-                <span className="spanHeader block">Car Enthusiasts</span>
+                <span className="spanHeader block">{this.props.intro}</span>
+                {/* <span className="spanHeader block">Car Enthusiasts</span> */}
               </header>
 
               {/* <footer id="topFooter">Copywrite @GTRHighPerformance</footer> */}
