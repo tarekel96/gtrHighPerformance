@@ -13,7 +13,7 @@ class Chris extends Component {
         <Figure.Image
           src={window.location.origin + "/images/Chris.jpg"}
           fluid
-          className="figBorders"
+          className="figBorder"
         />
       </Figure>
     );

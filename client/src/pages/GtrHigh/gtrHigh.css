@@ -1,12 +1,18 @@
 .spanHeader {
   color: white;
   font-weight: bold thick;
-  font-size: xx-large;
+  font-size: 50px;
   font-family: "Ubuntu", sans-serif;
   text-shadow: 2px 2px grey;
-  margin-left: -8px;
-  text-align: center;
+  margin-left: 10%;
+  align-content: center;
+  /* text-align: center; */
   margin-top: 10%;
+}
+
+#highPer {
+  margin: 0;
+  margin-left: 15%;
 }
 .block {
   display: block;
@@ -21,7 +27,7 @@
 }
 
 #gtrDiv {
-  background-image: url("https://www.wallpapersbrowse.com/images/vr/vrsfxzg.jpg");
+  /* background-image: url("https://www.wallpapersbrowse.com/images/vr/vrsfxzg.jpg"); */
   /* Full height
 
  /* Full height */
@@ -33,6 +39,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 #gtrValues {

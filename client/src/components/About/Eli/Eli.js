@@ -1,23 +1,23 @@
 import React, { Component } from "react";
 import { Figure } from "react-bootstrap";
-import "./josh.css";
-class Josh extends Component {
+import "./eli.css";
+class Eli extends Component {
   state = {};
   render() {
     return (
       <Figure>
         <Figure.Caption className="blackFont B6">
-          <h4>Josh Felton</h4>
-          <h6>Marketing/Advertising/Web Site/Photography </h6>
+          <h4>Elisseos Patronas</h4>
+          <h6>Sales Associate/ Customer Service / Installer</h6>
         </Figure.Caption>
         <Figure.Image
-          src={window.location.origin + "/images/Josh.jpg"}
+          src={window.location.origin + "/images/Eli.jpg"}
           fluid
-          className="figBorders"
+          className="figBorder"
         />
       </Figure>
     );
   }
 }
 
-export default Josh;
+export default Eli;

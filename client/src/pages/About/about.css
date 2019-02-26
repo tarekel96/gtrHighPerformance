@@ -1,28 +1,25 @@
-body {
+.aboutCon body {
   font-family: "Lato", sans-serif;
 }
 
-.biog {
-  /* background-color: #e3e3e3; */
+.aboutCon .biog {
   font-size: x-large;
 }
 
-.bold {
+.aboutCon .bold {
   font-weight: bold;
 }
 
-.topMargin {
+.aboutCon .topMargin {
   margin-top: 5%;
 }
 
-#header {
+.aboutCon .header {
   text-align: center;
   font-weight: bold thick;
   text-shadow: 2px 2px darkgray;
 }
 
-#foundersCon {
+.aboutCon {
   background-color: #e3e3e3;
-  /* margin-top: 20%; */
-  /* border-top: black medium solid; */
 }
