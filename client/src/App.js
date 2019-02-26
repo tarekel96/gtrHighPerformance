@@ -3,7 +3,8 @@ import "./css/App.css";
 import Navs from "./components/Navbar/Navs";
 import AboutHome from "../src/pages/AboutHome/AboutHome.js";
 import About from "./pages/About/About";
-let classList = [`Navs, AboutHome, About`];
+import Appt from "./pages/Appt/index.js";
+
 const App = () => (
   <div>
     <Navs fixed="top" fluid />
@@ -14,6 +15,7 @@ const App = () => (
       historyInitialThree={""}
     />
     <About />
+    <Appt />
   </div>
 );
 
