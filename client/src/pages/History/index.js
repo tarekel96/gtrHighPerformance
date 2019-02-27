@@ -5,6 +5,7 @@ import EliImg from "../../images/Eli.jpg";
 import ChrisImg from "../../images/Chris.jpg";
 import DaveImg from "../../images/Dave.jpg";
 import JoshImg from "../../images/Josh.jpg";
+import "./history.css";
 
 class History extends Component {
   constructor(props) {
@@ -75,12 +76,32 @@ class History extends Component {
     return (
       <div id="historyContainer">
         {members.map(member => (
-          <section>
-            <img src={member.image} />
-            `Name: `{member.name}, `Title `{member.title}, `Background: `
-            {member.background}, `Hobbies: {member.hobbies}`, `Food:{" "}
-            {member.food}`, `Rides: {member.rides}`
-          </section>
+          <div id="cardContainer">
+            <img id="portrait" src={member.image} />
+            <p className="spanCard">
+              <span style={{ fontWeight: `bold` }}>Name: </span>
+              {member.name}
+            </p>
+            <p className="spanCard">
+              <span style={{ fontWeight: `bold` }}>Title {member.title}</span>
+            </p>
+            <p className="spanCard">
+              <span style={{ fontWeight: `bold` }}>Background: </span>
+              {member.background}
+            </p>
+            <p className="spanCard">
+              <span style={{ fontWeight: `bold` }}>Hobbies: </span>
+              {member.hobbies}
+            </p>
+            <p className="spanCard">
+              <span style={{ fontWeight: `bold` }}>Food: </span>
+              {member.food}`
+            </p>
+            <p className="spanCard">
+              <span style={{ fontWeight: `bold` }}>Rides: </span>
+              {member.rides}`
+            </p>
+          </div>
         ))}
       </div>
     );

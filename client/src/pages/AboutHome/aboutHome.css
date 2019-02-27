@@ -7,6 +7,7 @@
   width: 90%;
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-left: 3%;
 }
 
 #aboutH .image {
@@ -48,6 +49,14 @@
   padding-top: 20px;
 }
 
-#aboutH justify {
-  align-content: justify;
+.justify {
+  text-align: justify;
+}
+
+.paddingPars {
+  padding: 10px;
+}
+
+.historyWords {
+  margin: 0;
 }

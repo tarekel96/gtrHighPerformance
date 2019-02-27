@@ -1,4 +1,22 @@
 #historyContainer {
   display: flex;
+  flex-flow: column wrap;
   justify-content: space-evenly;
+
+  /* align-content: space-around; */
+}
+
+#cardContainer {
+  box-shadow: 5px 10px #7acfd6;
+  max-height: 750px;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 3% auto;
+  border: black medium solid;
+  /* padding: 0;
+  margin: 0; */
+}
+
+.spanCard {
+  margin: 0;
 }

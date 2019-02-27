@@ -2,22 +2,22 @@ import React from "react";
 import "./css/App.css";
 import Navs from "./components/Navbar/Navs";
 import AboutHome from "../src/pages/AboutHome/AboutHome.js";
-import About from "./pages/About/About";
+// import About from "./pages/About/About";
 import Appt from "./pages/Appt/index.js";
 import History from "./pages/History/index.js";
 
 const App = () => (
   <div>
     <Navs fixed="top" fluid />
+    <History />
     <AboutHome
       titleInitial={""}
       historyInitialOne={""}
       historyInitialTwo={""}
       historyInitialThree={""}
     />
-    <About />
+    {/* <About /> */}
     <Appt />
-    <History />
   </div>
 );
 

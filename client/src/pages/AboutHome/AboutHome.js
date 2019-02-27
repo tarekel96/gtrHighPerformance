@@ -70,70 +70,36 @@ class AboutHome extends Component {
   render() {
     return (
       <div id="aboutH">
-        <Container fluid>
-          <Row>
-            <Col>
-              <div className="containerAbout">
-                <img
-                  src="https://www.w3schools.com/howto/img_avatar.png"
-                  alt="Avatar"
-                  className="image"
-                />
-                <div class="middle">
-                  <Button class="text" onClick={this.showHistory}>
-                    History
-                  </Button>
-                </div>
-              </div>
-            </Col>
-            <Col>
-              <div className="containerAbout">
-                <img
-                  src="https://www.w3schools.com/howto/img_avatar.png"
-                  alt="Avatar"
-                  className="image"
-                />
-                <div className="middle">
-                  <Button
-                    // onClick={this.displayHistory(this.history)}
-                    className="text"
-                  >
-                    Founders
-                  </Button>
-                </div>
-              </div>
-            </Col>
-            <Col>
-              <div className="containerAbout">
-                <img
-                  src="https://www.w3schools.com/howto/img_avatar.png"
-                  alt="Avatar"
-                  class="image"
-                />
-                <div className="middle">
-                  <Button className="text">Staff</Button>
-                </div>
-              </div>
-            </Col>
-          </Row>
-        </Container>
         <Row>
-          <Col lg={2} />
-          <Col lg={8} md={6} className="justify">
-            <header>
-              <h3 id="title">{this.state.header}</h3>
-            </header>
-            <section className="padPar">
-              <article className="justify">{this.state.histParOne}</article>
-              <article className="justify" id="midPar">
-                {this.state.histParTwo}
-              </article>
-              <article className="justify" id="botPar">
-                {this.state.histParThree}
-              </article>
-            </section>
+          <Col>
+            <div className="containerAbout">
+              <img
+                src="https://www.w3schools.com/howto/img_avatar.png"
+                alt="Avatar"
+                className="image"
+              />
+              <div class="middle">
+                <Button class="text" onClick={this.showHistory}>
+                  History
+                </Button>
+              </div>
+            </div>
           </Col>
-          <Col lg={2} />
+          <Col
+            style={{ alignContent: `justify` }}
+            className="justify historyWords"
+          >
+            <div className="justify paddingPars">
+              <header>
+                <h3 id="title">{this.state.header}</h3>
+              </header>
+              <section className="padPar">
+                <article>{this.state.histParOne}</article>
+                <article>{this.state.histParTwo}</article>
+                <article>{this.state.histParThree}</article>
+              </section>
+            </div>
+          </Col>
         </Row>
       </div>
     );
