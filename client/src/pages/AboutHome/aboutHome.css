@@ -1,6 +1,6 @@
-#aboutH {
+/* #aboutH {
   background-color: #e3e3e3;
-}
+} */
 
 #aboutH .containerAbout {
   position: relative;
@@ -8,6 +8,11 @@
   padding-top: 30px;
   padding-bottom: 30px;
   margin-left: 3%;
+  height: 100%;
+  min-height: 500px;
+  border: black medium solid;
+  box-shadow: 5px 10px #393f4d;
+  background-color: #f6f5f3;
 }
 
 #aboutH .image {
@@ -19,7 +24,7 @@
   backface-visibility: hidden;
 }
 
-#aboutH .middle {
+#aboutH .midButton {
   /* transition: 0.5s ease;
   opacity: 0; */
   position: absolute;

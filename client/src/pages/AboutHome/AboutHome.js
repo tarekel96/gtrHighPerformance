@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Row, Col, Button } from "react-bootstrap";
+import classicShelby from "../../images/classicShelby.jpg";
 import "./aboutHome.css";
 
 class AboutHome extends Component {
@@ -26,7 +27,6 @@ class AboutHome extends Component {
 
   showHistory = () => {
     this.setState({
-      titleInitial: "center",
       header: "The History of GTR High Performance",
       histParOne: `Founded in 1997, GTR High Performance was created by two
          long-time Mustang enthusiasts, Gonzalo & Ricardo Topete. The
@@ -73,13 +73,19 @@ class AboutHome extends Component {
         <Row>
           <Col>
             <div className="containerAbout">
-              <img
-                src="https://www.w3schools.com/howto/img_avatar.png"
-                alt="Avatar"
+              <div
+                style={{
+                  backgroundImage: `url(${classicShelby})`,
+                  height: "100%",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "none",
+                  backgroundSize: "cover"
+                }}
+                alt="Avarar"
                 className="image"
               />
-              <div class="middle">
-                <Button class="text" onClick={this.showHistory}>
+              <div className="midButton">
+                <Button className="text" onClick={this.showHistory}>
                   History
                 </Button>
               </div>

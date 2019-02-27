@@ -77,7 +77,7 @@ class History extends Component {
       <div id="historyContainer">
         {members.map(member => (
           <div id="cardContainer">
-            <img id="portrait" src={member.image} />
+            <img id="portrait" src={member.image} alt="portrait" />
             <p className="spanCard">
               <span style={{ fontWeight: `bold` }}>Name: </span>
               {member.name}

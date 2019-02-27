@@ -10,22 +10,22 @@ class Navs extends Component {
   state = {};
   render() {
     return (
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar
+        id="homeNavBar"
+        collapseOnSelect
+        expand="lg"
+        bg="none"
+        // variant="dark"
+      >
         <Navbar.Brand href="#home">
           <GiHomeGarage id="homeIcon" />
         </Navbar.Brand>
+        <span>|</span>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <NavDropdown title="About" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">History</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Staff</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link href="#pricing">About</Nav.Link>
+            <span>|</span>
             <NavDropdown
               title="Products & Services"
               id="collasible-nav-dropdown"
@@ -42,6 +42,7 @@ class Navs extends Component {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
+            <span>|</span>
             <NavDropdown title="Accomplishments" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">GTR Press</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
@@ -59,12 +60,15 @@ class Navs extends Component {
             <Nav.Link eventKey={2} href="#memes">
               <FiShoppingCart />
             </Nav.Link>
+            <span>|</span>
             <Nav.Link href="#deets">
               <GoCalendar id="cal" />
             </Nav.Link>
+            <span>|</span>
             <Nav.Link eventKey={2} href="#memes">
               <FaEnvelope />
             </Nav.Link>
+            <span>|</span>
             <Nav.Link eventKey={2} href="#memes">
               More
             </Nav.Link>

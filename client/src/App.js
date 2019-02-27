@@ -1,5 +1,6 @@
 import React from "react";
 import "./css/App.css";
+import Home from "./pages/Home/index.js";
 import Navs from "./components/Navbar/Navs";
 import AboutHome from "../src/pages/AboutHome/AboutHome.js";
 // import About from "./pages/About/About";
@@ -8,10 +9,11 @@ import History from "./pages/History/index.js";
 
 const App = () => (
   <div>
-    <Navs fixed="top" fluid />
+    {/* <Navs fixed="top" fluid /> */}
+    <Home />
     <History />
     <AboutHome
-      titleInitial={""}
+      header={""}
       historyInitialOne={""}
       historyInitialTwo={""}
       historyInitialThree={""}
