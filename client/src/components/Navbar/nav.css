@@ -4,7 +4,23 @@
 }
 
 #homeNavBar {
-  color: #1b1b1b;
+  color: hsl(0, 0%, 11%);
+}
+
+.wordIcons {
+  display: none;
+}
+
+@media (max-width: 990px) {
+  #homeNavBar {
+    background-color: white;
+  }
+  .icons {
+    display: none;
+  }
+  .wordIcons {
+    display: block;
+  }
 }
 
 /* #cal {

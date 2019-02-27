@@ -20,12 +20,12 @@ class Navs extends Component {
         <Navbar.Brand href="#home">
           <GiHomeGarage id="homeIcon" />
         </Navbar.Brand>
-        <span>|</span>
+
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="#pricing">About</Nav.Link>
-            <span>|</span>
+
             <NavDropdown
               title="Products & Services"
               id="collasible-nav-dropdown"
@@ -42,7 +42,7 @@ class Navs extends Component {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
-            <span>|</span>
+
             <NavDropdown title="Accomplishments" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">GTR Press</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
@@ -57,18 +57,26 @@ class Navs extends Component {
           </Nav>
           <Nav>
             <Nav.Link eventKey={2} href="#memes" />
-            <Nav.Link eventKey={2} href="#memes">
+            <Nav.Link eventKey={2} href="#memes" className="icons">
               <FiShoppingCart />
             </Nav.Link>
-            <span>|</span>
-            <Nav.Link href="#deets">
+            <Nav.Link eventKey={2} href="#memes" className="wordIcons">
+              Cart
+            </Nav.Link>
+            <Nav.Link href="#deets" className="icons">
               <GoCalendar id="cal" />
             </Nav.Link>
-            <span>|</span>
-            <Nav.Link eventKey={2} href="#memes">
+            <Nav.Link eventKey={2} href="#memes" className="wordIcons">
+              Calendar
+            </Nav.Link>
+
+            <Nav.Link eventKey={2} href="#memes" className="icons">
               <FaEnvelope />
             </Nav.Link>
-            <span>|</span>
+            <Nav.Link eventKey={2} href="#memes" className="wordIcons">
+              Email
+            </Nav.Link>
+
             <Nav.Link eventKey={2} href="#memes">
               More
             </Nav.Link>
