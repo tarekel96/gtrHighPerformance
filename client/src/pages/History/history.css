@@ -1,22 +1,28 @@
 #historyContainer {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   justify-content: space-evenly;
-
   /* align-content: space-around; */
 }
 
 #cardContainer {
-  box-shadow: 5px 10px #7acfd6;
+  box-shadow: 5px 10px #393f4d;
   max-height: 750px;
   max-width: 500px;
   min-width: 300px;
   margin: 3% auto;
   border: black medium solid;
+  background-color: #f6f5f3;
   /* padding: 0;
   margin: 0; */
 }
 
 .spanCard {
   margin: 0;
+}
+
+#portrait {
+  border: #393f4d medium solid;
+  display: block;
+  margin: 5px auto;
 }
