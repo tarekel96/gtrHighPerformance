@@ -7,9 +7,9 @@ class Appt extends Component {
   }
 
   render() {
-    const navList = [
-      `First Name, Last Name, Date, Time, Make, Model, Model Year, Speciality`
-    ];
+    //     const navList = [
+    //       `First Name, Last Name, Date, Time, Make, Model, Model Year, Speciality`
+    //     ];
 
     const formList = [
       {
@@ -44,7 +44,7 @@ class Appt extends Component {
         {/* {navList.map(navItem => {
           <h3>{navItem}</h3>;
         })} */}
-        <form>
+        <form id="formBlock">
           {formList.map(formItem => (
             <input
               name={formItem.name}
