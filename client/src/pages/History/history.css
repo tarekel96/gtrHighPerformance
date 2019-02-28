@@ -1,28 +1,54 @@
-#historyContainer {
+#masterHistory {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  /* align-content: space-around; */
+  flex-direction: column;
+  align-items: center;
 }
 
-#cardContainer {
-  box-shadow: 5px 10px #393f4d;
-  max-height: 750px;
-  max-width: 500px;
-  min-width: 300px;
-  margin: 3% auto;
-  border: black medium solid;
-  background-color: #f6f5f3;
-  /* padding: 0;
-  margin: 0; */
+#classicShelbyCon {
+  width: 50%;
+  height: 100%;
+  min-height: 500px;
+  display: flex;
+  align-content: center;
 }
 
-.spanCard {
-  margin: 0;
-}
-
-#portrait {
-  border: #393f4d medium solid;
+#classicShelbyCon .image {
+  opacity: 1;
   display: block;
-  margin: 5px auto;
+  width: 100%;
+  height: auto;
+  border: black thin solid;
+}
+
+#midButton {
+  /* transition: 0.5s ease;
+  opacity: 0; */
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#classicShelbyCon:hover .image {
+  opacity: 0.3;
+}
+
+.padPar {
+  padding-top: 20px;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.paddingPars {
+  padding: 10px;
+}
+
+@media (max-height: 991px) {
+  #historyInfo {
+    display: block;
+  }
 }

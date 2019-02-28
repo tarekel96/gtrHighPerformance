@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import { Row, Col, Button } from "react-bootstrap";
-import classicShelby from "../../images/classicShelby.jpg";
-import "./aboutHome.css";
+import historyMust from "../../images/history.jpg";
+import "./history.css";
 
-class AboutHome extends Component {
+class History extends Component {
   constructor(props) {
     super(props);
     // this.title = props.title;
@@ -69,47 +68,37 @@ class AboutHome extends Component {
 
   render() {
     return (
-      <div id="aboutH">
-        <Row>
-          <Col>
-            <div className="containerAbout">
-              <div
-                style={{
-                  backgroundImage: `url(${classicShelby})`,
-                  height: "100%",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "none",
-                  backgroundSize: "cover"
-                }}
-                alt="Avarar"
-                className="image"
-              />
-              <div className="midButton">
-                <Button className="text" onClick={this.showHistory}>
-                  History
-                </Button>
-              </div>
-            </div>
-          </Col>
-          <Col
-            style={{ alignContent: `justify` }}
-            className="justify historyWords"
-          >
-            <div className="justify paddingPars">
-              <header>
-                <h3 id="title">{this.state.header}</h3>
-              </header>
-              <section className="padPar">
-                <article>{this.state.histParOne}</article>
-                <article>{this.state.histParTwo}</article>
-                <article>{this.state.histParThree}</article>
-              </section>
-            </div>
-          </Col>
-        </Row>
+      <div id="masterHistory">
+        <div id="classicShelbyCon">
+          <img
+            src={historyMust}
+            style={{
+              height: "100%",
+              backgroundPosition: "center",
+              backgroundRepeat: "none",
+              backgroundSize: "cover"
+            }}
+            alt="Avarar"
+            className="image"
+          />
+          <div />
+        </div>
+        <button className="histButton" onClick={this.showHistory}>
+          History
+        </button>
+        <div id="historyInfo" className="justify paddingPars">
+          <header>
+            <h3 id="title">{this.state.header}</h3>
+          </header>
+          <section className="padPar">
+            <p>{this.state.histParOne}</p>
+            <p>{this.state.histParTwo}</p>
+            <p>{this.state.histParThree}</p>
+          </section>
+        </div>
       </div>
     );
   }
 }
 
-export default AboutHome;
+export default History;
