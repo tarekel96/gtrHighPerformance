@@ -84,7 +84,7 @@ class History extends Component {
           <div />
         </div>
         <button className="histButton" onClick={this.showHistory}>
-          History
+          Click to Learn More About Our History
         </button>
         <div id="historyInfo" className="justify paddingPars">
           <header>

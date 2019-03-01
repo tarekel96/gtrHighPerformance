@@ -19,6 +19,7 @@
 .form-input {
   width: 100%;
   flex-basis: 100%;
+  border: black thin solid;
   /* display: block; */
 }
 #form-block input,
