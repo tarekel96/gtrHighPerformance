@@ -28,6 +28,12 @@
   flex-basis: 100%;
   background-color: white;
   margin-top: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.histButton:hover {
+  background-color: #9068be;
+  box-shadow: 2px 5px;
 }
 
 .padPar {

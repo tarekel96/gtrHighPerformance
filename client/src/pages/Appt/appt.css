@@ -4,6 +4,7 @@
   margin: 1rem auto;
   border: black thin solid;
   background-color: white;
+  box-shadow: 5px 10px;
 }
 
 .form-box {
@@ -12,16 +13,17 @@
   padding: 0.5rem 0;
 }
 
-/* #formBlock input {
-  min-width: 200px;
-} */
-
 .form-input {
   width: 100%;
   flex-basis: 100%;
   border: black thin solid;
-  /* display: block; */
 }
+
+.form-input:hover {
+  background-color: #6ed3cf;
+  box-shadow: 1px 3px;
+}
+
 #form-block input,
 #form-block label {
   padding: 0.2rem 1rem;
@@ -32,6 +34,11 @@
 #form-submit {
   margin: 0 auto;
   width: 90%;
+}
+
+input[type="submit"]:hover {
+  background-color: #7dce94;
+  box-shadow: 2px 5px;
 }
 
 @media all and (min-width: 600px) {
