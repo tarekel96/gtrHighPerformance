@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./appt.css";
 
 class Appt extends Component {
   constructor(props) {
@@ -13,56 +14,76 @@ class Appt extends Component {
 
     const formList = [
       {
-        name: `First Name`,
+        name: `Name`,
+        id: 1,
         type: `text`,
-        value: "First Name"
+        placeholder: `Name`
       },
       {
-        name: `Last Name`,
+        name: `Email`,
+        id: 2,
         type: `text`,
-        value: "Last Name"
+        placeholder: `Email`
       },
       {
-        name: `Model`,
+        name: `Car`,
+        id: 3,
         type: `text`,
-        value: "Model"
+        placeholder: `Car`
+      },
+      {
+        name: `Model & Trim`,
+        id: 4,
+        type: `text`,
+        placeholder: `Model & Trim`
       },
       {
         name: `Year`,
+        id: 5,
         type: `text`,
-        value: "Year"
-      },
-      {
-        name: `Service`,
-        type: `text`,
-        value: "Service"
+        placeholder: `Year`
       }
+      // {
+      //   name: `Service`,
+      //   type: `text`
+      // }
     ];
     return (
-      <div>
-        <h1>Hello</h1>
-        {/* {navList.map(navItem => {
-          <h3>{navItem}</h3>;
-        })} */}
-        <form id="formBlock">
-          {formList.map(formItem => (
-            <input
-              name={formItem.name}
-              type={formItem.type}
-              value={formItem.value}
-            />
-          ))}
-        </form>
-        {/* <nav>
-          <ul>
-            {navList.map(navItem => (
-              <li>
-                <a href="#">{navItem}</a>
-              </li>
+      <main id="form-div">
+        <form id="form-block">
+          <h3>Message:</h3>
+          <div className="form-box">
+            {formList.map(formItem => (
+              <label key={formItem.id} className="form-label">
+                {formItem.name}:
+                <input
+                  className="form-input"
+                  name={formItem.name}
+                  type={formItem.type}
+                  placeholder={formItem.placeholder}
+                />
+              </label>
             ))}
-          </ul>
-        </nav> */}
-      </div>
+          </div>
+          <div className="form-box">
+            <label className="form-label">
+              Service:
+              <textarea
+                className="form-input"
+                name="Service"
+                type="text"
+                placeholder="Service"
+              />
+            </label>
+            <input
+              className="form-input"
+              id="form-submit"
+              type="submit"
+              value="Submit"
+            />
+          </div>
+        </form>
+      </main>
     );
   }
 }

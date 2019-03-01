@@ -5,12 +5,20 @@
   /* align-content: space-around; */
 }
 
+@media all and (max-width: 1199px) {
+  #staffContainer {
+    display: flex;
+    flex-flow: column;
+  }
+}
+
 #cardContainer {
   box-shadow: 5px 10px #393f4d;
   max-height: 750px;
   max-width: 500px;
   min-width: 300px;
   margin: 3% auto;
+  padding: 1rem;
   border: black medium solid;
   background-color: #f6f5f3;
   /* padding: 0;

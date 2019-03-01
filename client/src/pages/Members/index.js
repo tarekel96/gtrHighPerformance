@@ -11,6 +11,7 @@ const Members = () => {
   const members = [
     {
       name: `Gonzalo Topete`,
+      id: 1,
       image: GonzImg,
       title: `President and Co-Founder of GTR High`,
       background: `Bachelor of Science Business Administration, University of California, Riverside, 1997.`,
@@ -21,6 +22,7 @@ const Members = () => {
     {
       name: `Ricardo Topete`,
       image: RicImg,
+      id: 2,
       title: `Vice-President and Co-Founder of GTR High`,
       background: ` Bachelor of Science Business Administration, University of California, Riverside, 1997. A.S.E Certified: A1 Engine Repair, A8 Engine Performance, A3 Manual Drivetrains, A4 Suspension & Steering, A5 Braking Systems.`,
       hobbies: `Spending time with family, Traveling, Bicycling, Cruising in Mustangs & making horsepower!`,
@@ -30,6 +32,7 @@ const Members = () => {
     {
       name: `Elisseos Patronas`,
       image: EliImg,
+      id: 3,
       title: `Sales Associate/ Customer Service / Installer`,
       background: `Started with GTR in 2002. In charge of shipping/receiving, fulfilling sales orders and parts sales in store. Eli ensures that your orders arrives accurately and promptly. Eli lends a hand in the shop and installs parts on a regular basis. Eli's hands-on experience is an advantage to you, our customer.`,
       hobbies: `Family, skateboarding, gym.`,
@@ -39,6 +42,7 @@ const Members = () => {
     {
       name: `Chris Balster`,
       image: ChrisImg,
+      id: 4,
       title: `Technician/Installer`,
       background: `Universal Technical Institute graduate, 2005. Ford FACT graduate, 2006. A.S.E. certified Master Mechanic, A1 Engine Repair, A2 Automatic Transmission, A3 Manual Drivetrains, A4 Suspension & Steering, A5 Brakes, A6 Electronic Systems, A7 Heating & Air Conditioning, A8 Engine Performance.`,
       hobbies: `Fishing.`,
@@ -48,6 +52,7 @@ const Members = () => {
     {
       name: `Dave Chamberlain`,
       image: DaveImg,
+      id: 5,
       title: `Technician/Installer`,
       background: `Started with GTR in 2006. Specializes in 5.0 Mustangs and truck performance. Was owner/operator of Dave's Custom Motorsports (Upland, Ca) 1992-1996.`,
       hobbies: `Las Vegas and sleeping.`,
@@ -57,6 +62,7 @@ const Members = () => {
     {
       name: `Josh Felton`,
       image: JoshImg,
+      id: 6,
       title: `Marketing/Advertising/Web Site/Photography`,
       background: `Started working with GTR in 2002. Designs, updates, and maintains advertisements in magazines, web site, and promotional media such as calendars, flyers, brochures, etc...`,
       hobbies: `Family, and apparently, work.`,
@@ -68,9 +74,9 @@ const Members = () => {
   ];
 
   return (
-    <div id="staffContainer">
+    <main id="staffContainer">
       {members.map(member => (
-        <div id="cardContainer">
+        <div id="cardContainer" key={member.id}>
           <img id="portrait" src={member.image} alt="portrait" />
           <p className="spanCard">
             <span style={{ fontWeight: `bold` }}>Name: </span>
@@ -97,7 +103,7 @@ const Members = () => {
           </p>
         </div>
       ))}
-    </div>
+    </main>
   );
 };
 

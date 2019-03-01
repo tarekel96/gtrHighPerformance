@@ -5,7 +5,11 @@ import "./home.css";
 class Home extends Component {
   state = {};
   render() {
-    const homeWelcome = ["Welcome to ", " GTR High ", " Performance"];
+    const homeWelcome = [
+      { phrase: "Welcome to ", id: 1 },
+      { phrase: " GTR High ", id: 2 },
+      { phrase: " Performance", id: 3 }
+    ];
     return (
       <div
         id="homeCon"
@@ -20,7 +24,7 @@ class Home extends Component {
         <Navbar />
         <div id="homeWelcome">
           {homeWelcome.map(word => {
-            return <h1>{word}</h1>;
+            return <h1 key={word.id}>{word.phrase}</h1>;
           })}
         </div>
       </div>

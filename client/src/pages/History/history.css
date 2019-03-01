@@ -23,9 +23,7 @@
 #midButton {
   /* transition: 0.5s ease;
   opacity: 0; */
-  position: absolute;
-  top: 80%;
-  left: 50%;
+  margin: auto 0;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;

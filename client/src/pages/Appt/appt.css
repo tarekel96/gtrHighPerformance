@@ -1,4 +1,38 @@
-/* #formBlock {
+#form-div {
+  width: 90%;
+  max-width: 1000px;
+  margin: 1rem auto;
+  border: black thin solid;
+  background-color: white;
+}
+
+.form-box {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
+  padding: 0.5rem 0;
+}
+
+/* #formBlock input {
+  min-width: 200px;
 } */
+
+.form-input {
+  width: 100%;
+  flex-basis: 100%;
+  /* display: block; */
+}
+#form-block input,
+#form-block label {
+  padding: 0.2rem 1rem;
+  font-size: 1.2rem;
+  color: inherit;
+}
+
+#form-submit {
+  margin: 0 auto;
+  width: 90%;
+}
+
+@media all and (min-width: 600px) {
+  flex-direction: row;
+}
