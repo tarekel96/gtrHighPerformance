@@ -1,66 +1,109 @@
 import React, { Component } from "react";
+import axios from "axios";
 import "./appt.css";
 
 class Appt extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
+  constructor() {
+    super();
+    this.state = {
+      name: "",
+      email: "",
+      car: "",
+      model: "",
+      trim: "",
+      year: "",
+      service: ""
+    };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange = e => {
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+  };
+
+  async handleSubmit(e) {
+    e.preventDefault();
+
+    const { name, email, car, model, trim, year, service } = this.state;
+
+    const form = await axios.post("/api/form", {
+      name,
+      email,
+      car,
+      model,
+      trim,
+      year,
+      service
+    });
+    // return form;
   }
 
   render() {
-    //     const navList = [
-    //       `First Name, Last Name, Date, Time, Make, Model, Model Year, Speciality`
-    //     ];
-
     const formList = [
       {
-        name: `Name`,
+        name: `name`,
         id: 1,
         type: `text`,
-        placeholder: `Name`
+        placeholder: `Name`,
+        value: ""
       },
       {
-        name: `Email`,
+        name: `email`,
         id: 2,
         type: `text`,
-        placeholder: `Email`
+        placeholder: `Email`,
+        value: ""
       },
       {
-        name: `Car`,
+        name: `car`,
         id: 3,
         type: `text`,
-        placeholder: `Car`
+        placeholder: `Car`,
+        value: ""
       },
       {
-        name: `Model & Trim`,
+        name: `model`,
         id: 4,
         type: `text`,
-        placeholder: `Model & Trim`
+        placeholder: `Model`,
+        value: ""
       },
       {
-        name: `Year`,
+        name: `trim`,
         id: 5,
         type: `text`,
-        placeholder: `Year`
+        placeholder: `Trim`,
+        value: ""
+      },
+      {
+        name: `year`,
+        id: 6,
+        type: `text`,
+        placeholder: `Year`,
+        value: ""
       }
-      // {
-      //   name: `Service`,
-      //   type: `text`
-      // }
     ];
     return (
       <main id="form-div">
-        <form id="form-block">
+        <form id="form-block" onSubmit={this.handleSubmit}>
           <h3>Message:</h3>
           <div className="form-box">
             {formList.map(formItem => (
-              <label key={formItem.id} className="form-label">
-                {formItem.name}:
+              <label
+                htmlFor={formItem.name}
+                key={formItem.id}
+                className="form-label"
+              >
+                {formItem.placeholder}:
                 <input
                   className="form-input"
                   name={formItem.name}
                   type={formItem.type}
                   placeholder={formItem.placeholder}
+                  onChange={this.handleChange}
                 />
               </label>
             ))}
@@ -70,9 +113,10 @@ class Appt extends Component {
               Service:
               <textarea
                 className="form-input"
-                name="Service"
-                type="text"
+                name="service"
+                type="textarea"
                 placeholder="Service"
+                onChange={this.handleChange}
               />
             </label>
             <input

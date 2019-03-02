@@ -7,4 +7,9 @@ apiRouter.get("/", (req, res) => {
   });
 });
 
+apiRouter.get("/form", (req, res) => {
+  req.body;
+  console.log(req.body);
+});
+
 module.exports = apiRouter;
