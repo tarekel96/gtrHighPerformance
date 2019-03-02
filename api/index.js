@@ -7,7 +7,7 @@ apiRouter.get("/", (req, res) => {
   });
 });
 
-apiRouter.get("/form", (req, res) => {
+apiRouter.post("/form", (req, res) => {
   req.body;
   console.log(req.body);
 });
