@@ -18,13 +18,13 @@ class Navs extends Component {
         // variant="dark"
       >
         <Navbar.Brand href="#home">
-          <GiHomeGarage id="homeIcon" />
+          <GiHomeGarage id="homeIcon" href="/" />
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#pricing">About</Nav.Link>
+            <Nav.Link href="/members">About</Nav.Link>
 
             <NavDropdown
               title="Products & Services"
@@ -70,10 +70,10 @@ class Navs extends Component {
               Calendar
             </Nav.Link>
 
-            <Nav.Link eventKey={2} href="#memes" className="icons">
+            <Nav.Link eventKey={2} href="/email" className="icons">
               <FaEnvelope />
             </Nav.Link>
-            <Nav.Link eventKey={2} href="#memes" className="wordIcons">
+            <Nav.Link eventKey={2} href="/email" className="wordIcons">
               Email
             </Nav.Link>
 
