@@ -21,7 +21,7 @@ class Home extends Component {
           backgroundSize: "cover"
         }}
       >
-        <Navbar />
+        {/* <Navbar /> */}
         <div id="homeWelcome">
           {homeWelcome.map(word => {
             return <h1 key={word.id}>{word.phrase}</h1>;

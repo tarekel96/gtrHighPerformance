@@ -4,6 +4,7 @@ import { GiHomeGarage } from "react-icons/gi";
 import { GoCalendar } from "react-icons/go";
 import { FiShoppingCart } from "react-icons/fi";
 import { FaEnvelope } from "react-icons/fa";
+import { LinkContainer } from "react-router-bootstrap";
 import "./nav.css";
 
 class Navs extends Component {
@@ -11,6 +12,7 @@ class Navs extends Component {
   render() {
     return (
       <Navbar
+        fixed="top"
         id="homeNavBar"
         collapseOnSelect
         expand="lg"
@@ -18,14 +20,17 @@ class Navs extends Component {
         // variant="dark"
       >
         <Navbar.Brand href="#home">
-          <GiHomeGarage id="homeIcon" href="/" />
+          <LinkContainer to="/" exact={true}>
+            <GiHomeGarage id="homeIcon" href="/" />
+          </LinkContainer>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="/members">About</Nav.Link>
-
+            <LinkContainer to="/members" exact={true}>
+              <Nav.Link href="/members">About</Nav.Link>
+            </LinkContainer>
             <NavDropdown
               title="Products & Services"
               id="collasible-nav-dropdown"
@@ -70,12 +75,17 @@ class Navs extends Component {
               Calendar
             </Nav.Link>
 
-            <Nav.Link eventKey={2} href="/email" className="icons">
-              <FaEnvelope />
+            <Nav.Link eventKey={2} className="icons">
+              <LinkContainer exact={true} to="/email">
+                <FaEnvelope />
+              </LinkContainer>
             </Nav.Link>
-            <Nav.Link eventKey={2} href="/email" className="wordIcons">
-              Email
-            </Nav.Link>
+
+            <LinkContainer exact={true} to="/email">
+              <Nav.Link eventKey={2} className="wordIcons">
+                Email
+              </Nav.Link>
+            </LinkContainer>
 
             <Nav.Link eventKey={2} href="#memes">
               More
