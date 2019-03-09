@@ -29,7 +29,7 @@ class Appt extends Component {
 
     const { name, email, car, model, trim, year, service } = this.state;
 
-    const form = await axios.post("/api/form", {
+    await axios.post("/api/form", {
       name,
       email,
       car,

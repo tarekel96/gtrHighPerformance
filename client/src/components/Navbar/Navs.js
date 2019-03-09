@@ -27,10 +27,17 @@ class Navs extends Component {
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
+          {/* mr-auto classname keeps nav to left */}
           <Nav className="mr-auto">
-            <LinkContainer to="/members" exact={true}>
-              <Nav.Link href="/members">About</Nav.Link>
-            </LinkContainer>
+            <NavDropdown title="About" id="collasible-nav-dropdown">
+              <LinkContainer to="/history" exact={true}>
+                <NavDropdown.Item href="#action/3.1">History</NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to="/members" exact={true}>
+                <NavDropdown.Item href="#action/3.2">Members</NavDropdown.Item>
+              </LinkContainer>
+            </NavDropdown>
+
             <NavDropdown
               title="Products & Services"
               id="collasible-nav-dropdown"
@@ -60,6 +67,7 @@ class Navs extends Component {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
+
           <Nav>
             <Nav.Link eventKey={2} href="#memes" />
             <Nav.Link eventKey={2} href="#memes" className="icons">

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Navbar from "../../components/Navbar";
 import threeMuscle from "../../images/threeMuscle.jpg";
 import "./home.css";
 class Home extends Component {
