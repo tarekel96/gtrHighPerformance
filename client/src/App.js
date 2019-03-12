@@ -8,18 +8,18 @@ import Appt from "./pages/Appt/index.js";
 import Members from "./pages/Members/index.js";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+import upgradeInfo from "./pages/upgradeInfo/index.js";
 
 const App = () => (
   <Router>
     <ScrollToTop>
       <div>
         <Nav />
-        {/* <Navs fixed="top" fluid /> */}
+
         <Route path="/" component={Home} />
 
         <Route path="/members" component={Members} />
 
-        {/* <Members /> */}
         <Route
           path="/history"
           render={props => (
@@ -34,14 +34,7 @@ const App = () => (
           )}
         />
         <Route path="/email" component={Appt} />
-        {/* <History
-        header={""}
-        historyInitialOne={""}
-        historyInitialTwo={""}
-        historyInitialThree={""}
-      /> */}
-        {/* <About /> */}
-        {/* <Appt /> */}
+        <Route path="/upgrade_info" component={upgradeInfo} />
       </div>
     </ScrollToTop>
   </Router>

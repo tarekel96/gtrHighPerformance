@@ -46,9 +46,11 @@ class Navs extends Component {
               <NavDropdown.Item href="#action/3.2">
                 Upgrade Packages
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">
-                Upgrades Explained
-              </NavDropdown.Item>
+              <LinkContainer to="/upgrade_info" exact={true}>
+                <NavDropdown.Item href="#action/3.3">
+                  Upgrades Explained
+                </NavDropdown.Item>
+              </LinkContainer>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
                 Separated link
