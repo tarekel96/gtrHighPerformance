@@ -79,12 +79,15 @@ class Navs extends Component {
               Cart
             </Nav.Link>
             <Nav.Link href="#deets" className="icons">
-              <GoCalendar id="cal" />
+              <LinkContainer exact={true} to="/calendar">
+                <GoCalendar id="cal" />
+              </LinkContainer>
             </Nav.Link>
-            <Nav.Link eventKey={2} href="#memes" className="wordIcons">
-              Calendar
-            </Nav.Link>
-
+            <LinkContainer exact={true} to="/calendar">
+              <Nav.Link eventKey={2} href="#memes" className="wordIcons">
+                Calendar
+              </Nav.Link>
+            </LinkContainer>
             <Nav.Link eventKey={2} className="icons">
               <LinkContainer exact={true} to="/email">
                 <FaEnvelope />
