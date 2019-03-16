@@ -7,22 +7,35 @@ import "./calendar.css";
 const localizer = Calendar.momentLocalizer(moment);
 
 class CalendarCom extends Component {
-  state = {
-    events: [
-      {
-        start: new Date(),
-        end: new Date(moment().add(0, "days")),
-        title: "Some title"
-      }
-    ]
-  };
+  // state = {
+  //   events: [
+  //     {
+  //       start: new Date(),
+  //       end: new Date(moment().add(0, "days")),
+  //       title: "Some title"
+  //     }
+  //   ]
+  // };
+  constructor(...args) {
+    super(...args);
 
-  handleSelect(start, end) {
+    this.state = {
+      events: [
+        {
+          start: new Date(),
+          end: new Date(moment().add(0, "days")),
+          title: "Some title"
+        }
+      ]
+    };
+  }
+
+  handleSelect = ({ start, end }) => {
     const title = window.prompt("New Event Name");
     if (title) {
       this.setState({
         events: [
-          this.state.events,
+          ...this.state.events,
           {
             start,
             end,
@@ -31,7 +44,7 @@ class CalendarCom extends Component {
         ]
       });
     }
-  }
+  };
 
   render() {
     return (
