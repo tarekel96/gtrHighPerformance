@@ -5,7 +5,7 @@ const port = process.env.PORT || 3001;
 const app = express();
 const apiRouter = require("./api");
 const bodyParser = require("body-parser"); // Parses incoming request bodies in a middleware before your handlers, available under the req.body property.
-
+require("dotenv").config();
 // the __dirname is the current directory from where the script is running
 // app.use(express.static(__dirname));
 // app.use(express.static(path.join(__dirname, "build")));

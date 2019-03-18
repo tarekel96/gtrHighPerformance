@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
+import gtrLogo from "../../images/gtrLogo.png";
 import { GiHomeGarage } from "react-icons/gi";
 import { GoCalendar } from "react-icons/go";
 import { FiShoppingCart } from "react-icons/fi";
@@ -21,7 +22,10 @@ class Navs extends Component {
       >
         <Navbar.Brand href="#home">
           <LinkContainer to="/" exact={true}>
-            <GiHomeGarage id="homeIcon" href="/" />
+            {/* <div style={{ margin: "0px", padding: "0px" }}> */}
+            <img src={gtrLogo} />
+            {/* <GiHomeGarage id="homeIcon" href="/" /> */}
+            {/* </div> */}
           </LinkContainer>
         </Navbar.Brand>
 
