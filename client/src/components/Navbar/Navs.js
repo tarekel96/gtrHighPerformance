@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import gtrLogo from "../../images/gtrLogo.png";
-import { GiHomeGarage } from "react-icons/gi";
+// import { GiHomeGarage } from "react-icons/gi";
 import { GoCalendar } from "react-icons/go";
 import { FiShoppingCart } from "react-icons/fi";
 import { FaEnvelope } from "react-icons/fa";
@@ -23,7 +23,7 @@ class Navs extends Component {
         <Navbar.Brand href="#home">
           <LinkContainer to="/" exact={true}>
             {/* <div style={{ margin: "0px", padding: "0px" }}> */}
-            <img src={gtrLogo} />
+            <img src={gtrLogo} alt="Home" />
             {/* <GiHomeGarage id="homeIcon" href="/" /> */}
             {/* </div> */}
           </LinkContainer>
@@ -51,7 +51,7 @@ class Navs extends Component {
                 Upgrade Packages
               </NavDropdown.Item>
               <LinkContainer to="/upgrade_info" exact={true}>
-                <NavDropdown.Item href="#action/3.3">
+                <NavDropdown.Item to="/upgrade_info">
                   Upgrades Explained
                 </NavDropdown.Item>
               </LinkContainer>
@@ -73,42 +73,40 @@ class Navs extends Component {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
-
-          <Nav>
-            <Nav.Link eventKey={2} href="#memes" />
-            <Nav.Link eventKey={2} href="#memes" className="icons">
-              <FiShoppingCart />
-            </Nav.Link>
-            <Nav.Link eventKey={2} href="#memes" className="wordIcons">
-              Cart
-            </Nav.Link>
-            <Nav.Link href="#deets" className="icons">
-              <LinkContainer exact={true} to="/calendar">
-                <GoCalendar id="cal" />
-              </LinkContainer>
-            </Nav.Link>
-            <LinkContainer exact={true} to="/calendar">
-              <Nav.Link eventKey={2} href="#memes" className="wordIcons">
-                Calendar
-              </Nav.Link>
-            </LinkContainer>
-            <Nav.Link eventKey={2} className="icons">
-              <LinkContainer exact={true} to="/email">
-                <FaEnvelope />
-              </LinkContainer>
-            </Nav.Link>
-
-            <LinkContainer exact={true} to="/email">
-              <Nav.Link eventKey={2} className="wordIcons">
-                Email
-              </Nav.Link>
-            </LinkContainer>
-
-            <Nav.Link eventKey={2} href="#memes">
-              More
-            </Nav.Link>
-          </Nav>
         </Navbar.Collapse>
+
+        <Nav>
+          <Nav.Link href="#memes" className="icons">
+            <FiShoppingCart />
+          </Nav.Link>
+          <Nav.Link href="#memes" className="wordIcons">
+            Cart
+          </Nav.Link>
+
+          <LinkContainer to={"/calendar"} exact={true}>
+            <Nav.Link to="/calendar" className="icons">
+              <GoCalendar id="cal" />
+            </Nav.Link>
+          </LinkContainer>
+          <LinkContainer to={"/calendar"} exact={true}>
+            <Nav.Link to="/calendar" className="wordIcons">
+              Calendar
+            </Nav.Link>
+          </LinkContainer>
+
+          <LinkContainer to={"/email"} exact={true}>
+            <Nav.Link className="icons" to="/email">
+              <FaEnvelope />
+            </Nav.Link>
+          </LinkContainer>
+          <LinkContainer to={"/email"} exact={true}>
+            <Nav.Link className="wordIcons" to="/email">
+              Email
+            </Nav.Link>
+          </LinkContainer>
+
+          <Nav.Link href="#memes">More</Nav.Link>
+        </Nav>
       </Navbar>
     );
   }

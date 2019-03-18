@@ -2,6 +2,13 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  background-image: linear-gradient(
+    to top,
+    #0c3483 0%,
+    #a2b6df 100%,
+    #6b8cce 100%,
+    #a2b6df 100%
+  );
   /* align-content: space-around; */
 }
 

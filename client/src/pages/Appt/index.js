@@ -87,46 +87,48 @@ class Appt extends Component {
       }
     ];
     return (
-      <main id="form-div">
-        <form id="form-block" onSubmit={this.handleSubmit}>
-          <h3>Message:</h3>
-          <div className="form-box">
-            {formList.map(formItem => (
-              <label
-                htmlFor={formItem.name}
-                key={formItem.id}
-                className="form-label"
-              >
-                {formItem.placeholder}:
-                <input
+      <main id="form-main">
+        <div id="form-div">
+          <form id="form-block" onSubmit={this.handleSubmit}>
+            <h3>Message:</h3>
+            <div className="form-box">
+              {formList.map(formItem => (
+                <label
+                  htmlFor={formItem.name}
+                  key={formItem.id}
+                  className="form-label"
+                >
+                  {formItem.placeholder}:
+                  <input
+                    className="form-input"
+                    name={formItem.name}
+                    type={formItem.type}
+                    placeholder={formItem.placeholder}
+                    onChange={this.handleChange}
+                  />
+                </label>
+              ))}
+            </div>
+            <div className="form-box">
+              <label className="form-label">
+                Service:
+                <textarea
                   className="form-input"
-                  name={formItem.name}
-                  type={formItem.type}
-                  placeholder={formItem.placeholder}
+                  name="service"
+                  type="textarea"
+                  placeholder="Service"
                   onChange={this.handleChange}
                 />
               </label>
-            ))}
-          </div>
-          <div className="form-box">
-            <label className="form-label">
-              Service:
-              <textarea
+              <input
                 className="form-input"
-                name="service"
-                type="textarea"
-                placeholder="Service"
-                onChange={this.handleChange}
+                id="form-submit"
+                type="submit"
+                value="Submit"
               />
-            </label>
-            <input
-              className="form-input"
-              id="form-submit"
-              type="submit"
-              value="Submit"
-            />
-          </div>
-        </form>
+            </div>
+          </form>
+        </div>
       </main>
     );
   }

@@ -1,55 +1,13 @@
 #masterHistory {
-  width: 90%;
-  margin: 1rem auto;
-  max-width: 1000px;
-}
-
-#classicShelbyCon {
-  display: flex;
-  flex-direction: column;
+  background-image: linear-gradient(#fddb92, #d1fdff);
   height: 100%;
-  width: 100%;
+  background-size: cover;
+  margin: 0 auto;
 }
 
-#classicShelbyCon .image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  border: black thin solid;
-}
-
-#classicShelbyCon:hover .image {
-  opacity: 0.3;
-}
-
-.histButton {
-  width: 100%;
-  flex-basis: 100%;
-  background-color: white;
-  margin-top: 1.2rem;
-  font-size: 1.2rem;
-}
-
-.histButton:hover {
-  background-color: #9068be;
-  box-shadow: 2px 5px;
-}
-
-.padPar {
-  padding-top: 20px;
-}
-
-.justify {
-  text-align: justify;
-}
-
-.paddingPars {
-  padding: 10px;
-}
-
-@media (max-height: 991px) {
-  #historyInfo {
-    display: block;
-  }
+#historyInfo {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 1000px;
 }
