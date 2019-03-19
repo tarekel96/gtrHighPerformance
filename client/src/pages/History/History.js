@@ -1,5 +1,6 @@
 import React from "react";
 // import historyMust from "../../images/history.jpg";
+
 import "./history.css";
 
 const History = () => {

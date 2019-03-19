@@ -7,6 +7,7 @@ import { FiShoppingCart } from "react-icons/fi";
 import { FaEnvelope } from "react-icons/fa";
 import { LinkContainer } from "react-router-bootstrap";
 import "./nav.css";
+import NavLink from "react-bootstrap/NavLink";
 
 class Navs extends Component {
   state = {};
@@ -20,12 +21,9 @@ class Navs extends Component {
         bg="none"
         // variant="dark"
       >
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <LinkContainer to="/" exact={true}>
-            {/* <div style={{ margin: "0px", padding: "0px" }}> */}
             <img src={gtrLogo} alt="Home" />
-            {/* <GiHomeGarage id="homeIcon" href="/" /> */}
-            {/* </div> */}
           </LinkContainer>
         </Navbar.Brand>
 
@@ -33,80 +31,76 @@ class Navs extends Component {
         <Navbar.Collapse id="responsive-navbar-nav">
           {/* mr-auto classname keeps nav to left */}
           <Nav className="mr-auto">
-            <NavDropdown title="About" id="collasible-nav-dropdown">
-              <LinkContainer to="/history" exact={true}>
-                <NavDropdown.Item href="#action/3.1">History</NavDropdown.Item>
-              </LinkContainer>
-              <LinkContainer to="/members" exact={true}>
-                <NavDropdown.Item href="#action/3.2">Members</NavDropdown.Item>
-              </LinkContainer>
-            </NavDropdown>
+            <LinkContainer to="/about" exact={true}>
+              <Nav.Link href="/about">About</Nav.Link>
+            </LinkContainer>
+
+            <LinkContainer to="/press" exact={true}>
+              <Nav.Link href="/press">Press</Nav.Link>
+            </LinkContainer>
+            {/* <NavDropdown title="Press" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="/press" eventKey={7}>
+                GTR Press
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/photos" eventKey={8}>
+                Customer Photos
+              </NavDropdown.Item>
+            </NavDropdown> */}
 
             <NavDropdown
               title="Products & Services"
               id="collasible-nav-dropdown"
             >
-              <NavDropdown.Item href="#action/3.1">Catalog</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Upgrade Packages
-              </NavDropdown.Item>
+              <LinkContainer to="/catalog" exact={true}>
+                <NavDropdown.Item href="/catalog">Catalog</NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to="/upgrade_packages" exact={true}>
+                <NavDropdown.Item href="/upgrade_packages">
+                  Upgrade Packages
+                </NavDropdown.Item>
+              </LinkContainer>
               <LinkContainer to="/upgrade_info" exact={true}>
                 <NavDropdown.Item to="/upgrade_info">
                   Upgrades Explained
                 </NavDropdown.Item>
               </LinkContainer>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-
-            <NavDropdown title="Accomplishments" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">GTR Press</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Customer Photos
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
+
+          <Nav>
+            <NavLink href="/cart" className="icons">
+              <FiShoppingCart />
+            </NavLink>
+            <Nav.Link href="/cart" className="wordIcons">
+              Cart
+            </Nav.Link>
+
+            <LinkContainer to={"/calendar"} exact={true}>
+              <Nav.Link to="/calendar" className="icons">
+                <GoCalendar id="cal" />
+              </Nav.Link>
+            </LinkContainer>
+            <LinkContainer to={"/calendar"} exact={true}>
+              <Nav.Link to="/calendar" className="wordIcons">
+                Calendar
+              </Nav.Link>
+            </LinkContainer>
+
+            <LinkContainer to={"/email"} exact={true}>
+              <Nav.Link className="icons" to="/email">
+                <FaEnvelope />
+              </Nav.Link>
+            </LinkContainer>
+            <LinkContainer to={"/email"} exact={true}>
+              <Nav.Link className="wordIcons" to="/email">
+                Email
+              </Nav.Link>
+            </LinkContainer>
+
+            <Nav.Link href="#memes">More</Nav.Link>
+          </Nav>
         </Navbar.Collapse>
-
-        <Nav>
-          <Nav.Link href="#memes" className="icons">
-            <FiShoppingCart />
-          </Nav.Link>
-          <Nav.Link href="#memes" className="wordIcons">
-            Cart
-          </Nav.Link>
-
-          <LinkContainer to={"/calendar"} exact={true}>
-            <Nav.Link to="/calendar" className="icons">
-              <GoCalendar id="cal" />
-            </Nav.Link>
-          </LinkContainer>
-          <LinkContainer to={"/calendar"} exact={true}>
-            <Nav.Link to="/calendar" className="wordIcons">
-              Calendar
-            </Nav.Link>
-          </LinkContainer>
-
-          <LinkContainer to={"/email"} exact={true}>
-            <Nav.Link className="icons" to="/email">
-              <FaEnvelope />
-            </Nav.Link>
-          </LinkContainer>
-          <LinkContainer to={"/email"} exact={true}>
-            <Nav.Link className="wordIcons" to="/email">
-              Email
-            </Nav.Link>
-          </LinkContainer>
-
-          <Nav.Link href="#memes">More</Nav.Link>
-        </Nav>
       </Navbar>
     );
   }

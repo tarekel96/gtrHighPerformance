@@ -6,28 +6,26 @@ import History from "../src/pages/History/History.js";
 import Appt from "./pages/Appt/index.js";
 import Members from "./pages/Members/index.js";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import ScrollToTop from "./components/ScrollToTop";
+// import ScrollToTop from "./components/ScrollToTop";
 import upgradeInfo from "./pages/upgradeInfo/index.js";
 import CalendarCom from "./components/Calendar/index.js";
-import Footer from "./components/Footer/index.js";
 
 const App = () => (
   <Router>
-    <ScrollToTop>
-      <div>
-        <Nav />
-
-        <Route path="/" component={Home} />
-
-        <Route path="/members" component={Members} />
-
-        <Route path="/history" render={() => <History component={Members} />} />
-        <Route path="/email" component={Appt} />
-        <Route path="/calendar" component={CalendarCom} />
-        <Route path="/upgrade_info" component={upgradeInfo} />
-      </div>
-      <Footer />
-    </ScrollToTop>
+    <div>
+      <Nav />
+      <Route path="/" component={Home} exact={true} />
+      <Route path="/members" component={Members} exact={true} />
+      <Route
+        path="/history"
+        render={() => <History component={Members} />}
+        exact={true}
+      />
+      <Route path="/email" component={Appt} exact={true} />
+      <Route path="/calendar" component={CalendarCom} exact={true} />
+      <Route path="/upgrade_info" component={upgradeInfo} exact={true} />
+    </div>
+    {/* <Footer id="footCom" /> */}
   </Router>
 );
 
