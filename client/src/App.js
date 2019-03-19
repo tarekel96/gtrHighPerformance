@@ -6,7 +6,6 @@ import History from "../src/pages/History/History.js";
 import Appt from "./pages/Appt/index.js";
 import Members from "./pages/Members/index.js";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-// import ScrollToTop from "./components/ScrollToTop";
 import upgradeInfo from "./pages/upgradeInfo/index.js";
 import CalendarCom from "./components/Calendar/index.js";
 

@@ -1,15 +1,16 @@
 import React, { Component } from "react";
 import { Jumbotron, Button, Container, Col, Row } from "react-bootstrap";
 import Shelby from "../../images/RedStang.jpeg";
+import { LinkContainer } from "react-router-bootstrap";
 // import threeMuscle from "../../images/threeMuscle.jpg";
 import "./home.css";
 class Home extends Component {
   state = {};
   render() {
     const buttons = [
-      { name: "About", id: 1 },
-      { name: "Services", id: 2 },
-      { name: "Contact", id: 3 }
+      { name: "About", id: 1, link: "/about" },
+      { name: "Services", id: 2, link: "/services" },
+      { name: "Contact", id: 3, link: "/email" }
     ];
     return (
       <main>
@@ -31,7 +32,9 @@ class Home extends Component {
                 <p>Home of Southern California's Mustang Best Experts</p>
                 <div id="home-buttons">
                   {buttons.map(button => (
-                    <Button>{button.name}</Button>
+                    <LinkContainer to={button.link} exact={true}>
+                      <Button>{button.name}</Button>
+                    </LinkContainer>
                   ))}
                 </div>
               </Jumbotron>
