@@ -15,11 +15,15 @@ const App = () => (
     <div>
       <Nav />
       <Route path="/" component={Home} exact={true} />
-      <Route path="/members" component={Members} exact={true} />
+
       <Route
-        path="/history"
-        render={() => <History component={Members} />}
-        exact={true}
+        path="/about"
+        render={props => (
+          <div>
+            <History />
+            <Members />
+          </div>
+        )}
       />
       <Route path="/email" component={Appt} exact={true} />
       <Route path="/calendar" component={CalendarCom} exact={true} />

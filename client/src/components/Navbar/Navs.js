@@ -18,7 +18,7 @@ class Navs extends Component {
         id="homeNavBar"
         collapseOnSelect
         expand="lg"
-        bg="none"
+
         // variant="dark"
       >
         <Navbar.Brand href="/">
@@ -31,12 +31,16 @@ class Navs extends Component {
         <Navbar.Collapse id="responsive-navbar-nav">
           {/* mr-auto classname keeps nav to left */}
           <Nav className="mr-auto">
-            <LinkContainer to="/about" exact={true}>
-              <Nav.Link href="/about">About</Nav.Link>
+            <LinkContainer to="/about">
+              <Nav.Link href="/about" className="nav-black">
+                About
+              </Nav.Link>
             </LinkContainer>
 
             <LinkContainer to="/press" exact={true}>
-              <Nav.Link href="/press">Press</Nav.Link>
+              <Nav.Link href="/press" className="nav-black">
+                Press
+              </Nav.Link>
             </LinkContainer>
             {/* <NavDropdown title="Press" id="collasible-nav-dropdown">
               <NavDropdown.Item href="/press" eventKey={7}>
@@ -50,17 +54,21 @@ class Navs extends Component {
             <NavDropdown
               title="Products & Services"
               id="collasible-nav-dropdown"
+              className="nav-black"
             >
               <LinkContainer to="/catalog" exact={true}>
                 <NavDropdown.Item href="/catalog">Catalog</NavDropdown.Item>
               </LinkContainer>
               <LinkContainer to="/upgrade_packages" exact={true}>
-                <NavDropdown.Item href="/upgrade_packages">
+                <NavDropdown.Item
+                  href="/upgrade_packages"
+                  className="nav-black"
+                >
                   Upgrade Packages
                 </NavDropdown.Item>
               </LinkContainer>
               <LinkContainer to="/upgrade_info" exact={true}>
-                <NavDropdown.Item to="/upgrade_info">
+                <NavDropdown.Item to="/upgrade_info" className="nav-black">
                   Upgrades Explained
                 </NavDropdown.Item>
               </LinkContainer>
@@ -72,7 +80,7 @@ class Navs extends Component {
             <NavLink href="/cart" className="icons">
               <FiShoppingCart />
             </NavLink>
-            <Nav.Link href="/cart" className="wordIcons">
+            <Nav.Link href="/cart" className="wordIcons nav-black">
               Cart
             </Nav.Link>
 
@@ -82,7 +90,7 @@ class Navs extends Component {
               </Nav.Link>
             </LinkContainer>
             <LinkContainer to={"/calendar"} exact={true}>
-              <Nav.Link to="/calendar" className="wordIcons">
+              <Nav.Link to="/calendar" className="wordIcons nav-black">
                 Calendar
               </Nav.Link>
             </LinkContainer>
@@ -93,12 +101,14 @@ class Navs extends Component {
               </Nav.Link>
             </LinkContainer>
             <LinkContainer to={"/email"} exact={true}>
-              <Nav.Link className="wordIcons" to="/email">
+              <Nav.Link className="wordIcons nav-black" to="/email">
                 Email
               </Nav.Link>
             </LinkContainer>
 
-            <Nav.Link href="#memes">More</Nav.Link>
+            <Nav.Link href="#memes" className="nav-black">
+              More
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

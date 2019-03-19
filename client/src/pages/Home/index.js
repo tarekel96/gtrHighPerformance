@@ -6,23 +6,13 @@ import "./home.css";
 class Home extends Component {
   state = {};
   render() {
-    // const homeWelcome = [
-    //   { phrase: "Welcome to ", id: 1 },
-    //   { phrase: " GTR High ", id: 2 },
-    //   { phrase: " Performance", id: 3 }
-    // ];
+    const buttons = [
+      { name: "About", id: 1 },
+      { name: "Services", id: 2 },
+      { name: "Contact", id: 3 }
+    ];
     return (
-      <main
-      // id="home-con"
-      // style={{
-      //   backgroundColor: "white",
-      //   backgroundImage: `url(${Shelby})`,
-      //   height: "700px",
-      //   backgroundPosition: "center",
-      //   backgroundRepeat: "none",
-      //   backgroundSize: "cover"
-      // }}
-      >
+      <main>
         <Container fluid id="home-con">
           <Row
             id="home-row"
@@ -37,9 +27,13 @@ class Home extends Component {
           >
             <Col id="home-col" lg={6}>
               <Jumbotron id="home-jumbo">
-                <h3>Welcome to GTR High Performance</h3>
+                <h2>Welcome to GTR High Performance</h2>
                 <p>Home of Southern California's Mustang Best Experts</p>
-                <Button>Our Services</Button>
+                <div id="home-buttons">
+                  {buttons.map(button => (
+                    <Button>{button.name}</Button>
+                  ))}
+                </div>
               </Jumbotron>
             </Col>
           </Row>
