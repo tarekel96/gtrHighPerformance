@@ -5,14 +5,22 @@
 #exp-con {
 }
 
-.exp-col {
-  align-self: center;
-}
-
 .exp-row {
   justify-content: center;
 }
 
+.exp-col {
+  /* justify-content: center; */
+}
+
+.exp-div {
+}
+
+.exp-ul {
+}
+
 .exp-images {
   border-radius: 50%;
+  height: 359px;
+  width: 359;
 }

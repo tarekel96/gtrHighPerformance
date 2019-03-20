@@ -135,18 +135,20 @@ class upgradeInfo extends Component {
         <Container fluid id="exp-con">
           {items.map(item => (
             <Row className="exp-row">
-              <Col className="exp-col">
-                <div key={item.id}>
+              <Col className="exp-col" lg={9}>
+                <Jumbotron>
                   <h2>{item.name}</h2>
                   <Image src={item.img} className="exp-images" />
                   <h3>Benefits: </h3>
-                  <ul>
-                    {item.benefits.map(benefit => (
-                      <li>{benefit}</li>
-                    ))}
-                  </ul>
-                  <p>{item.info}</p>
-                </div>
+                  <div className="exp-div" key={item.id}>
+                    <ul className="exp-ul">
+                      {item.benefits.map(benefit => (
+                        <li>{benefit}</li>
+                      ))}
+                    </ul>
+                    <p>{item.info}</p>
+                  </div>
+                </Jumbotron>
               </Col>
             </Row>
           ))}
