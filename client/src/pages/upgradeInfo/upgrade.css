@@ -1,0 +1,18 @@
+#exp-main {
+  padding-top: 6rem;
+}
+
+#exp-con {
+}
+
+.exp-col {
+  align-self: center;
+}
+
+.exp-row {
+  justify-content: center;
+}
+
+.exp-images {
+  border-radius: 50%;
+}
