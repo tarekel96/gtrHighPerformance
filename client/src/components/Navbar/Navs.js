@@ -10,7 +10,16 @@ import "./nav.css";
 import NavLink from "react-bootstrap/NavLink";
 
 class Navs extends Component {
-  state = {};
+  constructor(props) {
+    super(props);
+    this.state = {};
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+
+  handleScroll() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <Navbar
@@ -23,7 +32,7 @@ class Navs extends Component {
       >
         <Navbar.Brand href="/">
           <LinkContainer to="/" exact={true}>
-            <img src={gtrLogo} alt="Home" />
+            <img src={gtrLogo} alt="Home" onClick={this.handleScroll} />
           </LinkContainer>
         </Navbar.Brand>
 
@@ -32,13 +41,21 @@ class Navs extends Component {
           {/* mr-auto classname keeps nav to left */}
           <Nav className="mr-auto">
             <LinkContainer to="/about">
-              <Nav.Link href="/about" className="nav-black">
+              <Nav.Link
+                href="/about"
+                className="nav-black"
+                onClick={this.handleScroll}
+              >
                 About
               </Nav.Link>
             </LinkContainer>
 
             <LinkContainer to="/press" exact={true}>
-              <Nav.Link href="/press" className="nav-black">
+              <Nav.Link
+                href="/press"
+                className="nav-black"
+                onClick={this.handleScroll}
+              >
                 Press
               </Nav.Link>
             </LinkContainer>
@@ -57,18 +74,25 @@ class Navs extends Component {
               className="nav-black"
             >
               <LinkContainer to="/catalog" exact={true}>
-                <NavDropdown.Item href="/catalog">Catalog</NavDropdown.Item>
+                <NavDropdown.Item href="/catalog" onClick={this.handleScroll}>
+                  Catalog
+                </NavDropdown.Item>
               </LinkContainer>
               <LinkContainer to="/upgrade_packages" exact={true}>
                 <NavDropdown.Item
                   href="/upgrade_packages"
                   className="nav-black"
+                  onClick={this.handleScroll}
                 >
                   Upgrade Packages
                 </NavDropdown.Item>
               </LinkContainer>
               <LinkContainer to="/upgrade_info" exact={true}>
-                <NavDropdown.Item to="/upgrade_info" className="nav-black">
+                <NavDropdown.Item
+                  to="/upgrade_info"
+                  className="nav-black"
+                  onClick={this.handleScroll}
+                >
                   Upgrades Explained
                 </NavDropdown.Item>
               </LinkContainer>
@@ -77,36 +101,60 @@ class Navs extends Component {
           </Nav>
 
           <Nav>
-            <NavLink href="/cart" className="icons">
+            <NavLink href="/cart" className="icons" onClick={this.handleScroll}>
               <FiShoppingCart />
             </NavLink>
-            <Nav.Link href="/cart" className="wordIcons nav-black">
+            <Nav.Link
+              href="/cart"
+              className="wordIcons nav-black"
+              onClick={this.handleScroll}
+            >
               Cart
             </Nav.Link>
 
             <LinkContainer to={"/calendar"} exact={true}>
-              <Nav.Link to="/calendar" className="icons">
+              <Nav.Link
+                to="/calendar"
+                className="icons"
+                onClick={this.handleScroll}
+              >
                 <GoCalendar id="cal" />
               </Nav.Link>
             </LinkContainer>
             <LinkContainer to={"/calendar"} exact={true}>
-              <Nav.Link to="/calendar" className="wordIcons nav-black">
+              <Nav.Link
+                to="/calendar"
+                className="wordIcons nav-black"
+                onClick={this.handleScroll}
+              >
                 Calendar
               </Nav.Link>
             </LinkContainer>
 
             <LinkContainer to={"/email"} exact={true}>
-              <Nav.Link className="icons" to="/email">
+              <Nav.Link
+                className="icons"
+                to="/email"
+                onClick={this.handleScroll}
+              >
                 <FaEnvelope />
               </Nav.Link>
             </LinkContainer>
             <LinkContainer to={"/email"} exact={true}>
-              <Nav.Link className="wordIcons nav-black" to="/email">
+              <Nav.Link
+                className="wordIcons nav-black"
+                to="/email"
+                onClick={this.handleScroll}
+              >
                 Email
               </Nav.Link>
             </LinkContainer>
 
-            <Nav.Link href="#memes" className="nav-black">
+            <Nav.Link
+              href="#memes"
+              className="nav-black"
+              onClick={this.handleScroll}
+            >
               More
             </Nav.Link>
           </Nav>
