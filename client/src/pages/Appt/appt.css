@@ -1,7 +1,25 @@
 #form-main {
   background-image: linear-gradient(#fddb92, #d1fdff);
   padding: 2rem;
+  padding-top: 8rem;
 }
+
+#contact-row {
+  justify-content: center;
+}
+
+#contact-jumbo {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  border: thin black solid;
+  padding: 0;
+  text-align: center;
+}
+
+.contact-no-bull {
+  list-style-type: none;
+}
+
 #form-div {
   width: 90%;
   max-width: 1000px;

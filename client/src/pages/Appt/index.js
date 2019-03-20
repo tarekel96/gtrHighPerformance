@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import { Container, Row, Col, Jumbotron } from "react-bootstrap";
 import "./appt.css";
 
 class Appt extends Component {
@@ -63,31 +64,73 @@ class Appt extends Component {
         type: `text`,
         placeholder: `Car`,
         value: ""
-      },
-      {
-        name: `model`,
-        id: 4,
-        type: `text`,
-        placeholder: `Model`,
-        value: ""
-      },
-      {
-        name: `trim`,
-        id: 5,
-        type: `text`,
-        placeholder: `Trim`,
-        value: ""
-      },
-      {
-        name: `year`,
-        id: 6,
-        type: `text`,
-        placeholder: `Year`,
-        value: ""
       }
+      // {
+      //   name: `model`,
+      //   id: 4,
+      //   type: `text`,
+      //   placeholder: `Model`,
+      //   value: ""
+      // },
+      // {
+      //   name: `trim`,
+      //   id: 5,
+      //   type: `text`,
+      //   placeholder: `Trim`,
+      //   value: ""
+      // },
+      // {
+      //   name: `year`,
+      //   id: 4,
+      //   type: `text`,
+      //   placeholder: `Year`,
+      //   value: ""
+      // }
     ];
     return (
       <main id="form-main">
+        <Container id="contact-con">
+          <Row id="contact-row">
+            <Col lg={8} id="contact-col">
+              <Jumbotron id="contact-jumbo">
+                <div id="contact-jumbo-div">
+                  <h3>Contact</h3>
+                  <ul className="contact-no-bull">
+                    <li>
+                      <strong>Tech-Line 1: </strong>(909)-987-4386
+                    </li>
+                    <li>
+                      <strong>Tech Line 2: </strong>(909)-466-5993
+                    </li>
+                    <li>
+                      <strong>Fax:</strong> (909)-466-5981
+                    </li>
+                    <li>
+                      <strong>Order Line:</strong> 1.888.HIPOGTR
+                    </li>
+                  </ul>
+
+                  <h3>Adress</h3>
+
+                  <p>8678 Utica Ave., Rancho Cucamonga, CA 91730 </p>
+
+                  <h3>Hours of Operations</h3>
+                  <ul className="contact-no-bull">
+                    <li>
+                      <strong> Mon-Fri:</strong> 9:00 a.m. - 6:30 p.m.
+                    </li>
+                    <li>
+                      <strong> Sat:</strong>9:00 a.m. - 2:30 p.m.
+                    </li>
+                    <li>
+                      <strong> Sun:</strong>Closed
+                    </li>
+                  </ul>
+                </div>
+              </Jumbotron>
+            </Col>
+          </Row>
+        </Container>
         <div id="form-div">
           <form id="form-block" onSubmit={this.handleSubmit}>
             <h3>Message:</h3>
@@ -111,12 +154,12 @@ class Appt extends Component {
             </div>
             <div className="form-box">
               <label className="form-label">
-                Service:
+                Question:
                 <textarea
                   className="form-input"
-                  name="service"
+                  name="question"
                   type="textarea"
-                  placeholder="Service"
+                  placeholder="Question"
                   onChange={this.handleChange}
                 />
               </label>

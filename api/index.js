@@ -19,11 +19,8 @@ apiRouter.post("/form", (req, res) => {
       <li>Name: ${req.body.name}</li>
       <li>Email: ${req.body.email}</li>
       <li>Car: ${req.body.car}</li>
-      <li>Model: ${req.body.model}</li>
-      <li>Trim: ${req.body.trim}</li>
-      <li>Year: ${req.body.year}</li>
     </ul>
-      <h3>Service</h3>
+      <h3>Question</h3>
       <p>Description: ${req.body.service}</p>
     `;
     console.log("Credentials obtained, sending message...");

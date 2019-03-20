@@ -29,6 +29,7 @@
   margin: 3% auto;
   padding: 1rem;
   border: black medium solid;
+  border-radius: 20%;
   background-color: #f6f5f3;
   /* padding: 0;
   margin: 0; */
@@ -40,6 +41,7 @@
 
 #portrait {
   border: #393f4d medium solid;
+  border-radius: 50%;
   display: block;
   margin: 5px auto;
 }
