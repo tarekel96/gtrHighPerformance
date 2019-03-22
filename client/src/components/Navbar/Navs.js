@@ -131,24 +131,24 @@ class Navs extends Component {
               </Nav.Link>
             </LinkContainer>
 
-            <LinkContainer to={"/email"} exact={true}>
-              <Nav.Link
-                className="icons"
-                to="/email"
-                onClick={this.handleScroll}
-              >
-                <FaEnvelope />
-              </Nav.Link>
-            </LinkContainer>
-            <LinkContainer to={"/email"} exact={true}>
-              <Nav.Link
-                className="wordIcons nav-black"
-                to="/email"
-                onClick={this.handleScroll}
-              >
-                Email
-              </Nav.Link>
-            </LinkContainer>
+            {/* <LinkContainer to={"/email"} exact={true}> */}
+            <Nav.Link
+              className="icons"
+              href="info@gtrhipo.com"
+              // onClick={this.handleScroll}
+            >
+              <FaEnvelope />
+            </Nav.Link>
+            {/* </LinkContainer> */}
+            {/* <LinkContainer to={"/email"} exact={true}> */}
+            <Nav.Link
+              className="wordIcons nav-black"
+              href="info@gtrhipo.com"
+              // onClick={this.handleScroll}
+            >
+              Email
+            </Nav.Link>
+            {/* </LinkContainer> */}
 
             <Nav.Link
               href="#memes"
