@@ -1,37 +1,37 @@
-/* #exp-main {
-  padding-top: 7rem;
+#fuel-main {
+  /* padding-top: 7rem; */
 }
 
-.exp-row {
+.fuel-row {
   justify-content: center;
   flex-flow: row nowrap;
 }
 
-.exp-jumbo h2 {
+.fuel-jumbo h2 {
   text-align: center;
 }
 
-.exp-images-div {
+.fuel-images-div {
   display: flex;
   justify-content: center;
 }
 
-.exp-images {
+.fuel-images {
   border-radius: 50%;
   height: 359px;
   width: 359;
-} */
+}
 
-/* .exp-info {
-  display: none;
-} */
+/* .fuel-info {
+              display: none;
+            } */
 
-/* .exp-button-div {
+.fuel-button-div {
   display: flex;
   justify-content: center;
   padding-top: 2rem;
 }
 
-.exp-benefits-div {
+.fuel-benefits-div {
   text-align: left;
-} */
+}

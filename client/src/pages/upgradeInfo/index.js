@@ -1,6 +1,16 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Jumbotron, Image, Button } from "react-bootstrap";
+// import { Container, Row, Col, Jumbotron, Image, Button } from "react-bootstrap";
 import "./upgrade.css";
+import CAI from "../../components/upgradeInfo/CAI/index.js";
+import Exhaust from "../../components/upgradeInfo/Exhaust/index.js";
+import Suspension from "../../components/upgradeInfo/Suspension/index.js";
+import Gears from "../../components/upgradeInfo/Gears/index.js";
+import Shifters from "../../components/upgradeInfo/Shifters/index.js";
+import Pulleys from "../../components/upgradeInfo/Pulleys/index.js";
+import Brakes from "../../components/upgradeInfo/Brakes/index.js";
+import Fuel from "../../components/upgradeInfo/Fuel/index.js";
+import Cooling from "../../components/upgradeInfo/Cooling/index.js";
+
 class upgradeInfo extends Component {
   constructor(props) {
     super(props);
@@ -140,7 +150,16 @@ class upgradeInfo extends Component {
   render() {
     return (
       <main id="exp-main">
-        <Container fluid>
+        <CAI />
+        <Exhaust />
+        <Suspension />
+        <Gears />
+        <Shifters />
+        <Pulleys />
+        <Brakes />
+        <Fuel />
+        <Cooling />
+        {/* <Container fluid>
           {this.state.items.map(item => (
             <Row className="exp-row">
               <Col lg={9}>
@@ -168,7 +187,7 @@ class upgradeInfo extends Component {
               </Col>
             </Row>
           ))}
-        </Container>
+        </Container> */}
       </main>
     );
   }

@@ -1,37 +1,37 @@
-/* #exp-main {
-  padding-top: 7rem;
+#exhaust-main {
+  /* padding-top: 7rem; */
 }
 
-.exp-row {
+.exhaust-row {
   justify-content: center;
   flex-flow: row nowrap;
 }
 
-.exp-jumbo h2 {
+.exhaust-jumbo h2 {
   text-align: center;
 }
 
-.exp-images-div {
+.exhaust-images-div {
   display: flex;
   justify-content: center;
 }
 
-.exp-images {
+.exhaust-images {
   border-radius: 50%;
   height: 359px;
   width: 359;
-} */
+}
 
-/* .exp-info {
-  display: none;
-} */
+/* .exhaust-info {
+              display: none;
+            } */
 
-/* .exp-button-div {
+.exhaust-button-div {
   display: flex;
   justify-content: center;
   padding-top: 2rem;
 }
 
-.exp-benefits-div {
+.exhaust-benefits-div {
   text-align: left;
-} */
+}
