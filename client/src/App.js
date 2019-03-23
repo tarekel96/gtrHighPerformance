@@ -8,13 +8,14 @@ import Members from "./pages/Members/index.js";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import upgradeInfo from "./pages/upgradeInfo/index.js";
 import CalendarCom from "./components/Calendar/index.js";
+import ScrollUpButton from "./components/ScrollUpButton/index.js";
 
 const App = () => (
   <Router>
     <div>
       <Nav />
+      {/* <ScrollUpButton /> */}
       <Route path="/" component={Home} exact={true} />
-
       <Route
         path="/about"
         render={props => (

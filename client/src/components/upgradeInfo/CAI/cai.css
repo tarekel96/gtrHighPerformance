@@ -7,9 +7,9 @@
   flex-flow: row nowrap;
 }
 
-/* .cai-jumbo {
-  background-color: hsl(210, 14%, 53%);
-} */
+.cai-jumbo {
+  /* background-color: skyblue; */
+}
 
 .cai-jumbo h2 {
   text-align: center;

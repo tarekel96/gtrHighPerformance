@@ -10,6 +10,7 @@ import Pulleys from "../../components/upgradeInfo/Pulleys/index.js";
 import Brakes from "../../components/upgradeInfo/Brakes/index.js";
 import Fuel from "../../components/upgradeInfo/Fuel/index.js";
 import Cooling from "../../components/upgradeInfo/Cooling/index.js";
+import Fade from "react-reveal/Fade";
 
 class upgradeInfo extends Component {
   constructor(props) {
@@ -20,15 +21,17 @@ class upgradeInfo extends Component {
   render() {
     return (
       <main id="exp-main">
-        <CAI />
-        <Exhaust />
-        <Suspension />
-        <Gears />
-        <Shifters />
-        <Pulleys />
-        <Brakes />
-        <Fuel />
-        <Cooling />
+        <Fade clear>
+          <CAI />
+          <Exhaust />
+          <Suspension />
+          <Gears />
+          <Shifters />
+          <Pulleys />
+          <Brakes />
+          <Fuel />
+          <Cooling />
+        </Fade>
         {/* <Container fluid>
           {this.state.items.map(item => (
             <Row className="exp-row">

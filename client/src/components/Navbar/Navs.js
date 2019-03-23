@@ -23,7 +23,6 @@ class Navs extends Component {
   render() {
     return (
       <Navbar
-        fixed="top"
         id="homeNavBar"
         collapseOnSelect
         expand="lg"
