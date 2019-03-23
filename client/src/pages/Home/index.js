@@ -29,7 +29,7 @@ class Home extends Component {
             <Col id="home-col" lg={6}>
               <Jumbotron id="home-jumbo">
                 <h2>Welcome to GTR High Performance</h2>
-                <p>Home of Southern California's Mustang Best Experts</p>
+                <p>Home of Southern California's Best Mustang Experts</p>
                 <div id="home-buttons">
                   {buttons.map(button => (
                     <LinkContainer to={button.link} exact={true}>

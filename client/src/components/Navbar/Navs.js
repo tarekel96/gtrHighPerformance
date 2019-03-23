@@ -134,7 +134,7 @@ class Navs extends Component {
             {/* <LinkContainer to={"/email"} exact={true}> */}
             <Nav.Link
               className="icons"
-              href="info@gtrhipo.com"
+              href="mailto:info@gtrhipo.com"
               // onClick={this.handleScroll}
             >
               <FaEnvelope />
@@ -143,7 +143,7 @@ class Navs extends Component {
             {/* <LinkContainer to={"/email"} exact={true}> */}
             <Nav.Link
               className="wordIcons nav-black"
-              href="info@gtrhipo.com"
+              href="mailto:info@gtrhipo.com"
               // onClick={this.handleScroll}
             >
               Email

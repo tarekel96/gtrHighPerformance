@@ -1,8 +1,8 @@
-/* #exp-main {
-  padding-top: 7rem;
+#exp-main {
+  background-color: #005995;
 }
 
-.exp-row {
+/* .exp-row {
   justify-content: center;
   flex-flow: row nowrap;
 }
