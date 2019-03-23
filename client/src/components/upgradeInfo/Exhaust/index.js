@@ -24,6 +24,11 @@ class Exhaust extends Component {
       ]
     };
   }
+
+  handleClick = e => {
+    e.preventDefault();
+    this.setState(prevState => ({ render: !prevState.render }));
+  };
   render() {
     return (
       <main id="exhaust-main">
@@ -50,7 +55,7 @@ class Exhaust extends Component {
                   )}
                 </div>
                 <div className="exhaust-button-div">
-                  <Button>More Info</Button>
+                  <Button onClick={this.handleClick}>More Info</Button>
                 </div>
               </Jumbotron>
             </Col>

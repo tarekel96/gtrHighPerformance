@@ -20,6 +20,11 @@ class Shifters extends Component {
       ]
     };
   }
+
+  handleClick = e => {
+    e.preventDefault();
+    this.setState(prevState => ({ render: !prevState.render }));
+  };
   render() {
     return (
       <main id="shifters-main">
@@ -46,7 +51,7 @@ class Shifters extends Component {
                   )}
                 </div>
                 <div className="shifters-button-div">
-                  <Button>More Info</Button>
+                  <Button onClick={this.handleClick}>More Info</Button>
                 </div>
               </Jumbotron>
             </Col>

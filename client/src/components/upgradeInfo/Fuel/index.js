@@ -19,6 +19,11 @@ class Fuel extends Component {
       ]
     };
   }
+
+  handleClick = e => {
+    e.preventDefault();
+    this.setState(prevState => ({ render: !prevState.render }));
+  };
   render() {
     return (
       <main id="fuel-main">
@@ -45,7 +50,7 @@ class Fuel extends Component {
                   )}
                 </div>
                 <div className="fuel-button-div">
-                  <Button>More Info</Button>
+                  <Button onClick={this.handleClick}>More Info</Button>
                 </div>
               </Jumbotron>
             </Col>

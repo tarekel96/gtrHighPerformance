@@ -19,6 +19,11 @@ class Gears extends Component {
       ]
     };
   }
+
+  handleClick = e => {
+    e.preventDefault();
+    this.setState(prevState => ({ render: !prevState.render }));
+  };
   render() {
     return (
       <main id="gears-main">
@@ -45,7 +50,7 @@ class Gears extends Component {
                   )}
                 </div>
                 <div className="gears-button-div">
-                  <Button>More Info</Button>
+                  <Button onClick={this.handleClick}>More Info</Button>
                 </div>
               </Jumbotron>
             </Col>

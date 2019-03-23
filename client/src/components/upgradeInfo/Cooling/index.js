@@ -19,6 +19,12 @@ class Cooling extends Component {
       ]
     };
   }
+
+  handleClick = e => {
+    e.preventDefault();
+    this.setState(prevState => ({ render: !prevState.render }));
+  };
+
   render() {
     return (
       <main id="cooling-main">
@@ -45,7 +51,7 @@ class Cooling extends Component {
                   )}
                 </div>
                 <div className="cooling-button-div">
-                  <Button>More Info</Button>
+                  <Button onClick={this.handleClick}>More Info</Button>
                 </div>
               </Jumbotron>
             </Col>

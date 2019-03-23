@@ -20,6 +20,11 @@ class Pulleys extends Component {
       ]
     };
   }
+
+  handleClick = e => {
+    e.preventDefault();
+    this.setState(prevState => ({ render: !prevState.render }));
+  };
   render() {
     return (
       <main id="pulleys-main">
@@ -46,7 +51,7 @@ class Pulleys extends Component {
                   )}
                 </div>
                 <div className="pulleys-button-div">
-                  <Button>More Info</Button>
+                  <Button onClick={this.handleClick}>More Info</Button>
                 </div>
               </Jumbotron>
             </Col>

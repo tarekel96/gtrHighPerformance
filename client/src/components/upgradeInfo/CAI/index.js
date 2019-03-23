@@ -19,6 +19,12 @@ class CAI extends Component {
       ]
     };
   }
+
+  handleClick = e => {
+    e.preventDefault();
+    this.setState(prevState => ({ render: !prevState.render }));
+  };
+
   render() {
     return (
       <main id="cai-main">
@@ -45,7 +51,7 @@ class CAI extends Component {
                   )}
                 </div>
                 <div className="cai-button-div">
-                  <Button>More Info</Button>
+                  <Button onClick={this.handleClick}>More Info</Button>
                 </div>
               </Jumbotron>
             </Col>
