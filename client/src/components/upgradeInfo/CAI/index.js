@@ -38,7 +38,7 @@ class CAI extends Component {
                   <Image src={this.state.img} className="cai-images" />
                 </div>
 
-                <div className="cai-benefits-div" key={this.state.id}>
+                <div className="cai-benefits-div">
                   <h3>Benefits: </h3>
 
                   <ul>

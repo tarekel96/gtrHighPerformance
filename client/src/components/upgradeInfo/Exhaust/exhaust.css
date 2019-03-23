@@ -17,10 +17,23 @@
 }
 
 .exhaust-images {
+  height: 50%;
+  width: 50%;
   border-radius: 50%;
-  height: 359px;
-  width: 359;
 }
+
+/* .exhaust-images {
+  border-radius: 50%;
+  height: 340px;
+  width: 512px;
+} */
+
+/* @media (max-height: 768px) {
+  .exhaust-images {
+    height: 255px;
+    width: 384px;
+  }
+} */
 
 /* .exhaust-info {
               display: none;

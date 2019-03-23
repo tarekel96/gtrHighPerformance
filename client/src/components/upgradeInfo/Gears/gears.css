@@ -18,8 +18,10 @@
 
 .gears-images {
   border-radius: 50%;
-  height: 359px;
-  width: 359;
+  width: 50%;
+  height: 50%;
+  /* height: 359px;
+  width: 359; */
 }
 
 /* .gears-info {

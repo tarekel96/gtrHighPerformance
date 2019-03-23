@@ -9,7 +9,7 @@ class Pulleys extends Component {
       name: "Underdrive Power Pulleys",
       id: 6,
       render: false,
-      img: "assets/images/CAI_Cropped.jpg",
+      img: "assets/images/pulley.jpg",
       info:
         "Underdrive power pulleys slow down engine-driven accessories (water pump, alternator, power steering, etc...) which reduces parasitic drag on the motor. This reduction on parasitic drag translates into extra horsepower that is freed, which gets transferred to the rear wheels. Normal gains for power pulleys are about 10 rear wheel horsepower and 10 lb.ft. torque! In addition, the motor is made more efficient by the power pulleys because of the saved power (remember that the engine doesn't have to work as hard), you will improve gas mileage too! Talk about a win-win upgrade. GTR High Performance carries power pulleys from MAC Products, BBK Performance, ASP, and STEEDA. Consult GTR to find out which is best for your Mustang.",
       benefits: [
@@ -38,7 +38,7 @@ class Pulleys extends Component {
                   <Image src={this.state.img} className="pulleys-images" />
                 </div>
 
-                <div className="pulleys-benefits-div" key={this.state.id}>
+                <div className="pulleys-benefits-div">
                   <h3>Benefits: </h3>
 
                   <ul>

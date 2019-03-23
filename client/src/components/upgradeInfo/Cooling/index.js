@@ -9,7 +9,7 @@ class Cooling extends Component {
       name: "High Performance Cooling System Upgrades",
       id: 9,
       render: false,
-      img: "assets/images/CAI_Cropped.jpg",
+      img: "assets/images/cooling-system.jpeg",
       info:
         "The importance of a high capacity cooling system for your Mustang's engine shoulde be obvious. The more horsepower an engine creates, the more heat an engine will also create. The increase in an engine's heat requires a high performance cooling system to avoid engine damaging overheating problems. GTR carries everything your Mustang needs to run cool even in the dead of summer and when being driven hard. From Fluidyne aluminum racing radiators to low-temperature thermostats to high flow water pumps, GTR has it. All performance cooling parts GTR carries are direct replacement, and bolt on to their stock, factory counterpart. Ask a GTR representative if you need help choosing cooling parts that will best fit your needs.",
       benefits: [
@@ -38,7 +38,7 @@ class Cooling extends Component {
                   <Image src={this.state.img} className="cooling-images" />
                 </div>
 
-                <div className="cooling-benefits-div" key={this.state.id}>
+                <div className="cooling-benefits-div">
                   <h3>Benefits: </h3>
 
                   <ul>
