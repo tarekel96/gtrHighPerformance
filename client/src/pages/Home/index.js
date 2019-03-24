@@ -5,7 +5,10 @@ import { LinkContainer } from "react-router-bootstrap";
 // import threeMuscle from "../../images/threeMuscle.jpg";
 import "./home.css";
 class Home extends Component {
-  state = {};
+  state = {
+    show: false
+  };
+
   render() {
     const buttons = [
       { name: "About", id: 1, link: "/about" },

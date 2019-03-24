@@ -26,35 +26,35 @@ class upgradeInfo extends Component {
           <Container>
             <Row>
               <Col sm="12" lg="4">
-                <CAI />
+                <CAI show={false} />
               </Col>
               <Col sm="12" lg="4">
-                <Exhaust />
+                <Exhaust show={false} />
               </Col>
               <Col sm="12" lg="4">
-                <Suspension />
-              </Col>
-            </Row>
-            <Row>
-              <Col sm="12" lg="4">
-                <Gears />
-              </Col>
-              <Col sm="12" lg="4">
-                <Shifters />
-              </Col>
-              <Col sm="12" lg="4">
-                <Pulleys />
+                <Suspension show={false} />
               </Col>
             </Row>
             <Row>
               <Col sm="12" lg="4">
-                <Brakes />
+                <Gears show={false} />
               </Col>
               <Col sm="12" lg="4">
-                <Fuel />
+                <Shifters show={false} />
               </Col>
               <Col sm="12" lg="4">
-                <Cooling />
+                <Pulleys show={false} />
+              </Col>
+            </Row>
+            <Row>
+              <Col sm="12" lg="4">
+                <Brakes show={false} />
+              </Col>
+              <Col sm="12" lg="4">
+                <Fuel show={false} />
+              </Col>
+              <Col sm="12" lg="4">
+                <Cooling show={false} />
               </Col>
             </Row>
           </Container>

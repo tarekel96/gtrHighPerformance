@@ -1,10 +1,13 @@
 import React, { Component } from "react";
-import { Jumbotron, Image, Button } from "react-bootstrap";
+import { Jumbotron, Image, Button, Modal } from "react-bootstrap";
+// import ModalMod from "../ModalMod/index.js";
 import "./cai.css";
 
 class CAI extends Component {
   constructor(props) {
     super(props);
+    this.handleShow = this.handleShow.bind(this);
+    this.handleClose = this.handleClose.bind(this);
     this.state = {
       name: "Cold Air Induction Kits",
       id: 1,
@@ -16,14 +19,27 @@ class CAI extends Component {
         "Improves horsepower and torque output between 7-25 HP (depending on application)",
         "Improves gas mileage due to increased efficiency of engine",
         "Inlcudes re-usable, high-flow, lifetime air filter."
-      ]
+      ],
+      show: false
     };
   }
 
   handleClick = e => {
     e.preventDefault();
-    this.setState(prevState => ({ render: !prevState.render }));
+    this.setState(prevState => ({
+      render: !prevState.render,
+      show: true
+      // show: !prevState.show
+    }));
   };
+
+  handleShow() {
+    this.setState({ show: true });
+  }
+
+  handleClose() {
+    this.setState({ show: false });
+  }
 
   render() {
     return (
@@ -46,15 +62,30 @@ class CAI extends Component {
                 <li>{benefit}</li>
               ))}
             </ul>
-            {this.state.render && <p className="cai-info">{this.state.info}</p>}
+            {
+              <Modal show={this.state.show} onHide={this.handleClose}>
+                <Modal.Header closeButton>
+                  <Modal.Title>{this.state.name}</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                  <p className="cai-info">{this.state.info}</p>
+                </Modal.Body>
+                <Modal.Footer>
+                  <Button variant="secondary" onClick={this.handleClose}>
+                    Close
+                  </Button>
+                </Modal.Footer>
+              </Modal>
+            }
           </div>
           <div className="cai-button-div">
-            <Button onClick={this.handleClick}>More Info</Button>
+            <Button onClick={this.handleShow}>More Info</Button>
           </div>
         </Jumbotron>
         {/* </Col>
           </Row>
         </Container> */}
+        {/* <p className="cai-info">{this.state.info}</p> */}
       </main>
     );
   }
