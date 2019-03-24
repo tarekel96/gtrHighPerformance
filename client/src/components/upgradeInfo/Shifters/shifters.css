@@ -14,6 +14,12 @@
   height: 550px;
 }
 
+@media (max-height: 768px) {
+  .shifters-jumbo {
+    height: 600px;
+  }
+}
+
 .shifters-jumbo h2 {
   text-align: center;
 }

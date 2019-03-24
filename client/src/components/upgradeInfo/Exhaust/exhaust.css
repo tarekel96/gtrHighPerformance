@@ -15,6 +15,12 @@
   height: 600px;
 }
 
+@media (max-height: 768px) {
+  .exhaust-jumbo {
+    height: 625px;
+  }
+}
+
 .exhaust-jumbo h2 {
   text-align: center;
 }

@@ -15,6 +15,12 @@
   height: 600px;
 }
 
+@media (max-height: 768px) {
+  .cai-jumbo {
+    height: 625px;
+  }
+}
+
 .cai-jumbo {
   /* background-color: skyblue; */
 }
