@@ -1,10 +1,12 @@
 import React, { Component } from "react";
-import { Jumbotron, Image, Button } from "react-bootstrap";
+import { Jumbotron, Image, Button, Modal } from "react-bootstrap";
 import "./brakes.css";
 
 class Brakes extends Component {
   constructor(props) {
     super(props);
+    this.handleShow = this.handleShow.bind(this);
+    this.handleClose = this.handleClose.bind(this);
     this.state = {
       name: "Performance Brake Upgrades",
       id: 7,
@@ -20,18 +22,17 @@ class Brakes extends Component {
       ]
     };
   }
+  handleShow() {
+    this.setState({ show: true });
+  }
 
-  handleClick = e => {
-    e.preventDefault();
-    this.setState(prevState => ({ render: !prevState.render }));
-  };
+  handleClose() {
+    this.setState({ show: false });
+  }
 
   render() {
     return (
       <main id="brakes-main">
-        {/* <Container fluid>
-          <Row className="brakes-row">
-            <Col lg={9}> */}
         <Jumbotron className="brakes-jumbo">
           <h2>{this.state.name}</h2>
 
@@ -47,17 +48,26 @@ class Brakes extends Component {
                 <li>{benefit}</li>
               ))}
             </ul>
-            {this.state.render && (
-              <p className="brakes-info">{this.state.info}</p>
-            )}
+            {
+              <Modal show={this.state.show} onHide={this.handleClose}>
+                <Modal.Header closeButton>
+                  <Modal.Title>{this.state.name}</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                  <p className="cai-info">{this.state.info}</p>
+                </Modal.Body>
+                <Modal.Footer>
+                  <Button variant="secondary" onClick={this.handleClose}>
+                    Close
+                  </Button>
+                </Modal.Footer>
+              </Modal>
+            }
           </div>
           <div className="brakes-button-div">
-            <Button onClick={this.handleClick}>More Info</Button>
+            <Button onClick={this.handleShow}>More Info</Button>
           </div>
         </Jumbotron>
-        {/* </Col>
-          </Row>
-        </Container> */}
       </main>
     );
   }

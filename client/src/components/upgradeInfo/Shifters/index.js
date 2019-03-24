@@ -1,10 +1,12 @@
 import React, { Component } from "react";
-import { Jumbotron, Image, Button } from "react-bootstrap";
+import { Jumbotron, Image, Button, Modal } from "react-bootstrap";
 import "./shifters.css";
 
 class Shifters extends Component {
   constructor(props) {
     super(props);
+    this.handleShow = this.handleShow.bind(this);
+    this.handleClose = this.handleClose.bind(this);
     this.state = {
       name: "Short-Throw Racing Shifters",
       id: 5,
@@ -21,16 +23,16 @@ class Shifters extends Component {
     };
   }
 
-  handleClick = e => {
-    e.preventDefault();
-    this.setState(prevState => ({ render: !prevState.render }));
-  };
+  handleShow() {
+    this.setState({ show: true });
+  }
+
+  handleClose() {
+    this.setState({ show: false });
+  }
   render() {
     return (
       <main id="shifters-main">
-        {/* <Container fluid>
-          <Row className="shifters-row">
-            <Col lg={9}> */}
         <Jumbotron className="shifters-jumbo">
           <h2>{this.state.name}</h2>
 
@@ -46,17 +48,26 @@ class Shifters extends Component {
                 <li>{benefit}</li>
               ))}
             </ul>
-            {this.state.render && (
-              <p className="shifters-info">{this.state.info}</p>
-            )}
+            {
+              <Modal show={this.state.show} onHide={this.handleClose}>
+                <Modal.Header closeButton>
+                  <Modal.Title>{this.state.name}</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                  <p className="cai-info">{this.state.info}</p>
+                </Modal.Body>
+                <Modal.Footer>
+                  <Button variant="secondary" onClick={this.handleClose}>
+                    Close
+                  </Button>
+                </Modal.Footer>
+              </Modal>
+            }
           </div>
           <div className="shifters-button-div">
-            <Button onClick={this.handleClick}>More Info</Button>
+            <Button onClick={this.handleShow}>More Info</Button>
           </div>
         </Jumbotron>
-        {/* </Col>
-          </Row>
-        </Container> */}
       </main>
     );
   }

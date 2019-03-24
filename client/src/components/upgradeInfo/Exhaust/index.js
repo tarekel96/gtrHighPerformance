@@ -1,10 +1,12 @@
 import React, { Component } from "react";
-import { Jumbotron, Image, Button } from "react-bootstrap";
+import { Jumbotron, Image, Button, Modal } from "react-bootstrap";
 import "./exhaust.css";
 
 class Exhaust extends Component {
   constructor(props) {
     super(props);
+    this.handleShow = this.handleShow.bind(this);
+    this.handleClose = this.handleClose.bind(this);
     this.state = {
       name: "Performance Exhaust Systems",
       id: 2,
@@ -25,16 +27,17 @@ class Exhaust extends Component {
     };
   }
 
-  handleClick = e => {
-    e.preventDefault();
-    this.setState(prevState => ({ render: !prevState.render }));
-  };
+  handleShow() {
+    this.setState({ show: true });
+  }
+
+  handleClose() {
+    this.setState({ show: false });
+  }
+
   render() {
     return (
       <main id="exhaust-main">
-        {/* <Container fluid>
-          <Row className="exhaust-row">
-            <Col lg={9}> */}
         <Jumbotron className="exhaust-jumbo">
           <h2>{this.state.name}</h2>
 
@@ -50,17 +53,26 @@ class Exhaust extends Component {
                 <li>{benefit}</li>
               ))}
             </ul>
-            {this.state.render && (
-              <p className="exhaust-info">{this.state.info}</p>
-            )}
+            {
+              <Modal show={this.state.show} onHide={this.handleClose}>
+                <Modal.Header closeButton>
+                  <Modal.Title>{this.state.name}</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                  <p className="cai-info">{this.state.info}</p>
+                </Modal.Body>
+                <Modal.Footer>
+                  <Button variant="secondary" onClick={this.handleClose}>
+                    Close
+                  </Button>
+                </Modal.Footer>
+              </Modal>
+            }
           </div>
           <div className="exhaust-button-div">
-            <Button onClick={this.handleClick}>More Info</Button>
+            <Button onClick={this.handleShow}>More Info</Button>
           </div>
         </Jumbotron>
-        {/* </Col>
-          </Row>
-        </Container> */}
       </main>
     );
   }

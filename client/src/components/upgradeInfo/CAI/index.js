@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Jumbotron, Image, Button, Modal } from "react-bootstrap";
-// import ModalMod from "../ModalMod/index.js";
 import "./cai.css";
 
 class CAI extends Component {
@@ -24,14 +23,14 @@ class CAI extends Component {
     };
   }
 
-  handleClick = e => {
-    e.preventDefault();
-    this.setState(prevState => ({
-      render: !prevState.render,
-      show: true
-      // show: !prevState.show
-    }));
-  };
+  // handleClick = e => {
+  //   e.preventDefault();
+  //   this.setState(prevState => ({
+  //     render: !prevState.render,
+  //     show: true
+
+  //   }));
+  // };
 
   handleShow() {
     this.setState({ show: true });
@@ -44,9 +43,6 @@ class CAI extends Component {
   render() {
     return (
       <main id="cai-main">
-        {/* <Container fluid>
-          <Row className="cai-row">
-            <Col lg={9}> */}
         <Jumbotron className="cai-jumbo">
           <h2>{this.state.name}</h2>
 
@@ -82,10 +78,6 @@ class CAI extends Component {
             <Button onClick={this.handleShow}>More Info</Button>
           </div>
         </Jumbotron>
-        {/* </Col>
-          </Row>
-        </Container> */}
-        {/* <p className="cai-info">{this.state.info}</p> */}
       </main>
     );
   }
