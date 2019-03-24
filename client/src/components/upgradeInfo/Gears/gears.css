@@ -14,9 +14,15 @@
   height: 550px;
 }
 
-@media (max-height: 768px) {
+@media (max-width: 768px) {
   .gears-jumbo {
     height: 600px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .gears-jumbo {
+    height: 700px;
   }
 }
 

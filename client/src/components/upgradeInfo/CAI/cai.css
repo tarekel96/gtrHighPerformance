@@ -15,14 +15,16 @@
   height: 600px;
 }
 
-@media (max-height: 768px) {
+@media (max-width: 768px) {
   .cai-jumbo {
-    height: 625px;
+    height: 650px;
   }
 }
 
-.cai-jumbo {
-  /* background-color: skyblue; */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .cai-jumbo {
+    height: 800px;
+  }
 }
 
 .cai-jumbo h2 {

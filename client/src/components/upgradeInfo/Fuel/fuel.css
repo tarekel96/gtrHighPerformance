@@ -13,6 +13,12 @@
   height: 600px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .fuel-jumbo {
+    height: 700px;
+  }
+}
+
 .fuel-jumbo h2 {
   text-align: center;
 }

@@ -15,9 +15,15 @@
   height: 600px;
 }
 
-@media (max-height: 768px) {
+@media (max-width: 768px) {
   .suspension-jumbo {
-    height: 625px;
+    height: 650px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .suspension-jumbo {
+    height: 700px;
   }
 }
 
