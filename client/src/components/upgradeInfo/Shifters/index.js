@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Jumbotron, Image, Button } from "react-bootstrap";
+import { Jumbotron, Image, Button } from "react-bootstrap";
 import "./shifters.css";
 
 class Shifters extends Component {
@@ -28,35 +28,35 @@ class Shifters extends Component {
   render() {
     return (
       <main id="shifters-main">
-        <Container fluid>
+        {/* <Container fluid>
           <Row className="shifters-row">
-            <Col lg={9}>
-              <Jumbotron className="shifters-jumbo">
-                <h2>{this.state.name}</h2>
+            <Col lg={9}> */}
+        <Jumbotron className="shifters-jumbo">
+          <h2>{this.state.name}</h2>
 
-                <div className="shifters-images-div">
-                  <Image src={this.state.img} className="shifters-images" />
-                </div>
+          <div className="shifters-images-div">
+            <Image src={this.state.img} className="shifters-images" />
+          </div>
 
-                <div className="shifters-benefits-div">
-                  <h3>Benefits: </h3>
+          <div className="shifters-benefits-div">
+            <h3>Benefits: </h3>
 
-                  <ul>
-                    {this.state.benefits.map(benefit => (
-                      <li>{benefit}</li>
-                    ))}
-                  </ul>
-                  {this.state.render && (
-                    <p className="shifters-info">{this.state.info}</p>
-                  )}
-                </div>
-                <div className="shifters-button-div">
-                  <Button onClick={this.handleClick}>More Info</Button>
-                </div>
-              </Jumbotron>
-            </Col>
+            <ul>
+              {this.state.benefits.map(benefit => (
+                <li>{benefit}</li>
+              ))}
+            </ul>
+            {this.state.render && (
+              <p className="shifters-info">{this.state.info}</p>
+            )}
+          </div>
+          <div className="shifters-button-div">
+            <Button onClick={this.handleClick}>More Info</Button>
+          </div>
+        </Jumbotron>
+        {/* </Col>
           </Row>
-        </Container>
+        </Container> */}
       </main>
     );
   }

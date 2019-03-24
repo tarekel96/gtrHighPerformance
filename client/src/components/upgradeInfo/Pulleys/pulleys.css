@@ -1,10 +1,17 @@
 #pulleys-main {
   /* padding-top: 7rem; */
+  padding: 0;
+  margin: 0 auto;
 }
 
 .pulleys-row {
   justify-content: center;
   flex-flow: row nowrap;
+}
+
+.pulleys-jumbo {
+  height: 550px;
+  padding-top: 0px;
 }
 
 .pulleys-jumbo h2 {
@@ -17,9 +24,8 @@
 }
 
 .pulleys-images {
-  border-radius: 50%;
-  height: 50%;
-  width: 50%;
+  height: 80%;
+  width: 80%;
 }
 
 /* .pulleys-info {
@@ -29,7 +35,6 @@
 .pulleys-button-div {
   display: flex;
   justify-content: center;
-  padding-top: 2rem;
 }
 
 .pulleys-benefits-div {

@@ -7,6 +7,12 @@
   flex-flow: row nowrap;
 }
 
+.fuel-jumbo {
+  padding-top: 0;
+  /* padding-bottom: 1rem; */
+  height: 600px;
+}
+
 .fuel-jumbo h2 {
   text-align: center;
 }
@@ -17,9 +23,8 @@
 }
 
 .fuel-images {
-  border-radius: 50%;
-  height: 50%;
-  width: 50%;
+  height: 75%;
+  width: 75%;
 }
 
 /* .fuel-info {

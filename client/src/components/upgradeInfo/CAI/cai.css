@@ -1,10 +1,18 @@
 #cai-main {
-  padding-top: 7rem;
+  /* padding-top: 7rem; */
+  padding: 0;
+  margin: 0 auto;
 }
 
 .cai-row {
   justify-content: center;
   flex-flow: row nowrap;
+}
+
+.cai-jumbo {
+  padding-top: 0;
+  padding-bottom: 1rem;
+  height: 600px;
 }
 
 .cai-jumbo {
@@ -21,11 +29,9 @@
 }
 
 .cai-images {
-  border-radius: 50%;
-  height: 50%;
-  width: 50%;
-  /* height: 359px;
-  width: 359; */
+  /* border-radius: 50%; */
+  height: 80%;
+  width: 80%;
 }
 
 /* .cai-info {
@@ -35,7 +41,6 @@
 .cai-button-div {
   display: flex;
   justify-content: center;
-  padding-top: 2rem;
 }
 
 .cai-benefits-div {

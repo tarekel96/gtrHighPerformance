@@ -1,10 +1,18 @@
 #suspension-main {
   /* padding-top: 7rem; */
+  padding: 0;
+  margin: 0 auto;
 }
 
 .suspension-row {
   justify-content: center;
   flex-flow: row nowrap;
+}
+
+.suspension-jumbo {
+  padding-top: 0;
+  padding-bottom: 1rem;
+  height: 600px;
 }
 
 .suspension-jumbo h2 {
@@ -17,11 +25,9 @@
 }
 
 .suspension-images {
-  border-radius: 50%;
-  width: 50%;
-  height: 50%;
-  /* height: 359px;
-  width: 359; */
+  /* border-radius: 50%; */
+  width: 90%;
+  height: 90%;
 }
 
 /* .suspension-info {
@@ -31,7 +37,6 @@
 .suspension-button-div {
   display: flex;
   justify-content: center;
-  padding-top: 2rem;
 }
 
 .suspension-benefits-div {

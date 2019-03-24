@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Jumbotron, Image, Button } from "react-bootstrap";
+import { Jumbotron, Image, Button } from "react-bootstrap";
 import "./brakes.css";
 
 class Brakes extends Component {
@@ -29,35 +29,35 @@ class Brakes extends Component {
   render() {
     return (
       <main id="brakes-main">
-        <Container fluid>
+        {/* <Container fluid>
           <Row className="brakes-row">
-            <Col lg={9}>
-              <Jumbotron className="brakes-jumbo">
-                <h2>{this.state.name}</h2>
+            <Col lg={9}> */}
+        <Jumbotron className="brakes-jumbo">
+          <h2>{this.state.name}</h2>
 
-                <div className="brakes-images-div">
-                  <Image src={this.state.img} className="brakes-images" />
-                </div>
+          <div className="brakes-images-div">
+            <Image src={this.state.img} className="brakes-images" />
+          </div>
 
-                <div className="brakes-benefits-div">
-                  <h3>Benefits: </h3>
+          <div className="brakes-benefits-div">
+            <h3>Benefits: </h3>
 
-                  <ul>
-                    {this.state.benefits.map(benefit => (
-                      <li>{benefit}</li>
-                    ))}
-                  </ul>
-                  {this.state.render && (
-                    <p className="brakes-info">{this.state.info}</p>
-                  )}
-                </div>
-                <div className="brakes-button-div">
-                  <Button onClick={this.handleClick}>More Info</Button>
-                </div>
-              </Jumbotron>
-            </Col>
+            <ul>
+              {this.state.benefits.map(benefit => (
+                <li>{benefit}</li>
+              ))}
+            </ul>
+            {this.state.render && (
+              <p className="brakes-info">{this.state.info}</p>
+            )}
+          </div>
+          <div className="brakes-button-div">
+            <Button onClick={this.handleClick}>More Info</Button>
+          </div>
+        </Jumbotron>
+        {/* </Col>
           </Row>
-        </Container>
+        </Container> */}
       </main>
     );
   }

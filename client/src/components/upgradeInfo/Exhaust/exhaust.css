@@ -1,10 +1,18 @@
 #exhaust-main {
   /* padding-top: 7rem; */
+  padding: 0;
+  margin: 0 auto;
 }
 
 .exhaust-row {
   justify-content: center;
   flex-flow: row nowrap;
+}
+
+.exhaust-jumbo {
+  padding-top: 0;
+  padding-bottom: 1rem;
+  height: 600px;
 }
 
 .exhaust-jumbo h2 {
@@ -17,9 +25,9 @@
 }
 
 .exhaust-images {
-  height: 50%;
-  width: 50%;
-  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  /* border-radius: 50%; */
 }
 
 /* .exhaust-images {
@@ -42,7 +50,7 @@
 .exhaust-button-div {
   display: flex;
   justify-content: center;
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
 }
 
 .exhaust-benefits-div {

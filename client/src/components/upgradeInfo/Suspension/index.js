@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Jumbotron, Image, Button } from "react-bootstrap";
+import { Jumbotron, Image, Button } from "react-bootstrap";
 import "./suspension.css";
 
 class Suspension extends Component {
@@ -16,10 +16,12 @@ class Suspension extends Component {
       benefits: [
         "Greatly improve traction, grip and stability under performance driving conditions",
         "Better vehicle control leads to more driver confidence allowing you to drive harder and safer",
-        "Specific upgrades available for street performance, road-racing, drag-racing or something in between",
-        "Reduce or eliminate chassis and suspension flex or distortion for quicker steering response, better braking, flatter corner and just plain more fun!"
+
+        "Reduce or eliminate chassis and suspension flex or distortion."
       ]
     };
+    // "Specific upgrades available for street performance, road-racing, drag-racing or something in between",
+    // for quicker steering response, better braking, flatter corner and just plain more fun!"
   }
 
   handleClick = e => {
@@ -29,35 +31,35 @@ class Suspension extends Component {
   render() {
     return (
       <main id="suspension-main">
-        <Container fluid>
+        {/* <Container fluid>
           <Row className="suspension-row">
-            <Col lg={9}>
-              <Jumbotron className="suspension-jumbo">
-                <h2>{this.state.name}</h2>
+            <Col lg={9}> */}
+        <Jumbotron className="suspension-jumbo">
+          <h2>{this.state.name}</h2>
 
-                <div className="suspension-images-div">
-                  <Image src={this.state.img} className="suspension-images" />
-                </div>
+          <div className="suspension-images-div">
+            <Image src={this.state.img} className="suspension-images" />
+          </div>
 
-                <div className="suspension-benefits-div">
-                  <h3>Benefits: </h3>
+          <div className="suspension-benefits-div">
+            <h3>Benefits: </h3>
 
-                  <ul>
-                    {this.state.benefits.map(benefit => (
-                      <li>{benefit}</li>
-                    ))}
-                  </ul>
-                  {this.state.render && (
-                    <p className="suspension-info">{this.state.info}</p>
-                  )}
-                </div>
-                <div className="suspension-button-div">
-                  <Button onClick={this.handleClick}>More Info</Button>
-                </div>
-              </Jumbotron>
-            </Col>
+            <ul>
+              {this.state.benefits.map(benefit => (
+                <li>{benefit}</li>
+              ))}
+            </ul>
+            {this.state.render && (
+              <p className="suspension-info">{this.state.info}</p>
+            )}
+          </div>
+          <div className="suspension-button-div">
+            <Button onClick={this.handleClick}>More Info</Button>
+          </div>
+        </Jumbotron>
+        {/* </Col>
           </Row>
-        </Container>
+        </Container> */}
       </main>
     );
   }

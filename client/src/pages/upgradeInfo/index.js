@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 // import { Container, Row, Col, Jumbotron, Image, Button } from "react-bootstrap";
 import "./upgrade.css";
+import { Row, Col, Container } from "react-bootstrap";
 import CAI from "../../components/upgradeInfo/CAI/index.js";
 import Exhaust from "../../components/upgradeInfo/Exhaust/index.js";
 import Suspension from "../../components/upgradeInfo/Suspension/index.js";
@@ -22,15 +23,41 @@ class upgradeInfo extends Component {
     return (
       <main id="exp-main">
         <Fade clear>
-          <CAI />
-          <Exhaust />
-          <Suspension />
-          <Gears />
-          <Shifters />
-          <Pulleys />
-          <Brakes />
-          <Fuel />
-          <Cooling />
+          <Container>
+            <Row>
+              <Col sm="12" lg="4">
+                <CAI />
+              </Col>
+              <Col sm="12" lg="4">
+                <Exhaust />
+              </Col>
+              <Col sm="12" lg="4">
+                <Suspension />
+              </Col>
+            </Row>
+            <Row>
+              <Col sm="12" lg="4">
+                <Gears />
+              </Col>
+              <Col sm="12" lg="4">
+                <Shifters />
+              </Col>
+              <Col sm="12" lg="4">
+                <Pulleys />
+              </Col>
+            </Row>
+            <Row>
+              <Col sm="12" lg="4">
+                <Brakes />
+              </Col>
+              <Col sm="12" lg="4">
+                <Fuel />
+              </Col>
+              <Col sm="12" lg="4">
+                <Cooling />
+              </Col>
+            </Row>
+          </Container>
         </Fade>
         {/* <Container fluid>
           {this.state.items.map(item => (

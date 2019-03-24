@@ -1,10 +1,17 @@
 #shifters-main {
+  padding: 0;
+  margin: 0 auto;
   /* padding-top: 7rem; */
 }
 
 .shifters-row {
   justify-content: center;
   flex-flow: row nowrap;
+}
+
+.shifters-jumbo {
+  padding-top: 0;
+  height: 550px;
 }
 
 .shifters-jumbo h2 {
@@ -17,9 +24,8 @@
 }
 
 .shifters-images {
-  border-radius: 50%;
-  height: 50%;
-  width: 50%;
+  height: 100%;
+  width: 100%;
 }
 
 /* .shifters-info {
