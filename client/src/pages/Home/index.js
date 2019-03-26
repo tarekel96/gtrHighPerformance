@@ -32,7 +32,7 @@ class Home extends Component {
               style={{
                 backgroundColor: "white",
                 backgroundImage: `url(${Shelby})`,
-                height: "500px",
+                height: "400px",
                 backgroundPosition: "center",
                 backgroundRepeat: "none",
                 backgroundSize: "cover"

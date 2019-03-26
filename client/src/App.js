@@ -2,7 +2,7 @@ import React from "react";
 import "./css/App.css";
 import Nav from "./components/Navbar/Navs.js";
 import Home from "./pages/Home/index.js";
-import History from "../src/pages/History/History.js";
+// import History from "../src/pages/History/History.js";
 import Appt from "./pages/Appt/index.js";
 import Members from "./pages/Members/index.js";
 import { BrowserRouter as Router, Route } from "react-router-dom";
@@ -20,7 +20,7 @@ const App = () => (
         path="/about"
         render={props => (
           <div>
-            <History />
+            {/* <History /> */}
             <Members />
           </div>
         )}
