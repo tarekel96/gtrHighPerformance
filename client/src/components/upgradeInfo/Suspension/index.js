@@ -48,7 +48,7 @@ class Suspension extends Component {
 
             <ul>
               {this.state.benefits.map(benefit => (
-                <li>{benefit}</li>
+                <li key={benefit}>{benefit}</li>
               ))}
             </ul>
             {

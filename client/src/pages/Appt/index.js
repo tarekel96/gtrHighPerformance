@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { Container, Row, Col, Jumbotron } from "react-bootstrap";
+// import { Container, Row, Col, Jumbotron } from "react-bootstrap";
 import "./appt.css";
 
 class Appt extends Component {
@@ -89,7 +89,7 @@ class Appt extends Component {
     ];
     return (
       <main id="form-main">
-        <Container id="contact-con">
+        {/* <Container id="contact-con">
           <Row id="contact-row">
             <Col lg={8} id="contact-col">
               <Jumbotron id="contact-jumbo">
@@ -130,7 +130,7 @@ class Appt extends Component {
               </Jumbotron>
             </Col>
           </Row>
-        </Container>
+        </Container> */}
         <div id="form-div">
           <form id="form-block" onSubmit={this.handleSubmit}>
             <h3>Message:</h3>

@@ -1,46 +1,141 @@
 import React, { Component } from "react";
-import { Jumbotron, Button, Container, Col, Row } from "react-bootstrap";
+import { Container, Col, Row, Button, Image } from "react-bootstrap";
 import Shelby from "../../images/RedStang.jpeg";
-import { LinkContainer } from "react-router-bootstrap";
+import { FaFacebook, FaYelp } from "react-icons/fa";
+// import { LinkContainer } from "react-router-bootstrap";
 // import threeMuscle from "../../images/threeMuscle.jpg";
 import "./home.css";
 class Home extends Component {
-  state = {
-    show: false
-  };
+  constructor(props) {
+    super(props);
+    this.state = {};
+    this.handleScroll = this.handleScroll.bind.this;
+  }
+
+  handleScroll() {
+    window.scrollTo(0, 0);
+  }
 
   render() {
-    const buttons = [
-      { name: "About", id: 1, link: "/about" },
-      { name: "Services", id: 2, link: "/services" },
-      { name: "Contact", id: 3, link: "/email" }
-    ];
+    // const buttons = [
+    //   { name: "About", id: 1, link: "/about" },
+    //   { name: "Services", id: 2, link: "/services" },
+    //   { name: "Contact", id: 3, link: "/email" }
+    // ];
     return (
       <main>
         <Container fluid id="home-con">
-          <Row
-            id="home-row"
-            style={{
-              backgroundColor: "white",
-              backgroundImage: `url(${Shelby})`,
-              height: "700px",
-              backgroundPosition: "center",
-              backgroundRepeat: "none",
-              backgroundSize: "cover"
-            }}
-          >
-            <Col id="home-col" lg={6}>
-              <Jumbotron id="home-jumbo">
-                <h2>Welcome to GTR High Performance</h2>
-                <p>Home of Southern California's Best Mustang Experts</p>
-                <div id="home-buttons">
-                  {buttons.map(button => (
-                    <LinkContainer to={button.link} exact={true}>
-                      <Button>{button.name}</Button>
-                    </LinkContainer>
-                  ))}
+          <Row id="home-row">
+            <Col
+              lg="12"
+              id="home-col"
+              style={{
+                backgroundColor: "white",
+                backgroundImage: `url(${Shelby})`,
+                height: "500px",
+                backgroundPosition: "center",
+                backgroundRepeat: "none",
+                backgroundSize: "cover"
+              }}
+            />
+          </Row>
+          <Row id="home-row-two">
+            <Col className="home-low-left-col" xs="12" md="8" lg="7">
+              <div>
+                <h2>About</h2>
+                <section style={{ textAlign: "justify" }}>
+                  Founded in 1997, GTR High Performance was created by two
+                  long-time Mustang enthusiasts, Gonzalo & Ricardo Topete. The
+                  concept was simple: to create a positive and rewarding Mustang
+                  shop experience. With a courteous, professional, and
+                  knowledgeable staff, GTR High Performance has emerged as one
+                  of the premier Mustang performance shops in the country.
+                </section>
+
+                <Button id="home-button-learn" href="/about">
+                  Learn More
+                </Button>
+
+                <h5 id="home-checkout-social">
+                  Don't forget to checkout Yelp and follow our Socials!
+                </h5>
+                <div>
+                  <Container fluid>
+                    <Row id="home-row-icons">
+                      <Col>
+                        <a
+                          href="https://www.facebook.com/GTR-High-Performance-100816169990212/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{ color: "#3b5998" }}
+                        >
+                          <FaFacebook className="home-icons" />
+                        </a>
+                      </Col>
+                      <Col>
+                        <a
+                          href="https://www.instagram.com/explore/locations/310905761/gtr-high-performance?hl=en"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Image
+                            className="home-icons"
+                            src={"assets/images/instagram-logo.png"}
+                          />
+                        </a>
+                      </Col>
+                      <Col>
+                        <a
+                          href="https://www.yelp.com/biz/gtr-high-performance-rancho-cucamonga"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{ color: "#c41200" }}
+                        >
+                          <FaYelp className="home-icons" />
+                        </a>
+                      </Col>
+                    </Row>
+                  </Container>
                 </div>
-              </Jumbotron>
+              </div>
+            </Col>
+            <Col className="home-low-right-col" xs="12" md="4" lg="4">
+              <div>
+                <h2>Contact</h2>
+                <ul className="home-contact-no-bullet">
+                  <li>
+                    <strong>Tech-Line 1: </strong> (909)-987-4386
+                  </li>
+                  <li>
+                    <strong>Tech Line 2: </strong> (909)-466-5993
+                  </li>
+                  <li>
+                    <strong>Fax:</strong> (909)-466-5981
+                  </li>
+                  <li>
+                    <strong>Email:</strong> info@gtrhipo.com
+                  </li>
+                  <li>
+                    <strong>Order Line:</strong> 1.888.HIPOGTR
+                  </li>
+                </ul>
+                <h4>Hours of Operations</h4>
+                <ul className="home-contact-no-bullet">
+                  <li>
+                    <strong> Mon-Fri:</strong> 9:00 a.m. - 6:30 p.m.
+                  </li>
+                  <li>
+                    <strong> Sat:</strong> 9:00 a.m. - 2:30 p.m.
+                  </li>
+                  <li>
+                    <strong> Sun:</strong> Closed
+                  </li>
+                </ul>
+
+                <h4>Adress</h4>
+
+                <p>8678 Utica Ave, Rancho Cucamonga, CA 91730 </p>
+              </div>
             </Col>
           </Row>
         </Container>
