@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import { Container, Col, Row, Button, Image } from "react-bootstrap";
+import { Container, Col, Row, Button, Image, Card } from "react-bootstrap";
 import Shelby from "../../images/RedStang.jpeg";
 import { FaFacebook, FaYelp } from "react-icons/fa";
+import axios from "axios";
 // import { LinkContainer } from "react-router-bootstrap";
 // import threeMuscle from "../../images/threeMuscle.jpg";
 import "./home.css";
@@ -10,10 +11,26 @@ class Home extends Component {
     super(props);
     this.state = {};
     this.handleScroll = this.handleScroll.bind.this;
+    // this.getYelp = this.getYelp.bind.this;
   }
 
   handleScroll() {
     window.scrollTo(0, 0);
+  }
+
+  componentWillMount() {
+    const yelp_api = process.env.REACT_APP_YELP_API;
+    axios
+      .get(
+        // "https://api.yelp.com/v3/businesses/search",
+        "https://cors-anywhere.herokuapp.com/api.yelp.com/v3/businesses/gtr-high-performance-rancho-cucamonga/reviews",
+        {
+          headers: {
+            Authorization: `Bearer ${yelp_api}`
+          }
+        }
+      )
+      .then(response => console.log(response));
   }
 
   render() {
@@ -22,6 +39,7 @@ class Home extends Component {
     //   { name: "Services", id: 2, link: "/services" },
     //   { name: "Contact", id: 3, link: "/email" }
     // ];
+
     return (
       <main>
         <Container fluid id="home-con">
@@ -40,7 +58,7 @@ class Home extends Component {
             />
           </Row>
           <Row id="home-row-two">
-            <Col className="home-low-left-col" xs="12" md="8" lg="7">
+            <Col className="home-low-left-col" xs="12" md="8" lg="5">
               <div>
                 <h2>About</h2>
                 <section style={{ textAlign: "justify" }}>
@@ -99,10 +117,27 @@ class Home extends Component {
                 </div>
               </div>
             </Col>
-            <Col className="home-low-right-col" xs="12" md="4" lg="4">
+            <Col className="home-low-right-col" xs="12" md="4" lg="6">
               <div>
-                <h2>Contact</h2>
-                <ul className="home-contact-no-bullet">
+                <h2>Feed</h2>
+
+                <Card style={{ width: "18rem" }}>
+                  <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">
+                      Card Subtitle
+                    </Card.Subtitle>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                    <Button>Test</Button>
+                    <Card.Link href="#">Card Link</Card.Link>
+                    <Card.Link href="#">Another Link</Card.Link>
+                  </Card.Body>
+                </Card>
+
+                {/* <ul className="home-contact-no-bullet">
                   <li>
                     <strong>Tech-Line 1: </strong> (909)-987-4386
                   </li>
@@ -134,7 +169,7 @@ class Home extends Component {
 
                 <h4>Adress</h4>
 
-                <p>8678 Utica Ave, Rancho Cucamonga, CA 91730 </p>
+                <p>8678 Utica Ave, Rancho Cucamonga, CA 91730 </p> */}
               </div>
             </Col>
           </Row>

@@ -59,35 +59,6 @@ class upgradeInfo extends Component {
             </Row>
           </Container>
         </Fade>
-        {/* <Container fluid>
-          {this.state.items.map(item => (
-            <Row className="exp-row">
-              <Col lg={9}>
-                <Jumbotron className="exp-jumbo">
-                  <h2>{item.name}</h2>
-
-                  <div className="exp-images-div">
-                    <Image src={item.img} className="exp-images" />
-                  </div>
-
-                  <div className="exp-benefits-div" key={item.id}>
-                    <h3>Benefits: </h3>
-
-                    <ul>
-                      {item.benefits.map(benefit => (
-                        <li>{benefit}</li>
-                      ))}
-                    </ul>
-                    {item.render && <p className="exp-info">{item.info}</p>}
-                  </div>
-                  <div className="exp-button-div">
-                    <Button>More Info</Button>
-                  </div>
-                </Jumbotron>
-              </Col>
-            </Row>
-          ))}
-        </Container> */}
       </main>
     );
   }
