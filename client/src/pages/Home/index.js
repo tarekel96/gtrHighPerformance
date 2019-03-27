@@ -9,7 +9,13 @@ import "./home.css";
 class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      name: "GTR High Performance",
+      review_one: "",
+      review_two: "",
+      review_three: "",
+      cards: [{}, {}, {}]
+    };
     this.handleScroll = this.handleScroll.bind.this;
     // this.getYelp = this.getYelp.bind.this;
   }
@@ -30,7 +36,20 @@ class Home extends Component {
           }
         }
       )
-      .then(response => console.log(response));
+      // .then(response => console.log(response));
+      .then(response => {
+        // console.log(response);
+        // console.log(response.data.reviews.map(review => review));
+        const yelpData = response.data.reviews.map(review => review);
+        // console.log(response.data.reviews.map(review => review.text[0]));
+        // const review_first = response.data.reviews.map(
+        //   review => review.text[0]
+        // );
+        this.setState({
+          cards: yelpData
+        });
+        console.log(yelpData);
+      });
   }
 
   render() {
@@ -58,7 +77,7 @@ class Home extends Component {
             />
           </Row>
           <Row id="home-row-two">
-            <Col className="home-low-left-col" xs="12" md="8" lg="5">
+            <Col className="home-low-left-col" xs="12" md="8" lg="3">
               <div>
                 <h2>About</h2>
                 <section style={{ textAlign: "justify" }}>
@@ -120,22 +139,32 @@ class Home extends Component {
             <Col className="home-low-right-col" xs="12" md="4" lg="6">
               <div>
                 <h2>Feed</h2>
-
-                <Card style={{ width: "18rem" }}>
+                {this.state.cards.map(card => (
+                  <Card style={{ width: "18rem" }}>
+                    <Card.Body>
+                      <Card.Title>{this.state.name}</Card.Title>
+                      <Card.Subtitle className="mb-2 text-muted">
+                        {card.text}
+                      </Card.Subtitle>
+                      <Card.Text />
+                      {/* <Button>Test</Button> */}
+                      <Card.Link href="#">Card Link</Card.Link>
+                      <Card.Link href="#">Another Link</Card.Link>
+                    </Card.Body>
+                  </Card>
+                ))}
+                {/* <Card style={{ width: "18rem" }}>
                   <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
+                    <Card.Title>GTR High Performance</Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">
                       Card Subtitle
                     </Card.Subtitle>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
+                    <Card.Text>{this.state.text}</Card.Text>
                     <Button>Test</Button>
                     <Card.Link href="#">Card Link</Card.Link>
                     <Card.Link href="#">Another Link</Card.Link>
                   </Card.Body>
-                </Card>
+                </Card> */}
 
                 {/* <ul className="home-contact-no-bullet">
                   <li>
