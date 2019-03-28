@@ -5,6 +5,7 @@ import Home from "./pages/Home/index.js";
 // import History from "../src/pages/History/History.js";
 import Appt from "./pages/Appt/index.js";
 import Members from "./pages/Members/index.js";
+import Press from "./pages/Press/index.js";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import upgradeInfo from "./pages/upgradeInfo/index.js";
 import CalendarCom from "./components/Calendar/index.js";
@@ -25,6 +26,7 @@ const App = () => (
           </div>
         )}
       />
+      <Route path="/press" component={Press} exact={true} />
       <Route path="/email" component={Appt} exact={true} />
       <Route path="/calendar" component={CalendarCom} exact={true} />
       <Route path="/upgrade_info" component={upgradeInfo} exact={true} />

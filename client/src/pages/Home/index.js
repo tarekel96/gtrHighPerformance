@@ -1,11 +1,9 @@
 import React, { Component } from "react";
-import { Container, Col, Row, Button, Image, Card } from "react-bootstrap";
+import { Container, Col, Row, Button, Image } from "react-bootstrap";
 import Shelby from "../../images/RedStang.jpeg";
 import { FaFacebook, FaYelp } from "react-icons/fa";
-import axios from "axios";
-// import { LinkContainer } from "react-router-bootstrap";
-// import threeMuscle from "../../images/threeMuscle.jpg";
 import "./home.css";
+
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -22,34 +20,6 @@ class Home extends Component {
 
   handleScroll() {
     window.scrollTo(0, 0);
-  }
-
-  componentWillMount() {
-    const yelp_api = process.env.REACT_APP_YELP_API;
-    axios
-      .get(
-        // "https://api.yelp.com/v3/businesses/search",
-        "https://cors-anywhere.herokuapp.com/api.yelp.com/v3/businesses/gtr-high-performance-rancho-cucamonga/reviews",
-        {
-          headers: {
-            Authorization: `Bearer ${yelp_api}`
-          }
-        }
-      )
-      // .then(response => console.log(response));
-      .then(response => {
-        // console.log(response);
-        // console.log(response.data.reviews.map(review => review));
-        const yelpData = response.data.reviews.map(review => review);
-        // console.log(response.data.reviews.map(review => review.text[0]));
-        // const review_first = response.data.reviews.map(
-        //   review => review.text[0]
-        // );
-        this.setState({
-          cards: yelpData
-        });
-        console.log(yelpData);
-      });
   }
 
   render() {
@@ -139,34 +109,8 @@ class Home extends Component {
             <Col className="home-low-right-col" xs="12" md="4" lg="6">
               <div>
                 <h2>Feed</h2>
-                {this.state.cards.map(card => (
-                  <Card style={{ width: "18rem" }}>
-                    <Card.Body>
-                      <Card.Title>{this.state.name}</Card.Title>
-                      <Card.Subtitle className="mb-2 text-muted">
-                        {card.text}
-                      </Card.Subtitle>
-                      <Card.Text />
-                      {/* <Button>Test</Button> */}
-                      <Card.Link href="#">Card Link</Card.Link>
-                      <Card.Link href="#">Another Link</Card.Link>
-                    </Card.Body>
-                  </Card>
-                ))}
-                {/* <Card style={{ width: "18rem" }}>
-                  <Card.Body>
-                    <Card.Title>GTR High Performance</Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">
-                      Card Subtitle
-                    </Card.Subtitle>
-                    <Card.Text>{this.state.text}</Card.Text>
-                    <Button>Test</Button>
-                    <Card.Link href="#">Card Link</Card.Link>
-                    <Card.Link href="#">Another Link</Card.Link>
-                  </Card.Body>
-                </Card> */}
 
-                {/* <ul className="home-contact-no-bullet">
+                <ul className="home-contact-no-bullet">
                   <li>
                     <strong>Tech-Line 1: </strong> (909)-987-4386
                   </li>
@@ -198,7 +142,7 @@ class Home extends Component {
 
                 <h4>Adress</h4>
 
-                <p>8678 Utica Ave, Rancho Cucamonga, CA 91730 </p> */}
+                <p>8678 Utica Ave, Rancho Cucamonga, CA 91730 </p>
               </div>
             </Col>
           </Row>
