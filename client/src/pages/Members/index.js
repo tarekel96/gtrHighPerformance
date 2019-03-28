@@ -7,6 +7,7 @@ import Eli from "../../components/Members/Eli/index.js";
 import Chris from "../../components/Members/Chris/index.js";
 import Dave from "../../components/Members/Dave/index.js";
 import Josh from "../../components/Members/Josh/index.js";
+import Footer from "../../components/Footer/index.js";
 
 class Members extends Component {
   constructor(props) {
@@ -40,6 +41,7 @@ class Members extends Component {
             </Col>
           </Row>
         </Container>
+        <Footer />
       </main>
     );
   }

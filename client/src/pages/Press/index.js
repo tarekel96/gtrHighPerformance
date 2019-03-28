@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Container } from "react-bootstrap";
 import YelpOne from "../../components/Press/YelpOne/index.js";
+import Footer from "../../components/Footer/index.js";
 // import axios from "axios";
 
 class Press extends Component {
@@ -54,6 +55,7 @@ class Press extends Component {
         <Container fluid>
           <YelpOne />
         </Container>
+        <Footer />
       </div>
     );
   }

@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import { Container, Col, Row, Button, Image } from "react-bootstrap";
+import { Container, Col, Row, Button } from "react-bootstrap";
 import Shelby from "../../images/RedStang.jpeg";
-import { FaFacebook, FaYelp } from "react-icons/fa";
+// import { FaFacebook, FaYelp } from "react-icons/fa";
+import Footer from "../../components/Footer/index.js";
 import "./home.css";
 
 class Home extends Component {
@@ -61,7 +62,7 @@ class Home extends Component {
             />
           </Row>
           <Row id="home-row-two">
-            <Col className="home-low-left-col" xs="12" md="8" lg="3">
+            <Col className="home-low-left-col" xs="12" md="8" lg="6">
               <div>
                 <h2>About</h2>
                 <section style={{ textAlign: "justify" }}>
@@ -77,10 +78,10 @@ class Home extends Component {
                   Learn More
                 </Button>
 
-                <h5 id="home-checkout-social">
+                {/* <h5 id="home-checkout-social">
                   Don't forget to checkout Yelp and follow our Socials!
-                </h5>
-                <div>
+                </h5> */}
+                {/* <div>
                   <Container fluid>
                     <Row id="home-row-icons">
                       <Col>
@@ -117,10 +118,10 @@ class Home extends Component {
                       </Col>
                     </Row>
                   </Container>
-                </div>
+                </div> */}
               </div>
             </Col>
-            <Col className="home-low-right-col" xs="12" md="4" lg="6">
+            {/* <Col className="home-low-right-col" xs="12" md="4" lg="6">
               <div>
                 <h2>Feed</h2>
 
@@ -158,9 +159,10 @@ class Home extends Component {
 
                 <p>8678 Utica Ave, Rancho Cucamonga, CA 91730 </p>
               </div>
-            </Col>
+            </Col> */}
           </Row>
         </Container>
+        <Footer />
       </main>
     );
   }
