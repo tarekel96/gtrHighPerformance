@@ -18,6 +18,20 @@ class Home extends Component {
     // this.getYelp = this.getYelp.bind.this;
   }
 
+  // componentWillMount() {
+  //   const yelp_api = process.env.REACT_APP_YELP_API;
+  //   axios
+  //     .get(
+  //       // "https://api.yelp.com/v3/businesses/search",
+  //       "https://cors-anywhere.herokuapp.com/api.yelp.com/v3/businesses/gtr-high-performance-rancho-cucamonga/reviews",
+  //       {
+  //         headers: {
+  //           Authorization: `Bearer ${yelp_api}`
+  //         }
+  //       }
+  //     )
+  //     // .then(response => console.log(response));}
+
   handleScroll() {
     window.scrollTo(0, 0);
   }
