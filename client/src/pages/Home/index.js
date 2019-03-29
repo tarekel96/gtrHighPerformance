@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Container, Col, Row, Button } from "react-bootstrap";
 import Shelby from "../../images/RedStang.jpeg";
-// import { FaFacebook, FaYelp } from "react-icons/fa";
+import Maps from "../../components/Maps/index.js";
 import Footer from "../../components/Footer/index.js";
 import "./home.css";
 
@@ -16,34 +16,13 @@ class Home extends Component {
       cards: [{}, {}, {}]
     };
     this.handleScroll = this.handleScroll.bind.this;
-    // this.getYelp = this.getYelp.bind.this;
   }
-
-  // componentWillMount() {
-  //   const yelp_api = process.env.REACT_APP_YELP_API;
-  //   axios
-  //     .get(
-  //       // "https://api.yelp.com/v3/businesses/search",
-  //       "https://cors-anywhere.herokuapp.com/api.yelp.com/v3/businesses/gtr-high-performance-rancho-cucamonga/reviews",
-  //       {
-  //         headers: {
-  //           Authorization: `Bearer ${yelp_api}`
-  //         }
-  //       }
-  //     )
-  //     // .then(response => console.log(response));}
 
   handleScroll() {
     window.scrollTo(0, 0);
   }
 
   render() {
-    // const buttons = [
-    //   { name: "About", id: 1, link: "/about" },
-    //   { name: "Services", id: 2, link: "/services" },
-    //   { name: "Contact", id: 3, link: "/email" }
-    // ];
-
     return (
       <main>
         <Container fluid id="home-con">
@@ -77,89 +56,11 @@ class Home extends Component {
                 <Button id="home-button-learn" href="/about">
                   Learn More
                 </Button>
-
-                {/* <h5 id="home-checkout-social">
-                  Don't forget to checkout Yelp and follow our Socials!
-                </h5> */}
-                {/* <div>
-                  <Container fluid>
-                    <Row id="home-row-icons">
-                      <Col>
-                        <a
-                          href="https://www.facebook.com/GTR-High-Performance-100816169990212/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          style={{ color: "#3b5998" }}
-                        >
-                          <FaFacebook className="home-icons" />
-                        </a>
-                      </Col>
-                      <Col>
-                        <a
-                          href="https://www.instagram.com/explore/locations/310905761/gtr-high-performance?hl=en"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <Image
-                            className="home-icons"
-                            src={"assets/images/instagram-logo.png"}
-                          />
-                        </a>
-                      </Col>
-                      <Col>
-                        <a
-                          href="https://www.yelp.com/biz/gtr-high-performance-rancho-cucamonga"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          style={{ color: "#c41200" }}
-                        >
-                          <FaYelp className="home-icons" />
-                        </a>
-                      </Col>
-                    </Row>
-                  </Container>
-                </div> */}
               </div>
             </Col>
-            {/* <Col className="home-low-right-col" xs="12" md="4" lg="6">
-              <div>
-                <h2>Feed</h2>
-
-                <ul className="home-contact-no-bullet">
-                  <li>
-                    <strong>Tech-Line 1: </strong> (909)-987-4386
-                  </li>
-                  <li>
-                    <strong>Tech Line 2: </strong> (909)-466-5993
-                  </li>
-                  <li>
-                    <strong>Fax:</strong> (909)-466-5981
-                  </li>
-                  <li>
-                    <strong>Email:</strong> info@gtrhipo.com
-                  </li>
-                  <li>
-                    <strong>Order Line:</strong> 1.888.HIPOGTR
-                  </li>
-                </ul>
-                <h4>Hours of Operations</h4>
-                <ul className="home-contact-no-bullet">
-                  <li>
-                    <strong> Mon-Fri:</strong> 9:00 a.m. - 6:30 p.m.
-                  </li>
-                  <li>
-                    <strong> Sat:</strong> 9:00 a.m. - 2:30 p.m.
-                  </li>
-                  <li>
-                    <strong> Sun:</strong> Closed
-                  </li>
-                </ul>
-
-                <h4>Adress</h4>
-
-                <p>8678 Utica Ave, Rancho Cucamonga, CA 91730 </p>
-              </div>
-            </Col> */}
+            <Col md="8" lg="6">
+              <Maps />
+            </Col>
           </Row>
         </Container>
         <Footer />
