@@ -1,4 +1,7 @@
 #staffContainer {
   background-color: #fee8d6;
-  padding-top: 1rem;
+}
+
+.members-spacing {
+  padding: 1rem;
 }

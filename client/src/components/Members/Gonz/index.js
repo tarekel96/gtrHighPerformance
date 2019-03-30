@@ -15,7 +15,7 @@ class Gonz extends Component {
       hobbies: `Microsoft X-Box & sports.`,
       food: `Anything his wife, Lauri, makes.`,
       rides: [
-        `Vortech Intercooled Supercharged 2006 Mustang GT (465 RWHP)`,
+        `2006 Mustang GT Vortech Intercooled Supercharged (465 RWHP)`,
         `1989 Mustang 5.0 LX, 1999 Camaro Z-28 (Yes, a Camaro?!)`,
         `2007 Tahoe`
       ],
@@ -62,7 +62,7 @@ class Gonz extends Component {
               {this.state.food}
             </p>
             <strong>Personal Rides:</strong>
-            <ul className="member-ride-list">
+            <ul>
               {this.state.rides.map(ride => (
                 <li>{ride}</li>
               ))}

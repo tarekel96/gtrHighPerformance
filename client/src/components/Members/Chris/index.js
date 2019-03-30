@@ -56,7 +56,7 @@ class Chris extends Component {
               {this.state.food}
             </p>
             <strong>Personal Rides:</strong>
-            <ul className="member-ride-list">
+            <ul>
               {this.state.rides.map(ride => (
                 <li>{ride}</li>
               ))}

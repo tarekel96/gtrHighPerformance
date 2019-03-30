@@ -15,7 +15,7 @@ class Eli extends Component {
       hobbies: `Family, skateboarding, gym.`,
       food: `Gyros, lowfat yogurt & cottage cheese.`,
       rides: [
-        `Paxton Intercooled Supercharged 2000 Mustang GT`,
+        `2000 Mustang GT Paxton Intercooled Supercharged`,
         `94 Mustang GT`,
         `99 Mustang GT`,
         `2000 Mustang GT (current)`,
@@ -62,7 +62,7 @@ class Eli extends Component {
               {this.state.food}
             </p>
             <strong>Personal Rides:</strong>
-            <ul className="member-ride-list">
+            <ul>
               {this.state.rides.map(ride => (
                 <li>{ride}</li>
               ))}

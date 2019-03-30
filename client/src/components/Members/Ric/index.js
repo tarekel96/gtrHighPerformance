@@ -15,8 +15,8 @@ class Ric extends Component {
       hobbies: `Spending time with family, Traveling, Bicycling, Cruising in Mustangs & making horsepower!`,
       food: `Any dead and cooked animal is fair game`,
       rides: [
-        `Paxton Supercharged 2001 Mustang GT`,
-        `Vortech Supercharged 1994 SVT Cobra (sold)`,
+        `2001 Mustang GT Paxton Supercharged`,
+        `1994 SVT Cobra Vortech Supercharged (sold)`,
         `1992 Mustang GT (sold)`,
         `1964 1/2 Mustang 289`,
         `2005 Ford F-150 SuperCrew`,
@@ -65,7 +65,7 @@ class Ric extends Component {
               {this.state.food}
             </p>
             <strong>Personal Rides:</strong>
-            <ul className="member-ride-list">
+            <ul>
               {this.state.rides.map(ride => (
                 <li>{ride}</li>
               ))}

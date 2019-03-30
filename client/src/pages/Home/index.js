@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Container, Col, Row, Button } from "react-bootstrap";
 import Shelby from "../../images/RedStang.jpeg";
-import Maps from "../../components/Maps/index.js";
+// import Maps from "../../components/Maps/index.js";
+import GoogleMap from "../../components/GoogleMap/index.js";
 import Footer from "../../components/Footer/index.js";
 import "./home.css";
 
@@ -59,7 +60,8 @@ class Home extends Component {
               </div>
             </Col>
             <Col md="8" lg="6">
-              <Maps />
+              <GoogleMap />
+              {/* <Maps /> */}
             </Col>
           </Row>
         </Container>

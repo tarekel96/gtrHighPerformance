@@ -19,24 +19,24 @@ class Members extends Component {
       <main id="staffContainer">
         <Container id="members-container">
           <Row id="members-row-one">
-            <Col lg="4" className="members-full-width">
+            <Col lg="4" className="members-spacing">
               <Gonz />
             </Col>
-            <Col lg="4" className="members-full-width">
+            <Col lg="4" className="members-spacing">
               <Ric />
             </Col>
-            <Col lg="4" className="members-full-width">
+            <Col lg="4" className="members-spacing">
               <Eli />
             </Col>
           </Row>
           <Row id="members-row-two">
-            <Col lg="4" className="members-full-width">
+            <Col lg="4" className="members-spacing">
               <Chris />
             </Col>
-            <Col lg="4" className="members-full-width">
+            <Col lg="4" className="members-spacing">
               <Dave />
             </Col>
-            <Col lg="4" className="members-full-width">
+            <Col lg="4" className="members-spacing">
               <Josh />
             </Col>
           </Row>
