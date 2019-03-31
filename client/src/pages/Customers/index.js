@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Container } from "react-bootstrap";
+import Photos from "../../components/Customers/Photos/index.js";
 import YelpOne from "../../components/Customers/YelpOne/index.js";
 import Footer from "../../components/Footer/index.js";
 import "./customers.css";
@@ -24,6 +25,7 @@ class Press extends Component {
     return (
       <div>
         <Container fluid>
+          <Photos />
           <h2 id="customers-testimonials">Testimonials</h2>
           <YelpOne />
         </Container>
