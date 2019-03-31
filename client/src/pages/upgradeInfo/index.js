@@ -23,43 +23,60 @@ class upgradeInfo extends Component {
   render() {
     return (
       <main id="exp-main">
-        <Fade clear>
-          <Container>
-            <Row>
-              <Col sm="12" lg="4">
+        <Container>
+          <Row>
+            <Col sm="12" lg="4">
+              <Fade clear>
                 <CAI show={false} />
-              </Col>
-              <Col sm="12" lg="4">
+              </Fade>
+            </Col>
+            <Col sm="12" lg="4">
+              <Fade clear>
                 <Exhaust show={false} />
-              </Col>
-              <Col sm="12" lg="4">
+              </Fade>
+            </Col>
+            <Col sm="12" lg="4">
+              <Fade clear>
                 <Suspension show={false} />
-              </Col>
-            </Row>
-            <Row>
-              <Col sm="12" lg="4">
+              </Fade>
+            </Col>
+          </Row>
+          <Row>
+            <Col sm="12" lg="4">
+              <Fade clear>
                 <Gears show={false} />
-              </Col>
-              <Col sm="12" lg="4">
+              </Fade>
+            </Col>
+            <Col sm="12" lg="4">
+              <Fade clear>
                 <Shifters show={false} />
-              </Col>
-              <Col sm="12" lg="4">
+              </Fade>
+            </Col>
+            <Col sm="12" lg="4">
+              <Fade clear>
                 <Pulleys show={false} />
-              </Col>
-            </Row>
-            <Row>
-              <Col sm="12" lg="4">
+              </Fade>
+            </Col>
+          </Row>
+          <Row>
+            <Col sm="12" lg="4">
+              <Fade clear>
                 <Brakes show={false} />
-              </Col>
-              <Col sm="12" lg="4">
+              </Fade>
+            </Col>
+            <Col sm="12" lg="4">
+              <Fade clear>
                 <Fuel show={false} />
-              </Col>
-              <Col sm="12" lg="4">
+              </Fade>
+            </Col>
+            <Col sm="12" lg="4">
+              <Fade clear>
                 <Cooling show={false} />
-              </Col>
-            </Row>
-          </Container>
-        </Fade>
+              </Fade>
+            </Col>
+          </Row>
+        </Container>
+
         <Footer />
       </main>
     );

@@ -19,31 +19,31 @@ class YelpOne extends Component {
           <Col>
             <span
               class="yelp-review"
-              data-review-id="353VwAL_oGMv_6N-DCrVtA"
+              data-review-id="CPZ43GwBDsLfZLaBpDPxFQ"
               data-hostname="www.yelp.com"
             >
-              Read
+              Read{" "}
               <a
-                href="https://www.yelp.com/user_details?userid=IoBhAxAxelNooJ3ySt26ug"
+                href="https://www.yelp.com/user_details?userid=nQjhEXRd9n1vON50NZnOCA"
                 rel="nofollow noopener"
               >
-                Moses B.
+                Jeff H.
               </a>
-              's
+              's{" "}
               <a
-                href="https://www.yelp.com/biz/gtr-high-performance-rancho-cucamonga?hrid=353VwAL_oGMv_6N-DCrVtA"
+                href="https://www.yelp.com/biz/gtr-high-performance-rancho-cucamonga?hrid=CPZ43GwBDsLfZLaBpDPxFQ"
                 rel="nofollow noopener"
               >
                 review
-              </a>
-              of
+              </a>{" "}
+              of{" "}
               <a
                 href="https://www.yelp.com/biz/xqUYSbS_GP3TKK3ooYgpNA"
                 rel="nofollow noopener"
               >
                 GTR High Performance
-              </a>
-              on
+              </a>{" "}
+              on{" "}
               <a href="https://www.yelp.com" rel="nofollow noopener">
                 Yelp
               </a>
@@ -52,19 +52,19 @@ class YelpOne extends Component {
           <Col>
             <span
               class="yelp-review"
-              data-review-id="CE0YQ8HtKTmP8GEIxavpiQ"
+              data-review-id="aUGiGaQinuDPaCJLMvYsrg"
               data-hostname="www.yelp.com"
             >
               Read{" "}
               <a
-                href="https://www.yelp.com/user_details?userid=dh4BdQL-2Glxg9-yOrPc8w"
+                href="https://www.yelp.com/user_details?userid=L74fXuL1VrIsMTBxUO5Kgw"
                 rel="nofollow noopener"
               >
-                Nathaniel S.
+                Jordan N.
               </a>
               's{" "}
               <a
-                href="https://www.yelp.com/biz/gtr-high-performance-rancho-cucamonga?hrid=CE0YQ8HtKTmP8GEIxavpiQ"
+                href="https://www.yelp.com/biz/gtr-high-performance-rancho-cucamonga?hrid=aUGiGaQinuDPaCJLMvYsrg"
                 rel="nofollow noopener"
               >
                 review
@@ -122,3 +122,58 @@ class YelpOne extends Component {
 }
 
 export default YelpOne;
+// componentWillMount() {
+//   const yelp_api = process.env.REACT_APP_YELP_API;
+//   axios
+//     .get(
+//       // "https://api.yelp.com/v3/businesses/search",
+//       "https://cors-anywhere.herokuapp.com/api.yelp.com/v3/businesses/gtr-high-performance-rancho-cucamonga/reviews",
+//       {
+//         headers: {
+//           Authorization: `Bearer ${yelp_api}`
+//         }
+//       }
+//     )
+//     // .then(response => console.log(response));
+//     .then(response => {
+//       // console.log(response);
+//       // console.log(response.data.reviews.map(review => review));
+//       const yelpData = response.data.reviews.map(review => review);
+//       const usersData = response.data.reviews.map(review => review.user);
+//       // console.log(response.data.reviews.map(review => review.text[0]));
+//       // const review_first = response.data.reviews.map(
+//       //   review => review.text[0]
+//       // );
+//       this.setState({
+//         cards: yelpData,
+//         users: usersData
+//       });
+//       console.log(yelpData);
+//       console.log(usersData);
+//     });
+// }
+/* {this.state.cards.map(card => (
+              <Col key={card.id}>
+                <Card style={{ width: "18rem" }}>
+                  <Card.Body>
+                    <Card.Title>{this.state.name}</Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">
+                      <Image
+                        src={
+                          "assets/images/yelp_stars/web_and_ios/small/small_5@3x.png"
+                        }
+                      />
+                      {card.time_created}
+                    </Card.Subtitle>
+                    <Image src={this.state.users.image_url} />
+                    {this.state.users.map(user => (
+                      <Image src={user.image_url} />
+                    ))}
+                    <Card.Text>{card.text}</Card.Text>
+              
+                    <Card.Link href="#">Card Link</Card.Link>
+                    <Card.Link href="#">Another Link</Card.Link>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))} */

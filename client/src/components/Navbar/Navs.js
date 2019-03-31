@@ -49,9 +49,9 @@ class Navs extends Component {
               </Nav.Link>
             </LinkContainer>
 
-            <LinkContainer to="/press" exact={true}>
+            <LinkContainer to="/customers" exact={true}>
               <Nav.Link
-                href="/press"
+                href="/customers"
                 className="nav-black"
                 onClick={this.handleScroll}
               >
@@ -72,9 +72,13 @@ class Navs extends Component {
               id="collasible-nav-dropdown"
               className="nav-black"
             >
-              <LinkContainer to="/catalog" exact={true}>
-                <NavDropdown.Item href="/catalog" onClick={this.handleScroll}>
-                  Catalog
+              <LinkContainer to="/upgrade_info" exact={true}>
+                <NavDropdown.Item
+                  to="/upgrade_info"
+                  className="nav-black"
+                  onClick={this.handleScroll}
+                >
+                  Upgrades Explained
                 </NavDropdown.Item>
               </LinkContainer>
               <LinkContainer to="/upgrade_packages" exact={true}>
@@ -86,16 +90,11 @@ class Navs extends Component {
                   Upgrade Packages
                 </NavDropdown.Item>
               </LinkContainer>
-              <LinkContainer to="/upgrade_info" exact={true}>
-                <NavDropdown.Item
-                  to="/upgrade_info"
-                  className="nav-black"
-                  onClick={this.handleScroll}
-                >
-                  Upgrades Explained
+              <LinkContainer to="/catalog" exact={true}>
+                <NavDropdown.Item href="/catalog" onClick={this.handleScroll}>
+                  Catalog
                 </NavDropdown.Item>
               </LinkContainer>
-              <NavDropdown.Divider />
             </NavDropdown>
           </Nav>
 

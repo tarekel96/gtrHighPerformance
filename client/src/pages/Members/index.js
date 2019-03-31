@@ -7,7 +7,7 @@ import Eli from "../../components/Members/Eli/index.js";
 import Chris from "../../components/Members/Chris/index.js";
 import Dave from "../../components/Members/Dave/index.js";
 import Josh from "../../components/Members/Josh/index.js";
-import Footer from "../../components/Footer/index.js";
+import Fade from "react-reveal/Fade";
 
 class Members extends Component {
   constructor(props) {
@@ -20,28 +20,39 @@ class Members extends Component {
         <Container id="members-container">
           <Row id="members-row-one">
             <Col lg="4" className="members-spacing">
-              <Gonz />
+              <Fade clear>
+                <Gonz />
+              </Fade>
             </Col>
             <Col lg="4" className="members-spacing">
-              <Ric />
+              <Fade clear>
+                <Ric />
+              </Fade>
             </Col>
             <Col lg="4" className="members-spacing">
-              <Eli />
+              <Fade clear>
+                <Eli />
+              </Fade>
             </Col>
           </Row>
           <Row id="members-row-two">
             <Col lg="4" className="members-spacing">
-              <Chris />
+              <Fade clear>
+                <Chris />
+              </Fade>
             </Col>
             <Col lg="4" className="members-spacing">
-              <Dave />
+              <Fade clear>
+                <Dave />
+              </Fade>
             </Col>
             <Col lg="4" className="members-spacing">
-              <Josh />
+              <Fade clear>
+                <Josh />
+              </Fade>
             </Col>
           </Row>
         </Container>
-        <Footer />
       </main>
     );
   }
