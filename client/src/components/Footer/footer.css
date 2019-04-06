@@ -40,3 +40,7 @@
   height: 4rem;
   width: 4rem;
 }
+
+.home-icons:hover {
+  transform: scale(1.5);
+}
