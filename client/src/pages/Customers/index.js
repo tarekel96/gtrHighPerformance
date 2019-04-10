@@ -14,11 +14,11 @@ class Press extends Component {
       users: [{}, {}, {}]
     };
   }
-  componentDidMount() {
-    const script = document.createElement("script");
-    script.setAttribute("src", "https://www.yelp.com/embed/widgets.js");
-    document.body.appendChild(script);
-  }
+  // componentDidMount() {
+  //   const script = document.createElement("script");
+  //   script.setAttribute("src", "https://www.yelp.com/embed/widgets.js");
+  //   document.body.appendChild(script);
+  // }
 
   render() {
     return (

@@ -11,7 +11,6 @@ import Pulleys from "../../components/upgradeInfo/Pulleys/index.js";
 import Brakes from "../../components/upgradeInfo/Brakes/index.js";
 import Fuel from "../../components/upgradeInfo/Fuel/index.js";
 import Cooling from "../../components/upgradeInfo/Cooling/index.js";
-import Footer from "../../components/Footer/index.js";
 import Fade from "react-reveal/Fade";
 
 class upgradeInfo extends Component {
@@ -76,8 +75,6 @@ class upgradeInfo extends Component {
             </Col>
           </Row>
         </Container>
-
-        <Footer />
       </main>
     );
   }
