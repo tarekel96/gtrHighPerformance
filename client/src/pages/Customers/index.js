@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Container } from "react-bootstrap";
 import Photos from "../../components/Customers/Photos/index.js";
 import YelpOne from "../../components/Customers/YelpOne/index.js";
-import Footer from "../../components/Footer/index.js";
 import "./customers.css";
 // import axios from "axios";
 
@@ -29,7 +28,6 @@ class Press extends Component {
           <h2 id="customers-testimonials">Testimonials</h2>
           <YelpOne />
         </Container>
-        <Footer />
       </div>
     );
   }

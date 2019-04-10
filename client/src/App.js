@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "./css/App.css";
 import Nav from "./components/Navbar/Navs.js";
 import Home from "./pages/Home/index.js";
@@ -9,13 +9,13 @@ import Customers from "./pages/Customers/index.js";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import upgradeInfo from "./pages/upgradeInfo/index.js";
 import CalendarCom from "./components/Calendar/index.js";
+import Footer from "./components/Footer/index.js";
 // import ScrollUpButton from "./components/ScrollUpButton/index.js";
 
 const App = () => (
   <Router>
-    <div>
+    <Fragment>
       <Nav />
-      {/* <ScrollUpButton /> */}
       <Route path="/" component={Home} exact={true} />
       <Route
         path="/about"
@@ -30,8 +30,8 @@ const App = () => (
       <Route path="/email" component={Appt} exact={true} />
       <Route path="/calendar" component={CalendarCom} exact={true} />
       <Route path="/upgrade_info" component={upgradeInfo} exact={true} />
-    </div>
-    {/* <Footer id="footCom" /> */}
+      <Footer id="footCom" />
+    </Fragment>
   </Router>
 );
 

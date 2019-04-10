@@ -99,7 +99,7 @@ class Navs extends Component {
           </Nav>
 
           <Nav>
-            <NavLink href="/cart" className="icons" onClick={this.handleScroll}>
+            {/* <NavLink href="/cart" className="icons" onClick={this.handleScroll}>
               <FiShoppingCart />
             </NavLink>
             <Nav.Link
@@ -108,7 +108,7 @@ class Navs extends Component {
               onClick={this.handleScroll}
             >
               Cart
-            </Nav.Link>
+            </Nav.Link> */}
 
             <LinkContainer to={"/calendar"} exact={true}>
               <Nav.Link
