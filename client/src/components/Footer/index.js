@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Image } from "react-bootstrap";
 import { FaFacebook, FaYelp } from "react-icons/fa";
 import "./footer.css";

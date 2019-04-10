@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { Card, Button, Modal } from "react-bootstrap";
 import "./chris.css";
 
@@ -8,13 +8,7 @@ class Chris extends Component {
     this.handleShow = this.handleShow.bind(this);
     this.handleClose = this.handleClose.bind(this);
     this.state = {
-      name: `Chris Balster`,
-      id: 4,
-      title: `Technician/Installer`,
-      background: `Universal Technical Institute graduate, 2005. Ford FACT graduate, 2006. A.S.E. certified Master Mechanic, A1 Engine Repair, A2 Automatic Transmission, A3 Manual Drivetrains, A4 Suspension & Steering, A5 Brakes, A6 Electronic Systems, A7 Heating & Air Conditioning, A8 Engine Performance.`,
-      hobbies: `Fishing.`,
-      food: `Vietnamese Food.`,
-      rides: [`93 Ford F-350 460 Big Block`, `Ford Explorer`, `Toyota Truck`]
+      show: false
     };
   }
 
@@ -27,12 +21,12 @@ class Chris extends Component {
   }
   render() {
     return (
-      <div>
+      <Fragment>
         <Card className="members-cards">
           <Card.Img variant="top" src={"assets/images/Chris.jpg"} />
           <Card.Body>
-            <Card.Title>{this.state.name}</Card.Title>
-            <Card.Text>{this.state.title}</Card.Text>
+            <Card.Title>{personalInfo.name}</Card.Title>
+            <Card.Text>{personalInfo.title}</Card.Text>
             <Button variant="primary" onClick={this.handleShow}>
               More
             </Button>
@@ -40,25 +34,25 @@ class Chris extends Component {
         </Card>
         <Modal show={this.state.show} onHide={this.handleClose}>
           <Modal.Header closeButton>
-            <Modal.Title>{this.state.name}</Modal.Title>
+            <Modal.Title>{personalInfo.name}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <p>
               <strong>Background: </strong>
-              {this.state.background}
+              {personalInfo.background}
             </p>
             <p>
               <strong>Hobbies: </strong>
-              {this.state.hobbies}
+              {personalInfo.hobbies}
             </p>
             <p>
               <strong>Favorite Food: </strong>
-              {this.state.food}
+              {personalInfo.food}
             </p>
             <strong>Personal Rides:</strong>
             <ul>
-              {this.state.rides.map(ride => (
-                <li>{ride}</li>
+              {rides.map(ride => (
+                <li key={ride.key}>{ride.name}</li>
               ))}
             </ul>
           </Modal.Body>
@@ -68,9 +62,32 @@ class Chris extends Component {
             </Button>
           </Modal.Footer>
         </Modal>
-      </div>
+      </Fragment>
     );
   }
 }
+
+const rides = [
+  {
+    name: `93 Ford F-350 460 Big Block`,
+    key: `ChrisF-350`
+  },
+  {
+    name: `Ford Explorer`,
+    key: `ChrisExplorer`
+  },
+  {
+    name: `Toyota Truck`,
+    key: `ChrisTruck`
+  }
+];
+
+const personalInfo = {
+  name: `Chris Balster`,
+  title: `Technician/Installer`,
+  background: `Universal Technical Institute graduate, 2005. Ford FACT graduate, 2006. A.S.E. certified Master Mechanic, A1 Engine Repair, A2 Automatic Transmission, A3 Manual Drivetrains, A4 Suspension & Steering, A5 Brakes, A6 Electronic Systems, A7 Heating & Air Conditioning, A8 Engine Performance.`,
+  hobbies: `Fishing.`,
+  food: `Vietnamese Food.`
+};
 
 export default Chris;

@@ -1,166 +1,117 @@
-import React, { Component } from "react";
+import React from "react";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import gtrLogo from "../../images/gtrLogo.png";
 // import { GiHomeGarage } from "react-icons/gi";
 import { GoCalendar } from "react-icons/go";
-import { FiShoppingCart } from "react-icons/fi";
+// import { FiShoppingCart } from "react-icons/fi";
 import { FaEnvelope } from "react-icons/fa";
 import { LinkContainer } from "react-router-bootstrap";
 import "./nav.css";
-import NavLink from "react-bootstrap/NavLink";
+// import NavLink from "react-bootstrap/NavLink";
 
-class Navs extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-    this.handleScroll = this.handleScroll.bind(this);
-  }
-
-  handleScroll() {
+const Navs = () => {
+  function handleScroll() {
     window.scrollTo(0, 0);
   }
 
-  render() {
-    return (
-      <Navbar
-        id="homeNavBar"
-        collapseOnSelect
-        expand="lg"
+  return (
+    <Navbar id="homeNavBar" collapseOnSelect expand="lg">
+      <Navbar.Brand href="/">
+        <LinkContainer to="/" exact={true}>
+          <img src={gtrLogo} alt="Home" onClick={handleScroll} />
+        </LinkContainer>
+      </Navbar.Brand>
 
-        // variant="dark"
-      >
-        <Navbar.Brand href="/">
-          <LinkContainer to="/" exact={true}>
-            <img src={gtrLogo} alt="Home" onClick={this.handleScroll} />
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        {/* mr-auto classname keeps nav to left */}
+        <Nav className="mr-auto">
+          <LinkContainer to="/about">
+            <Nav.Link
+              href="/about"
+              className="nav-black"
+              onClick={handleScroll}
+            >
+              About
+            </Nav.Link>
           </LinkContainer>
-        </Navbar.Brand>
 
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          {/* mr-auto classname keeps nav to left */}
-          <Nav className="mr-auto">
-            <LinkContainer to="/about">
-              <Nav.Link
-                href="/about"
-                className="nav-black"
-                onClick={this.handleScroll}
-              >
-                About
-              </Nav.Link>
-            </LinkContainer>
-
-            <LinkContainer to="/customers" exact={true}>
-              <Nav.Link
-                href="/customers"
-                className="nav-black"
-                onClick={this.handleScroll}
-              >
-                Press
-              </Nav.Link>
-            </LinkContainer>
-            {/* <NavDropdown title="Press" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="/press" eventKey={7}>
-                GTR Press
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/photos" eventKey={8}>
-                Customer Photos
-              </NavDropdown.Item>
-            </NavDropdown> */}
-
-            <NavDropdown
-              title="Products & Services"
-              id="collasible-nav-dropdown"
+          <LinkContainer to="/customers" exact={true}>
+            <Nav.Link
+              href="/customers"
               className="nav-black"
+              onClick={handleScroll}
             >
-              <LinkContainer to="/upgrade_info" exact={true}>
-                <NavDropdown.Item
-                  to="/upgrade_info"
-                  className="nav-black"
-                  onClick={this.handleScroll}
-                >
-                  Upgrades Explained
-                </NavDropdown.Item>
-              </LinkContainer>
-              <LinkContainer to="/upgrade_packages" exact={true}>
-                <NavDropdown.Item
-                  href="/upgrade_packages"
-                  className="nav-black"
-                  onClick={this.handleScroll}
-                >
-                  Upgrade Packages
-                </NavDropdown.Item>
-              </LinkContainer>
-              <LinkContainer to="/catalog" exact={true}>
-                <NavDropdown.Item href="/catalog" onClick={this.handleScroll}>
-                  Catalog
-                </NavDropdown.Item>
-              </LinkContainer>
-            </NavDropdown>
-          </Nav>
+              Press
+            </Nav.Link>
+          </LinkContainer>
 
-          <Nav>
-            {/* <NavLink href="/cart" className="icons" onClick={this.handleScroll}>
-              <FiShoppingCart />
-            </NavLink>
-            <Nav.Link
-              href="/cart"
-              className="wordIcons nav-black"
-              onClick={this.handleScroll}
-            >
-              Cart
-            </Nav.Link> */}
-
-            <LinkContainer to={"/calendar"} exact={true}>
-              <Nav.Link
-                to="/calendar"
-                className="icons"
-                onClick={this.handleScroll}
+          <NavDropdown
+            title="Products & Services"
+            id="collasible-nav-dropdown"
+            className="nav-black"
+          >
+            <LinkContainer to="/upgrade_info" exact={true}>
+              <NavDropdown.Item
+                to="/upgrade_info"
+                className="nav-black"
+                onClick={handleScroll}
               >
-                <GoCalendar id="cal" />
-              </Nav.Link>
+                Upgrades Explained
+              </NavDropdown.Item>
             </LinkContainer>
-            <LinkContainer to={"/calendar"} exact={true}>
-              <Nav.Link
-                to="/calendar"
-                className="wordIcons nav-black"
-                onClick={this.handleScroll}
+            <LinkContainer to="/upgrade_packages" exact={true}>
+              <NavDropdown.Item
+                href="/upgrade_packages"
+                className="nav-black"
+                onClick={handleScroll}
               >
-                Calendar
-              </Nav.Link>
+                Upgrade Packages
+              </NavDropdown.Item>
             </LinkContainer>
+            <LinkContainer to="/catalog" exact={true}>
+              <NavDropdown.Item href="/catalog" onClick={handleScroll}>
+                Catalog
+              </NavDropdown.Item>
+            </LinkContainer>
+          </NavDropdown>
+        </Nav>
 
-            {/* <LinkContainer to={"/email"} exact={true}> */}
-            <Nav.Link
-              className="icons"
-              href="mailto:info@gtrhipo.com"
-              // onClick={this.handleScroll}
-            >
-              <FaEnvelope />
+        <Nav>
+          <LinkContainer to={"/calendar"} exact={true}>
+            <Nav.Link to="/calendar" className="icons" onClick={handleScroll}>
+              <GoCalendar id="cal" />
             </Nav.Link>
-            {/* </LinkContainer> */}
-            {/* <LinkContainer to={"/email"} exact={true}> */}
+          </LinkContainer>
+          <LinkContainer to={"/calendar"} exact={true}>
             <Nav.Link
+              to="/calendar"
               className="wordIcons nav-black"
-              href="mailto:info@gtrhipo.com"
-              // onClick={this.handleScroll}
+              onClick={handleScroll}
             >
-              Email
+              Calendar
             </Nav.Link>
-            {/* </LinkContainer> */}
+          </LinkContainer>
 
-            <Nav.Link
-              href="#memes"
-              className="nav-black"
-              onClick={this.handleScroll}
-            >
-              More
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
-    );
-  }
-}
+          <Nav.Link className="icons" href="mailto:info@gtrhipo.com">
+            <FaEnvelope />
+          </Nav.Link>
+
+          <Nav.Link
+            className="wordIcons nav-black"
+            href="mailto:info@gtrhipo.com"
+          >
+            Email
+          </Nav.Link>
+
+          <Nav.Link href="#memes" className="nav-black" onClick={handleScroll}>
+            More
+          </Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+  );
+};
 
 export default Navs;
 

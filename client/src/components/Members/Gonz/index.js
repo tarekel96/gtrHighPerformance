@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { Card, Button, Modal } from "react-bootstrap";
 import "./gonz.css";
 
@@ -8,17 +8,6 @@ class Gonz extends Component {
     this.handleShow = this.handleShow.bind(this);
     this.handleClose = this.handleClose.bind(this);
     this.state = {
-      name: `Gonzalo Topete`,
-      id: 1,
-      title: `President and Co-Founder of GTR High`,
-      background: `Bachelor of Science Business Administration, University of California, Riverside, 1997.`,
-      hobbies: `Microsoft X-Box & sports.`,
-      food: `Anything his wife, Lauri, makes.`,
-      rides: [
-        `2006 Mustang GT Vortech Intercooled Supercharged (465 RWHP)`,
-        `1989 Mustang 5.0 LX, 1999 Camaro Z-28 (Yes, a Camaro?!)`,
-        `2007 Tahoe`
-      ],
       show: false
     };
   }
@@ -33,12 +22,12 @@ class Gonz extends Component {
 
   render() {
     return (
-      <div>
+      <Fragment>
         <Card className="members-cards">
           <Card.Img variant="top" src={"assets/images/Gonz.jpeg"} />
           <Card.Body>
-            <Card.Title>{this.state.name}</Card.Title>
-            <Card.Text>{this.state.title}</Card.Text>
+            <Card.Title>{personalInfo.name}</Card.Title>
+            <Card.Text>{personalInfo.title}</Card.Text>
             <Button variant="primary" onClick={this.handleShow}>
               More
             </Button>
@@ -51,20 +40,20 @@ class Gonz extends Component {
           <Modal.Body>
             <p>
               <strong>Background: </strong>
-              {this.state.background}
+              {personalInfo.background}
             </p>
             <p>
               <strong>Hobbies: </strong>
-              {this.state.hobbies}
+              {personalInfo.hobbies}
             </p>
             <p>
               <strong>Favorite Food: </strong>
-              {this.state.food}
+              {personalInfo.food}
             </p>
             <strong>Personal Rides:</strong>
             <ul>
-              {this.state.rides.map(ride => (
-                <li>{ride}</li>
+              {rides.map(ride => (
+                <li key={ride.key}>{ride.name}</li>
               ))}
             </ul>
           </Modal.Body>
@@ -74,9 +63,36 @@ class Gonz extends Component {
             </Button>
           </Modal.Footer>
         </Modal>
-      </div>
+      </Fragment>
     );
   }
 }
+
+const rides = [
+  {
+    name: `2006 Mustang GT Vortech Intercooled Supercharged (465 RWHP)`,
+    key: `Gonz2006GT`
+  },
+  {
+    name: `1989 Mustang 5.0 LX, 1999 Camaro Z-28 (Yes, a Camaro?!)`,
+    key: `Gonz19895.0`
+  },
+  {
+    name: `2006 Mustang GT Vortech Intercooled Supercharged (465 RWHP)`,
+    key: `Gonz2006GT`
+  },
+  {
+    name: `2007 Tahoe`,
+    key: `Gonz2007Tahoe`
+  }
+];
+
+const personalInfo = {
+  name: `Gonzalo Topete`,
+  title: `President and Co-Founder of GTR High`,
+  background: `Bachelor of Science Business Administration, University of California, Riverside, 1997.`,
+  hobbies: `Microsoft X-Box & sports.`,
+  food: `Anything his wife, Lauri, makes.`
+};
 
 export default Gonz;

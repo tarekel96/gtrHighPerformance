@@ -8,15 +8,7 @@ class Josh extends Component {
     this.handleShow = this.handleShow.bind(this);
     this.handleClose = this.handleClose.bind(this);
     this.state = {
-      name: `Josh Felton`,
-
-      id: 6,
-      title: `Marketing/Advertising/Web Site/Photography`,
-      background: `Started working with GTR in 2002. Designs, updates, and maintains advertisements in magazines, web site, and promotional media such as calendars, flyers, brochures, etc...`,
-      hobbies: `Family, and apparently, work.`,
-      food: `Anything the majority of North Americans consider food is fine by me.
-         `,
-      rides: [`2005 Dodge Magnum RT`, `2005 Ford F-150 FX4 SuperCrew`]
+      show: false
     };
   }
   handleClose() {
@@ -32,8 +24,8 @@ class Josh extends Component {
         <Card className="members-cards">
           <Card.Img variant="top" src={"assets/images/Josh.jpg"} />
           <Card.Body>
-            <Card.Title>{this.state.name}</Card.Title>
-            <Card.Text>{this.state.title}</Card.Text>
+            <Card.Title>{personalInfo.name}</Card.Title>
+            <Card.Text>{personalInfo.title}</Card.Text>
             <Button variant="primary" onClick={this.handleShow}>
               More
             </Button>
@@ -41,25 +33,25 @@ class Josh extends Component {
         </Card>
         <Modal show={this.state.show} onHide={this.handleClose}>
           <Modal.Header closeButton>
-            <Modal.Title>{this.state.name}</Modal.Title>
+            <Modal.Title>{personalInfo.name}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <p>
               <strong>Background: </strong>
-              {this.state.background}
+              {personalInfo.background}
             </p>
             <p>
               <strong>Hobbies: </strong>
-              {this.state.hobbies}
+              {personalInfo.hobbies}
             </p>
             <p>
               <strong>Favorite Food: </strong>
-              {this.state.food}
+              {personalInfo.food}
             </p>
             <strong>Personal Rides:</strong>
             <ul>
-              {this.state.rides.map(ride => (
-                <li>{ride}</li>
+              {rides.map(ride => (
+                <li key={ride.key}>{ride.name}</li>
               ))}
             </ul>
           </Modal.Body>
@@ -73,5 +65,24 @@ class Josh extends Component {
     );
   }
 }
+
+const rides = [
+  {
+    name: `2005 Dodge Magnum RT`,
+    key: `Josh2005Dodge`
+  },
+  {
+    name: `2005 Ford F-150 FX4 SuperCrew`,
+    key: `Josh2005Ford`
+  }
+];
+
+const personalInfo = {
+  name: `Josh Felton`,
+  title: `Marketing/Advertising/Web Site/Photography`,
+  background: `Started working with GTR in 2002. Designs, updates, and maintains advertisements in magazines, web site, and promotional media such as calendars, flyers, brochures, etc...`,
+  hobbies: `Family, and apparently, work.`,
+  food: `Anything the majority of North Americans consider food is fine by me.`
+};
 
 export default Josh;
