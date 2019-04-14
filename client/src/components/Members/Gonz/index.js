@@ -35,7 +35,7 @@ class Gonz extends Component {
         </Card>
         <Modal show={this.state.show} onHide={this.handleClose}>
           <Modal.Header closeButton>
-            <Modal.Title>{this.state.name}</Modal.Title>
+            <Modal.Title>{personalInfo.name}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <p>
@@ -76,10 +76,6 @@ const rides = [
   {
     name: `1989 Mustang 5.0 LX, 1999 Camaro Z-28 (Yes, a Camaro?!)`,
     key: `Gonz19895.0`
-  },
-  {
-    name: `2006 Mustang GT Vortech Intercooled Supercharged (465 RWHP)`,
-    key: `Gonz2006GT`
   },
   {
     name: `2007 Tahoe`,

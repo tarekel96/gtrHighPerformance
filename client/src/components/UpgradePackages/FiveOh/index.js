@@ -23,7 +23,11 @@ class FiveOh extends Component {
   render() {
     return (
       <React.Fragment>
-        <Image src="assets/images/50Button.png" onClick={this.handleShow} />
+        <Image
+          src="assets/images/50Button.png"
+          className="package-image"
+          onClick={this.handleShow}
+        />
 
         <Modal show={this.state.show}>
           <Modal.Header>

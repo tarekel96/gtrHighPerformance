@@ -1,0 +1,11 @@
+.package-image {
+  width: 300px;
+  height: 176px;
+}
+
+@media (max-width: 1024px) {
+  .package-image {
+    width: 150px;
+    height: 88px;
+  }
+}
