@@ -27,7 +27,6 @@ class YelpOne extends Component {
   //   const script = document.createElement("script");
   //   script.setAttribute("src", "https://www.yelp.com/embed/widgets.js");
   //   document.getElementById("root").appendChild(script);
-  //   <script src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script>
   // }
 
   render() {
