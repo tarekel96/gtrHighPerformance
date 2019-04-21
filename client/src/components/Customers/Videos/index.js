@@ -18,7 +18,7 @@ class Videos extends React.Component {
     };
 
     return (
-      <Carousel className="text-center">
+      <Carousel className="text-center" interval={false}>
         {videosInfo.map(video => (
           <Carousel.Item key={video.key}>
             <YouTubeCom videoId={video.videoId} opts={opts} />

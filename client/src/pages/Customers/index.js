@@ -26,9 +26,9 @@ class Press extends Component {
     return (
       <div>
         <Featured />
-        <h2 className="text-center">Customer Dyno Videos</h2>
+        <h2 className="text-center pt-3">Customer Dyno Videos</h2>
         <Videos />
-        <h2 className="text-center">Galleries</h2>
+        <h2 className="text-center pt-3">Galleries</h2>
         <Container fluid>
           <Photos />
           <h2 id="customers-testimonials">Testimonials</h2>

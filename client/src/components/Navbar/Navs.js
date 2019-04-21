@@ -103,10 +103,11 @@ const Navs = () => {
           >
             Email
           </Nav.Link>
-
-          <Nav.Link href="#memes" className="nav-black" onClick={handleScroll}>
-            More
-          </Nav.Link>
+          <LinkContainer to={"/press"} exact={true}>
+            <Nav.Link to="/press" className="nav-black" onClick={handleScroll}>
+              Press
+            </Nav.Link>
+          </LinkContainer>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
