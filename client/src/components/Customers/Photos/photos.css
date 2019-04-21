@@ -11,3 +11,12 @@
 .carousel-items {
   text-align: center;
 }
+
+.carousel-items a {
+  background-color: lightgray;
+}
+
+.carousel-items a:link:active,
+a:visited:active {
+  color: red;
+}

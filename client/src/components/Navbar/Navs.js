@@ -42,7 +42,7 @@ const Navs = () => {
               className="nav-black"
               onClick={handleScroll}
             >
-              Press
+              Customers
             </Nav.Link>
           </LinkContainer>
 

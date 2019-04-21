@@ -58,6 +58,7 @@ class CalendarCom extends Component {
   //   }
   // }};
 
+  componentDidMount(e) {}
   saveEvent = ({ slotInfo }) => {};
 
   render() {

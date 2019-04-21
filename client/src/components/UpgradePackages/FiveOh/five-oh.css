@@ -1,6 +1,7 @@
 .package-image {
   width: 300px;
   height: 176px;
+  cursor: pointer;
 }
 
 @media (max-width: 1024px) {
