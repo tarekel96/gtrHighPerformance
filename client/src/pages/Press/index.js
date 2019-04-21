@@ -1,16 +1,41 @@
 import React, { Component } from "react";
 import ArticleT from "../../components/Press/ArticleT/index.js";
+import YouTubeCom from "../../components/Customers/YouTube/index.js";
+import { Button } from "react-bootstrap";
 
 class Press extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      table: false
+    };
   }
+
+  showArticles = () => {
+    this.setState(prevState => ({
+      table: !prevState.table
+    }));
+  };
+
   render() {
+    const opts = {
+      height: "390",
+      width: "640",
+      playerVars: {
+        // https://developers.google.com/youtube/player_parameters
+        autoplay: 2
+      }
+    };
     return (
       <div id="mainContent">
-        <h3> GTR High Performance in the Press</h3>
-        <ArticleT />
+        <h3 className="text-center"> GTR High Performance in the Press</h3>
+        <div className="d-flex justify-content-center">
+          <YouTubeCom videoId={"OSJpSXdeWMs"} opts={opts} />
+        </div>
+        <Button className="mx-auto d-flex" onClick={this.showArticles}>
+          Show Articles
+        </Button>
+        <ArticleT table={this.state.table} />
         <p>&nbsp;</p>
         <p>
           <a
