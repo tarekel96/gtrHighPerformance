@@ -1,9 +1,13 @@
 import React from "react";
 import { Row, Container } from "react-bootstrap";
+import "./article-t.css";
 
 const ArticleT = ({ table }) => {
   return (
-    <Container style={{ display: table ? "" : "none" }}>
+    <Container
+      className="articles"
+      style={{ display: table ? "" : "none", marginTop: "2rem" }}
+    >
       <Row className={`justify-content-center`}>
         <a
           href="http://www.amosauto.com/Articles/Gm/Tech/get-a-grip"
@@ -15,6 +19,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="121"
             alt="getagrip"
+            title="Get A Grip"
           />
         </a>
 
@@ -29,6 +34,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="121"
             border="0"
+            title="Barton Industires Short Flow Six Speed Shifter"
           />
         </a>
 
@@ -43,6 +49,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="122"
             border="0"
+            title="Six Speed Transmission G Force Gear Upgrades"
           />
         </a>
 
@@ -57,6 +64,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="121"
             border="0"
+            title="2002 Ford Mustang GT 8.8 Rearend Rebuild"
           />
         </a>
 
@@ -71,6 +79,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="121"
             border="0"
+            title="Trick Flow Twisted Wedge Chamber"
           />
         </a>
       </Row>
@@ -86,6 +95,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="121"
             border="0"
+            title="2011 Ford Mustang GT Steeda Ultimate Induction Pak"
           />
         </a>
 
@@ -99,6 +109,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="121"
             alt="Recession Proof Performance"
+            title="Recession Proof Performance"
           />
         </a>
 
@@ -113,6 +124,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="135"
             border="0"
+            title="Trick Flo's Twisted Wedge Chamber"
           />
         </a>
 
@@ -127,6 +139,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="132"
             border="0"
+            title="Cool Under Pressure"
           />
         </a>
 
@@ -141,6 +154,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="135"
             border="0"
+            title="Casual Zex"
           />
         </a>
       </Row>
@@ -156,6 +170,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="135"
             border="0"
+            title="Barton Industries Short Throw Six Speed Shifter"
           />
         </a>
 
@@ -170,6 +185,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="135"
             border="0"
+            title="Gimme A Boost"
           />
         </a>
 
@@ -184,6 +200,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="135"
             border="0"
+            title="Easy Breathing"
           />
         </a>
 
@@ -198,6 +215,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="135"
             border="0"
+            title="Six Speed Transmission G Force"
           />
         </a>
 
@@ -212,6 +230,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="121"
             border="0"
+            title="Mustang Engine Swap"
           />
         </a>
       </Row>
@@ -227,6 +246,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="132"
             border="0"
+            title="License to Chill"
           />
         </a>
 
@@ -241,6 +261,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="135"
             border="0"
+            title="Lift it Quick"
           />
         </a>
 
@@ -255,6 +276,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="135"
             border="0"
+            title="Quick Six"
           />
         </a>
 
@@ -269,6 +291,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="135"
             border="0"
+            title="Mach1 Makeover"
           />
         </a>
 
@@ -283,6 +306,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="135"
             border="0"
+            title="Mustang Engine Swap"
           />
         </a>
       </Row>
@@ -298,6 +322,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="132"
             border="0"
+            title="Shock Therapy"
           />
         </a>
 
@@ -312,6 +337,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="135"
             border="0"
+            title="2002 Ford Mustang GT 8.8"
           />
         </a>
 
@@ -326,6 +352,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="135"
             border="0"
+            title="2011 Ford Mustang GT Steeda"
           />
         </a>
 
@@ -336,7 +363,8 @@ const ArticleT = ({ table }) => {
         >
           <img
             src="assets/images/Press/StraightShooter-1.jpg"
-            alt="GTR-in-press"
+            alt="Straight Shooter"
+            title="Straight Shooter"
             width="100"
             height="135"
             border="0"
@@ -354,6 +382,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="135"
             border="0"
+            title="Sittin Pretty"
           />
         </a>
       </Row>
@@ -368,6 +397,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="135"
             alt="GTR-Turbonetics"
+            title="GTR-Turbonetics"
           />
         </a>
 
@@ -382,6 +412,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="135"
             border="0"
+            title="Underdriving Overachiever"
           />
         </a>
 
@@ -396,6 +427,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="135"
             border="0"
+            title="Raising The Bar"
           />
         </a>
 
@@ -410,6 +442,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="135"
             border="0"
+            title="A Shift for the Better"
           />
         </a>
 
@@ -424,6 +457,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="135"
             border="0"
+            title="The Missing Link"
           />
         </a>
       </Row>
@@ -439,6 +473,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="135"
             border="0"
+            title="True Flow First Look"
           />
         </a>
 
@@ -453,6 +488,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="135"
             border="0"
+            title="Blowing the 5.0"
           />
         </a>
 
@@ -467,6 +503,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="132"
             border="0"
+            title="Baer Essentials"
           />
         </a>
 
@@ -479,6 +516,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="135"
             alt="gtr-camaro-clutch-article"
+            title="GTR Camaro Clutch article"
           />
         </a>
 
@@ -493,6 +531,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="132"
             border="0"
+            title="Upgraded Road Handling"
           />
         </a>
       </Row>
@@ -508,6 +547,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="135"
             border="0"
+            title="Blown Away"
           />
         </a>
 
@@ -522,6 +562,7 @@ const ArticleT = ({ table }) => {
             width="100"
             height="135"
             border="0"
+            title="X Marks the Spot"
           />
         </a>
       </Row>

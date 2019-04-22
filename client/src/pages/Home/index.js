@@ -1,26 +1,13 @@
 import React, { Component } from "react";
 import { Container, Col, Row, Button } from "react-bootstrap";
-import Shelby from "../../images/RedStang.jpeg";
-// import Maps from "../../components/Maps/index.js";
+import Shelby from "../../images/Home/RedStang.jpeg";
 import GoogleMap from "../../components/GoogleMap/index.js";
 import "./home.css";
 
 class Home extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: "GTR High Performance",
-      review_one: "",
-      review_two: "",
-      review_three: "",
-      cards: [{}, {}, {}]
-    };
-    this.handleScroll = this.handleScroll.bind.this;
-  }
-
-  handleScroll() {
+  handleScroll = () => {
     window.scrollTo(0, 0);
-  }
+  };
 
   render() {
     return (
@@ -60,7 +47,6 @@ class Home extends Component {
             </Col>
             <Col md="8" lg="6">
               <GoogleMap />
-              {/* <Maps /> */}
             </Col>
           </Row>
         </Container>
