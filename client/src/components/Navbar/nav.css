@@ -1,11 +1,5 @@
-/* #homeIcon {
-  height: 10px;
-  width: 10px;
-} */
-
 #homeNavBar {
   color: hsl(0, 0%, 11%);
-  /* background-color: #f5f5f5; */
   background-color: #ecebe5;
 }
 
@@ -28,8 +22,3 @@
     display: block;
   }
 }
-
-/* #cal {
-  height: 30px;
-  width: 30px;
-} */

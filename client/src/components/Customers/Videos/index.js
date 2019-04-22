@@ -1,11 +1,11 @@
 import React from "react";
 import YouTubeCom from "../YouTube/index.js";
 import Carousel from "react-bootstrap/Carousel";
+import { Container, Col } from "react-bootstrap";
 
 class Videos extends React.Component {
   _onReady(event) {
     // access to player in all event handlers via event.target
-    // "2g811Eo7K8U"
     event.target.pauseVideo();
   }
   render() {
@@ -18,13 +18,17 @@ class Videos extends React.Component {
     };
 
     return (
-      <Carousel className="text-center" interval={false}>
-        {videosInfo.map(video => (
-          <Carousel.Item key={video.key}>
-            <YouTubeCom videoId={video.videoId} opts={opts} />
-          </Carousel.Item>
-        ))}
-      </Carousel>
+      <Container>
+        <Col className="mx-auto" lg={8}>
+          <Carousel className="text-center" interval={false}>
+            {videosInfo.map(video => (
+              <Carousel.Item key={video.key}>
+                <YouTubeCom videoId={video.videoId} opts={opts} />
+              </Carousel.Item>
+            ))}
+          </Carousel>
+        </Col>
+      </Container>
     );
   }
 }

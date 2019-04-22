@@ -24,7 +24,7 @@ class TwoVal extends Component {
       <React.Fragment>
         <Image
           className="package-image"
-          src="assets/images/2VGTButton.png"
+          src="assets/images/UpgradePackages/2VGTButton.png"
           onClick={this.handleShow}
         />
 

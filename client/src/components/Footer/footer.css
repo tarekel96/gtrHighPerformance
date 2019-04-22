@@ -42,5 +42,6 @@
 }
 
 .home-icons:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
+  background-color: #17a2b8;
 }

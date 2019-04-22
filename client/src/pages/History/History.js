@@ -5,16 +5,19 @@ import "./history.css";
 
 const History = () => {
   return (
-    <div id="masterHistory">
-      <Fade>
-        <div id="historyInfo" className="justify paddingPars">
-          <header>
-            <h3 id="title">The History of GTR High Performance</h3>
-          </header>
-          <ParagraphLayout data={historyData} />
-        </div>
-      </Fade>
-    </div>
+    <React.Fragment>
+      <hr id="history-hr" />
+      <div id="masterHistory">
+        <Fade>
+          <div id="historyInfo" className="justify paddingPars">
+            <header>
+              <h3 id="title">The History of GTR High Performance</h3>
+            </header>
+            <ParagraphLayout data={historyData} />
+          </div>
+        </Fade>
+      </div>
+    </React.Fragment>
   );
 };
 

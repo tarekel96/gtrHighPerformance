@@ -24,7 +24,7 @@ class FiveOh extends Component {
     return (
       <React.Fragment>
         <Image
-          src="assets/images/50Button.png"
+          src="assets/images/UpgradePackages/50Button.png"
           className="package-image"
           onClick={this.handleShow}
         />

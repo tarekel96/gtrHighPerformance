@@ -3,6 +3,10 @@
   height: 176px;
   cursor: pointer;
 }
+.package-image:hover {
+  zoom: 120%;
+  background-color: #dc3545;
+}
 
 @media (max-width: 1024px) {
   .package-image {

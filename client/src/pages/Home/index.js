@@ -40,7 +40,7 @@ class Home extends Component {
                   of the premier Mustang performance shops in the country.
                 </section>
 
-                <Button id="home-button-learn" href="/about">
+                <Button id="home-button-learn" variant="info" href="/about">
                   Learn More
                 </Button>
               </div>

@@ -23,7 +23,7 @@ class VSix extends Component {
     return (
       <React.Fragment>
         <Image
-          src="assets/images/V6Button.png"
+          src="assets/images/UpgradePackages/V6Button.png"
           className="package-image"
           onClick={this.handleShow}
         />

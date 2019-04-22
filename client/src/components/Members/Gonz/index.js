@@ -24,11 +24,11 @@ class Gonz extends Component {
     return (
       <Fragment>
         <Card className="members-cards">
-          <Card.Img variant="top" src={"assets/images/Gonz.jpeg"} />
+          <Card.Img variant="top" src={"assets/images/members/Gonz.jpeg"} />
           <Card.Body>
             <Card.Title>{personalInfo.name}</Card.Title>
             <Card.Text>{personalInfo.title}</Card.Text>
-            <Button variant="primary" onClick={this.handleShow}>
+            <Button variant="info" onClick={this.handleShow}>
               More
             </Button>
           </Card.Body>

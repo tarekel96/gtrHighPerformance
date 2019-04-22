@@ -11,7 +11,7 @@ class Fuel extends Component {
       name: "Fuel System Upgrades",
       id: 8,
       render: false,
-      img: "assets/images/fuel-system.jpeg",
+      img: "assets/images/UpgradeInfo/fuel-system.jpeg",
       info:
         "Everybody knows that you can't make horsepower without fuel...it really is that simple. GTR High Performance carries a wide assortment of fuel system components to feed your beast. From high flow fuel pumps, to larger capacity fuel injectors to adjustable fuel pressure regulators to help fine-tune your Mustang's fuel demands, GTR has you covered. Not sure exactly how much fuel flow is required to optimize your current or future modifications, call us and put our vast experience to use. Having tested and installed virtually every fuel system upgrade on the market, we know what works best on Mustangs.",
       benefits: [
@@ -33,9 +33,6 @@ class Fuel extends Component {
   render() {
     return (
       <main id="fuel-main">
-        {/* <Container fluid>
-          <Row className="fuel-row">
-            <Col lg={9}> */}
         <Jumbotron className="fuel-jumbo">
           <h2>{this.state.name}</h2>
 

@@ -1,13 +1,10 @@
 import React from "react";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import gtrLogo from "../../images/gtrLogo.png";
-// import { GiHomeGarage } from "react-icons/gi";
 import { GoCalendar } from "react-icons/go";
-// import { FiShoppingCart } from "react-icons/fi";
 import { FaEnvelope } from "react-icons/fa";
 import { LinkContainer } from "react-router-bootstrap";
 import "./nav.css";
-// import NavLink from "react-bootstrap/NavLink";
 
 const Navs = () => {
   function handleScroll() {
@@ -115,9 +112,3 @@ const Navs = () => {
 };
 
 export default Navs;
-
-// import { Button } from "react-bootstrap/Button";
-
-// const Navs = () => <Button bsStyle="success">Hello</Button>;
-
-// export default Navs;

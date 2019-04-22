@@ -34,10 +34,19 @@ class Press extends Component {
       <Fragment>
         <Fade clear>
           <h3 className="text-center"> GTR High Performance in the Press</h3>
-          {/* <PaginCom toggleArticles={this.togglerArticles} /> */}
+
           <div className="d-flex justify-content-center mb-4">
             <YouTubeCom videoId={"OSJpSXdeWMs"} opts={opts} />
           </div>
+          <p
+            style={{
+              textAlign: "center",
+              marginTop: "-1rem"
+            }}
+          >
+            Vortech Track Day Featuring GTR High Performance
+          </p>
+          <hr className="w-75" />
           <Fade clear>
             <h4 className="text-center">Articles featuring GTR</h4>
             <SideArticles list={articles} showList={this.state.showList} />
