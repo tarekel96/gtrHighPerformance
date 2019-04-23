@@ -37,7 +37,7 @@ class Photos extends Component {
             <Carousel.Item className="carousel-items">
               <img
                 className="d-block w-100"
-                src="assets/images/2007-customer-day.jpg"
+                src="assets/images/Customers/2007-customer-day.jpg"
                 alt="Third slide"
               />
 
@@ -54,7 +54,7 @@ class Photos extends Component {
             <Carousel.Item className="carousel-items">
               <img
                 className="d-block w-100"
-                src="assets/images/ford-gt.jpg"
+                src="assets/images/Customers/ford-gt.jpg"
                 alt="First slide"
               />
               <Carousel.Caption className="pt-3">
@@ -71,7 +71,7 @@ class Photos extends Component {
             <Carousel.Item className="carousel-items">
               <img
                 className="d-block w-100"
-                src="assets/images/2008-sema-day.jpg"
+                src="assets/images/Customers/2008-sema-day.jpg"
                 alt="Third slide"
                 rel="noopener noreferrer"
               />
@@ -89,7 +89,7 @@ class Photos extends Component {
             <Carousel.Item className="carousel-items">
               <img
                 className="d-block w-100"
-                src="assets/images/2009-fab-fords.jpg"
+                src="assets/images/Customers/2009-fab-fords.jpg"
                 alt="Third slide"
               />
 
@@ -106,7 +106,7 @@ class Photos extends Component {
             <Carousel.Item className="carousel-items">
               <img
                 className="d-block w-100"
-                src="assets/images/van-nic-photo.jpg"
+                src="assets/images/Customers/van-nic-photo.jpg"
                 alt="Third slide"
               />
 
@@ -123,7 +123,7 @@ class Photos extends Component {
             <Carousel.Item className="carousel-items">
               <img
                 className="d-block w-100"
-                src="assets/images/gtr-work.jpg"
+                src="assets/images/Customers/gtr-work.jpg"
                 alt="Third slide"
               />
 
@@ -140,7 +140,7 @@ class Photos extends Component {
             <Carousel.Item className="carousel-items">
               <img
                 className="d-block w-100"
-                src="assets/images/misc-customer.jpg"
+                src="assets/images/Customers/misc-customer.jpg"
                 alt="Third slide"
               />
 

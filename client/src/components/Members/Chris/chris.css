@@ -1,7 +1,7 @@
 .members-cards {
   height: 400px;
-  color: white;
-  background-color: #343a40;
+  background-color: #e9ecef;
+  font-family: "Ubuntu", sans-serif;
 }
 
 /* .bio-name {

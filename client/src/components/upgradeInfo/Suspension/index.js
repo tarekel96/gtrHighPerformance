@@ -66,7 +66,9 @@ class Suspension extends Component {
             }
           </div>
           <div className="suspension-button-div">
-            <Button onClick={this.handleShow}>More Info</Button>
+            <Button variant="info" onClick={this.handleShow}>
+              More Info
+            </Button>
           </div>
         </Jumbotron>
       </main>

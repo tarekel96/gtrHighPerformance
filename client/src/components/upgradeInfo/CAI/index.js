@@ -58,7 +58,7 @@ class CAI extends Component {
                   <p className="cai-info">{this.state.info}</p>
                 </Modal.Body>
                 <Modal.Footer>
-                  <Button variant="secondary" onClick={this.handleClose}>
+                  <Button variant="info" onClick={this.handleClose}>
                     Close
                   </Button>
                 </Modal.Footer>
@@ -66,7 +66,9 @@ class CAI extends Component {
             }
           </div>
           <div className="cai-button-div">
-            <Button onClick={this.handleShow}>More Info</Button>
+            <Button variant="info" onClick={this.handleShow}>
+              More Info
+            </Button>
           </div>
         </Jumbotron>
       </main>

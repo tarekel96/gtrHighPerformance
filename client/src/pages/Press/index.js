@@ -33,7 +33,10 @@ class Press extends Component {
     return (
       <Fragment>
         <Fade clear>
-          <h3 className="text-center"> GTR High Performance in the Press</h3>
+          <h3 className="text-center p-3">
+            {" "}
+            GTR High Performance in the Press
+          </h3>
 
           <div className="d-flex justify-content-center mb-4">
             <YouTubeCom videoId={"OSJpSXdeWMs"} opts={opts} />

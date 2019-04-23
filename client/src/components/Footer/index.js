@@ -63,7 +63,7 @@ const Footer = () => {
         >
           <Image
             className="home-icons"
-            src={"assets/images/instagram-logo.png"}
+            src={"assets/images/Footer/instagram-logo.png"}
           />
         </a>
 

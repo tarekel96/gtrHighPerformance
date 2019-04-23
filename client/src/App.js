@@ -12,7 +12,6 @@ import UpgradePackages from "./pages/UpgradePackages/index.js";
 import CalendarCom from "./components/Calendar/index.js";
 import Press from "./pages/Press/index.js";
 import Footer from "./components/Footer/index.js";
-// import ScrollUpButton from "./components/ScrollUpButton/index.js";
 
 const App = () => (
   <Router>
